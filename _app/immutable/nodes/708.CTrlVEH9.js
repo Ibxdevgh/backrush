@@ -1,0 +1,1 @@
+import{r as e}from"../chunks/KjYeVjkE.js";const o=async()=>{e(303,"/docs/tutorials/vue/step-1")},r=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{r as universal};

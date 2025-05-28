@@ -1,0 +1,1 @@
+import{t as c,a as l}from"./Cw4I5osi.js";import{p as i,I as n,a as u,c as e,r}from"./NgVQVlRK.js";import{s as m}from"./DVI7OasS.js";var b=c('<blockquote class="web-blockquote"><p class="text-description"><!></p></blockquote>');function f(s,t){i(t,!0),n("no-paragraph",!0);var o=b(),a=e(o),p=e(a);m(p,()=>t.children),r(a),r(o),l(s,o),u()}export{f as B};

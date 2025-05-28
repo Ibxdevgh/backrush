@@ -1,0 +1,1 @@
+import{f as s}from"./DIePDvv_.js";const a=e=>{const t=new Date(e);return s(t,"MMMM d, yyyy")},n=e=>{const t=new Date(e);return isNaN(t.getTime())?!1:t.setHours(0,0,0,0)>new Date().setHours(0,0,0,0)};export{a as f,n as i};

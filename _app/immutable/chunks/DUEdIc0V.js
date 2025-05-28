@@ -1,0 +1,1 @@
+import{J as c,K as i,L as _,q as h,z as y,v as d,U as k,x as r,B as u,y as v}from"./NgVQVlRK.js";function I(f,n,t){r&&u();var e=f,s=k,a,o=c()?i:_;h(()=>{o(s,s=n())&&(a&&y(a),a=d(()=>t(e)))}),r&&(e=v)}export{I as k};

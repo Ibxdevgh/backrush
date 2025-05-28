@@ -1,0 +1,1 @@
+import{t as n,a as r}from"./Cw4I5osi.js";import{t as i}from"./NgVQVlRK.js";import{d as m,c}from"./BzVk5r6l.js";import{p as f}from"./B4IyMRKX.js";var l=n("<span></span>");function v(a,t){const e=f(t,"size",3,"s"),p={s:"16px",m:"20px",l:"32px",xl:"40px"};var s=l();let o;i(()=>{m(s,1,`icon-${t.icon??""}`),o=c(s,"",o,{"font-size":p[e()]})}),r(a,s)}export{v as I};

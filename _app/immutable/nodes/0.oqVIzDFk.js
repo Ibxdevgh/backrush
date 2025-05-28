@@ -1,0 +1,1 @@
+import{g as e}from"../chunks/CX7kx0JQ.js";import{_ as s}from"../chunks/BzVk5r6l.js";const t="never",o=async()=>({changelogEntries:(await e()).length}),r=Object.freeze(Object.defineProperty({__proto__:null,load:o,trailingSlash:t},Symbol.toStringTag,{value:"Module"}));export{s as component,r as universal};
