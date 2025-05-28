@@ -67,8 +67,8 @@ export default async ({ req, res, error }) => {
 
     <script src="//unpkg.com/alpinejs" defer><\/script>
 
-    <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink" />
-    <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink-icons" />
+    <link rel="stylesheet" href="https://unpkg.com/@backrush.io/pink" />
+    <link rel="stylesheet" href="https://unpkg.com/@backrush.io/pink-icons" />
   </head>
 </html>
 `,language:"html",process:!0,children:(o,a)=>{t();var s=l(`<!doctype html>
@@ -101,8 +101,8 @@ export default async ({ req, res, error }) => {
 
     <script src="//unpkg.com/alpinejs" defer><\/script>
 
-    <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink" />
-    <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink-icons" />
+    <link rel="stylesheet" href="https://unpkg.com/@backrush.io/pink" />
+    <link rel="stylesheet" href="https://unpkg.com/@backrush.io/pink-icons" />
   </head>
 </html>`);r(o,s)},$$slots:{default:!0}});var f=e(_);v(f,{children:(o,a)=>{t();var s=l("The code above includes a script that will handle the form submission and a script tag that includes of the Alpine.js library. This library will be used to handle the submission of the form.");r(o,s)},$$slots:{default:!0}});var u=e(f);v(u,{children:(o,a)=>{t();var s=je(),h=e(p(s));y(h,{content:"</head>"});var x=e(h,2);y(x,{content:"<body>"}),t(),r(o,s)},$$slots:{default:!0}});var n=e(u);j(n,{content:`<body>
   <main class="main-content">

@@ -14,10 +14,10 @@ import{t as p,b as a,a as t}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6
   --collection-id "<COLLECTION_ID>" \\
   --document-id "<DOCUMENT_ID>" \\
   --console --open`);t(r,o)},$$slots:{default:!0}});var wt=e(Pt);O(wt,{id:"examples",level:1,children:(r,_)=>{s();var o=a("Examples");t(r,o)},$$slots:{default:!0}});var xt=e(wt);O(xt,{id:"create-user",level:2,children:(r,_)=>{s();var o=a("Create user");t(r,o)},$$slots:{default:!0}});var yt=e(xt);j(yt,{children:(r,_)=>{s();var o=a("To create a new user in your project, you can use the create command.");t(r,o)},$$slots:{default:!0}});var bt=e(yt);S(bt,{content:`backrush users create --user-id "unique()" \\
-    --email hello@appwrite.io \\
+    --email hello@backrush.io \\
     --password very_strong_password
 `,language:"sh",process:!0,children:(r,_)=>{s();var o=a(`backrush users create --user-id "unique()" \\
-    --email hello@appwrite.io \\
+    --email hello@backrush.io \\
     --password very_strong_password`);t(r,o)},$$slots:{default:!0}});var At=e(bt);O(At,{id:"list-users",level:2,children:(r,_)=>{s();var o=a("List users");t(r,o)},$$slots:{default:!0}});var Tt=e(At);j(Tt,{children:(r,_)=>{s();var o=a("To get a list of all your project users, you can use the list command.");t(r,o)},$$slots:{default:!0}});var It=e(Tt);S(It,{content:`backrush users list
 `,language:"sh",process:!0,children:(r,_)=>{s();var o=a("backrush users list");t(r,o)},$$slots:{default:!0}});var Ct=e(It);O(Ct,{id:"list-collections",level:2,children:(r,_)=>{s();var o=a("List collections");t(r,o)},$$slots:{default:!0}});var Dt=e(Ct);j(Dt,{children:(r,_)=>{s();var o=Ge(),g=e(v(o));qt(g,{href:"/docs/tooling/command-line/collections",children:(C,N)=>{s();var T=a("collections");t(C,T)},$$slots:{default:!0}});var E=e(g,2);m(E,{content:"list-collections"}),s(),t(r,o)},$$slots:{default:!0}});var Lt=e(Dt);S(Lt,{content:`backrush databases list-collections --database-id "<DATABASE_ID>"
 `,language:"sh",process:!0,children:(r,_)=>{s();var o=a('backrush databases list-collections --database-id "<DATABASE_ID>"');t(r,o)},$$slots:{default:!0}});var Ot=e(Lt);j(Ot,{children:(r,_)=>{s();var o=He(),g=e(v(o));m(g,{content:"--json"}),s(),t(r,o)},$$slots:{default:!0}});var Et=e(Ot);S(Et,{content:`backrush databases list-collections --database-id "<DATABASE_ID>" --json

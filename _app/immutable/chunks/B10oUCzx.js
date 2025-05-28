@@ -28,8 +28,8 @@ import{t as u,b as s,a as n}from"./Cw4I5osi.js";import"./BzVk5r6l.js";import{c a
 
     <script src="//unpkg.com/alpinejs" defer><\/script>
 
-    <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink" />
-    <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink-icons" />
+    <link rel="stylesheet" href="https://unpkg.com/@backrush.io/pink" />
+    <link rel="stylesheet" href="https://unpkg.com/@backrush.io/pink-icons" />
   </head>
   <body>
     <main class="main-content">
@@ -118,8 +118,8 @@ import{t as u,b as s,a as n}from"./Cw4I5osi.js";import"./BzVk5r6l.js";import{c a
 
     <script src="//unpkg.com/alpinejs" defer><\/script>
 
-    <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink" />
-    <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink-icons" />
+    <link rel="stylesheet" href="https://unpkg.com/@backrush.io/pink" />
+    <link rel="stylesheet" href="https://unpkg.com/@backrush.io/pink-icons" />
   </head>
   <body>
     <main class="main-content">

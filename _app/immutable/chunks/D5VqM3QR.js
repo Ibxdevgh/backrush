@@ -127,7 +127,7 @@ export const user = {
         <div id="email">
             <h2>Enter Email</h2>
             <form on:submit={createOtp}>
-                <input type="email" name="email" id="email" placeholder="team@appwrite.io" required>
+                <input type="email" name="email" id="email" placeholder="team@backrush.io" required>
                 <button class="button" type="submit">Submit</button>
             </form>
         </div>
@@ -169,7 +169,7 @@ export const user = {
         <div id="email">
             <h2>Enter Email</h2>
             <form on:submit={createOtp}>
-                <input type="email" name="email" id="email" placeholder="team@appwrite.io" required>
+                <input type="email" name="email" id="email" placeholder="team@backrush.io" required>
                 <button class="button" type="submit">Submit</button>
             </form>
         </div>

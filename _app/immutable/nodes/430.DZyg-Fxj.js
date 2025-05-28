@@ -70,8 +70,8 @@ export default async ({ req, res, error }) => {
 
   <script src="//unpkg.com/alpinejs" defer><\/script>
 
-  <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink" />
-  <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink-icons" />
+  <link rel="stylesheet" href="https://unpkg.com/@backrush.io/pink" />
+  <link rel="stylesheet" href="https://unpkg.com/@backrush.io/pink-icons" />
 </head>
 `,language:"html",process:!0,children:(i,v)=>{t();var p=a(`<head>
   <meta charset="UTF-8" />
@@ -101,8 +101,8 @@ export default async ({ req, res, error }) => {
 
   <script src="//unpkg.com/alpinejs" defer><\/script>
 
-  <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink" />
-  <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink-icons" />
+  <link rel="stylesheet" href="https://unpkg.com/@backrush.io/pink" />
+  <link rel="stylesheet" href="https://unpkg.com/@backrush.io/pink-icons" />
 </head>`);n(i,p)},$$slots:{default:!0}});var s=e(g);h(s,{children:(i,v)=>{t();var p=qe(),x=e(m(p));P(x,{content:"</head>"});var q=e(x,2);P(q,{content:"<body>"}),t(),n(i,p)},$$slots:{default:!0}});var f=e(s);T(f,{content:`<body>
   <main class="main-content">
     <div class="top-cover u-padding-block-end-56">
