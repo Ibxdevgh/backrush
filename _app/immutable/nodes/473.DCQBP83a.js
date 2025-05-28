@@ -1,7 +1,7 @@
-import{t as f,b as s,a as r}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6l.js";import{c as lt,s as n,f as Q,n as a,r as ut}from"../chunks/NgVQVlRK.js";import{n as dt}from"../chunks/B4IyMRKX.js";import{H as m}from"../chunks/CXsRaEhZ.js";import{M as b}from"../chunks/hMT8fFzP.js";import{I as it}from"../chunks/BypEz2Fd.js";import"../chunks/NwRJ91PD.js";/* empty css                */import"../chunks/BZUG4Puk.js";/* empty css                */import"../chunks/D9bBQFLV.js";import{C as x}from"../chunks/DXp9_3zM.js";import{F as l}from"../chunks/OFUKRh55.js";import"../chunks/POtwinrL.js";import"../chunks/CbbZjpT6.js";/* empty css                */import{P}from"../chunks/D8YsId2T.js";import{S as nt}from"../chunks/yHjwcyUH.js";import{L as T}from"../chunks/yh4_9ChP.js";import{A as ct}from"../chunks/CqOphJLh.js";const $t={layout:"article",title:"Queries",description:"Harness the power of querying with Backrush Databases. Discover various query options, filtering, sorting, and advanced querying techniques."};var pt=f("Backrush SDKs provide a <!> class to help you build queries. The <!> class has methods for each type of supported query operation.",1),vt=f("Queries are passed to an endpoint through the <!> parameter as an array of query strings, which can be generated using the <!> class.",1),ht=f("Each query method is logically separated via <!> operations. For <!> operation, pass multiple values into the query method separated by commas. For example <!> will fetch the movies <!> or <!>.",1),_t=f("By default, results are limited to the <!>. You can change this through <!>.",1),gt=f("<!><!><!><!><!><!>",1),yt=f("The <!> operator allows you to specify which attributes should be returned from a document. This is useful for optimizing response size and only retrieving the data you need.",1),ft=f("<!><!><!><!><!><!><!><!>",1),Qt=f("<!><!><!><!><!><!><!><!>",1),mt=f("<!><!><!><!><!><!><!><!>",1),Pt=f("<!><!><!><!><!><!><!><!>",1),bt=f("<!><!><!><!><!><!><!><!>",1),xt=f("<!><!><!><!><!><!><!><!>",1),Tt=f("<!><!><!><!><!><!><!><!>",1),wt=f("<!><!><!><!><!><!><!><!>",1),qt=f("<!><!><!><!><!><!><!><!>",1),At=f("Returns documents where attribute value is <!> null.",1),Dt=f("<!><!><!><!><!><!><!><!>",1),It=f("<!><!><!><!><!><!><!><!>",1),Et=f("<!><!><!><!><!><!><!><!>",1),Ot=f("<!><!><!><!><!><!><!><!>",1),Ct=f("Searches string attributes for provided keywords. Requires a <!> on queried attributes.",1),zt=f("<!><!><!><!><!><!><!><!>",1),Nt=f("<!><!><!><!><!><!><!><!>",1),Lt=f("<!><!><!><!><!><!><!><!>",1),Rt=f("<!><!><!><!><!><!><!><!>",1),Bt=f("<!><!><!><!><!><!><!><!>",1),kt=f("Limits the number of results returned by the query. Used for <!>.",1),Ft=f("<!><!><!><!><!><!><!><!>",1),Mt=f("Offset the results returned by skipping some of the results. Used for <!>.",1),St=f("<!><!><!><!><!><!><!><!>",1),Wt=f("Places the cursor after the specified resource ID. Used for <!>.",1),jt=f("<!><!><!><!><!><!><!><!>",1),Gt=f("Places the cursor before the specified resource ID. Used for <!>.",1),Jt=f("<!><!><!><!><!><!><!><!>",1),Ht=f("<!><!><!><!>",1),Ut=f("This example demonstrates how to combine <!> and <!> operations. The query uses <!> to match either condition: books under $20 OR magazines under $10. Each condition within the OR is composed of two AND conditions - one for the category and one for the price threshold. The database will return documents that match either of these combined conditions.",1),Xt=f("<article><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!></article>");function yr(at){ct(at,dt($t,{children:(st,Yt)=>{var w=Xt(),q=lt(w);P(q,{children:(d,h)=>{a();var o=s("Many list endpoints in Backrush allow you to filter, sort, and paginate results using queries. Backrush provides a common set of syntax to build queries.");r(d,o)},$$slots:{default:!0}});var A=n(q);m(A,{id:"query-class",level:1,children:(d,h)=>{a();var o=s("Query class");r(d,o)},$$slots:{default:!0}});var D=n(A);P(D,{children:(d,h)=>{a();var o=pt(),i=n(Q(o));x(i,{content:"Query"});var c=n(i,2);x(c,{content:"Query"}),a(),r(d,o)},$$slots:{default:!0}});var I=n(D);m(I,{id:"building-queries",level:1,children:(d,h)=>{a();var o=s("Building queries");r(d,o)},$$slots:{default:!0}});var E=n(I);P(E,{children:(d,h)=>{a();var o=vt(),i=n(Q(o));x(i,{content:"queries"});var c=n(i,2);x(c,{content:"Query"}),a(),r(d,o)},$$slots:{default:!0}});var O=n(E);P(O,{children:(d,h)=>{a();var o=ht(),i=n(Q(o));x(i,{content:"AND"});var c=n(i,2);x(c,{content:"OR"});var v=n(c,2);x(v,{content:"Query.equal('title', ['Avatar', 'Lord of the Rings'])"});var p=n(v,2);x(p,{content:"Avatar"});var _=n(p,2);x(_,{content:"Lord of the Rings"}),a(),r(d,o)},$$slots:{default:!0}});var C=n(O);it(C,{title:"Default pagination behavior",children:(d,h)=>{P(d,{children:(o,i)=>{a();var c=_t(),v=n(Q(c));nt(v,{marker:"**",children:(_,g)=>{a();var $=s("first 25 items");r(_,$)},$$slots:{default:!0}});var p=n(v,2);T(p,{href:"/docs/products/databases/pagination",children:(_,g)=>{a();var $=s("pagination");r(_,$)},$$slots:{default:!0}}),a(),r(o,c)},$$slots:{default:!0}})}});var z=n(C);b(z,{children:(d,h)=>{var o=gt(),i=Q(o);l(i,{content:`import { Client, Databases, Query } from "appwrite";
+import{t as f,b as s,a as r}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6l.js";import{c as lt,s as n,f as Q,n as a,r as ut}from"../chunks/NgVQVlRK.js";import{n as dt}from"../chunks/B4IyMRKX.js";import{H as m}from"../chunks/CXsRaEhZ.js";import{M as b}from"../chunks/hMT8fFzP.js";import{I as it}from"../chunks/BypEz2Fd.js";import"../chunks/NwRJ91PD.js";/* empty css                */import"../chunks/BZUG4Puk.js";/* empty css                */import"../chunks/D9bBQFLV.js";import{C as x}from"../chunks/DXp9_3zM.js";import{F as l}from"../chunks/OFUKRh55.js";import"../chunks/POtwinrL.js";import"../chunks/CbbZjpT6.js";/* empty css                */import{P}from"../chunks/D8YsId2T.js";import{S as nt}from"../chunks/yHjwcyUH.js";import{L as T}from"../chunks/yh4_9ChP.js";import{A as ct}from"../chunks/CqOphJLh.js";const $t={layout:"article",title:"Queries",description:"Harness the power of querying with Backrush Databases. Discover various query options, filtering, sorting, and advanced querying techniques."};var pt=f("Backrush SDKs provide a <!> class to help you build queries. The <!> class has methods for each type of supported query operation.",1),vt=f("Queries are passed to an endpoint through the <!> parameter as an array of query strings, which can be generated using the <!> class.",1),ht=f("Each query method is logically separated via <!> operations. For <!> operation, pass multiple values into the query method separated by commas. For example <!> will fetch the movies <!> or <!>.",1),_t=f("By default, results are limited to the <!>. You can change this through <!>.",1),gt=f("<!><!><!><!><!><!>",1),yt=f("The <!> operator allows you to specify which attributes should be returned from a document. This is useful for optimizing response size and only retrieving the data you need.",1),ft=f("<!><!><!><!><!><!><!><!>",1),Qt=f("<!><!><!><!><!><!><!><!>",1),mt=f("<!><!><!><!><!><!><!><!>",1),Pt=f("<!><!><!><!><!><!><!><!>",1),bt=f("<!><!><!><!><!><!><!><!>",1),xt=f("<!><!><!><!><!><!><!><!>",1),Tt=f("<!><!><!><!><!><!><!><!>",1),wt=f("<!><!><!><!><!><!><!><!>",1),qt=f("<!><!><!><!><!><!><!><!>",1),At=f("Returns documents where attribute value is <!> null.",1),Dt=f("<!><!><!><!><!><!><!><!>",1),It=f("<!><!><!><!><!><!><!><!>",1),Et=f("<!><!><!><!><!><!><!><!>",1),Ot=f("<!><!><!><!><!><!><!><!>",1),Ct=f("Searches string attributes for provided keywords. Requires a <!> on queried attributes.",1),zt=f("<!><!><!><!><!><!><!><!>",1),Nt=f("<!><!><!><!><!><!><!><!>",1),Lt=f("<!><!><!><!><!><!><!><!>",1),Rt=f("<!><!><!><!><!><!><!><!>",1),Bt=f("<!><!><!><!><!><!><!><!>",1),kt=f("Limits the number of results returned by the query. Used for <!>.",1),Ft=f("<!><!><!><!><!><!><!><!>",1),Mt=f("Offset the results returned by skipping some of the results. Used for <!>.",1),St=f("<!><!><!><!><!><!><!><!>",1),Wt=f("Places the cursor after the specified resource ID. Used for <!>.",1),jt=f("<!><!><!><!><!><!><!><!>",1),Gt=f("Places the cursor before the specified resource ID. Used for <!>.",1),Jt=f("<!><!><!><!><!><!><!><!>",1),Ht=f("<!><!><!><!>",1),Ut=f("This example demonstrates how to combine <!> and <!> operations. The query uses <!> to match either condition: books under $20 OR magazines under $10. Each condition within the OR is composed of two AND conditions - one for the category and one for the price threshold. The database will return documents that match either of these combined conditions.",1),Xt=f("<article><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!></article>");function yr(at){ct(at,dt($t,{children:(st,Yt)=>{var w=Xt(),q=lt(w);P(q,{children:(d,h)=>{a();var o=s("Many list endpoints in Backrush allow you to filter, sort, and paginate results using queries. Backrush provides a common set of syntax to build queries.");r(d,o)},$$slots:{default:!0}});var A=n(q);m(A,{id:"query-class",level:1,children:(d,h)=>{a();var o=s("Query class");r(d,o)},$$slots:{default:!0}});var D=n(A);P(D,{children:(d,h)=>{a();var o=pt(),i=n(Q(o));x(i,{content:"Query"});var c=n(i,2);x(c,{content:"Query"}),a(),r(d,o)},$$slots:{default:!0}});var I=n(D);m(I,{id:"building-queries",level:1,children:(d,h)=>{a();var o=s("Building queries");r(d,o)},$$slots:{default:!0}});var E=n(I);P(E,{children:(d,h)=>{a();var o=vt(),i=n(Q(o));x(i,{content:"queries"});var c=n(i,2);x(c,{content:"Query"}),a(),r(d,o)},$$slots:{default:!0}});var O=n(E);P(O,{children:(d,h)=>{a();var o=ht(),i=n(Q(o));x(i,{content:"AND"});var c=n(i,2);x(c,{content:"OR"});var v=n(c,2);x(v,{content:"Query.equal('title', ['Avatar', 'Lord of the Rings'])"});var p=n(v,2);x(p,{content:"Avatar"});var _=n(p,2);x(_,{content:"Lord of the Rings"}),a(),r(d,o)},$$slots:{default:!0}});var C=n(O);it(C,{title:"Default pagination behavior",children:(d,h)=>{P(d,{children:(o,i)=>{a();var c=_t(),v=n(Q(c));nt(v,{marker:"**",children:(_,g)=>{a();var $=s("first 25 items");r(_,$)},$$slots:{default:!0}});var p=n(v,2);T(p,{href:"/docs/products/databases/pagination",children:(_,g)=>{a();var $=s("pagination");r(_,$)},$$slots:{default:!0}}),a(),r(o,c)},$$slots:{default:!0}})}});var z=n(C);b(z,{children:(d,h)=>{var o=gt(),i=Q(o);l(i,{content:`import { Client, Databases, Query } from 'backrush';
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
     .setProject('<PROJECT_ID>');
 
 const databases = new Databases(client);
@@ -14,10 +14,10 @@ databases.listDocuments(
         Query.greaterThan('year', 1999)
     ]
 );
-`,language:"client-web",process:!0,children:($,y)=>{a();var e=s(`import { Client, Databases, Query } from "appwrite";
+`,language:"client-web",process:!0,children:($,y)=>{a();var e=s(`import { Client, Databases, Query } from 'backrush';
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
     .setProject('<PROJECT_ID>');
 
 const databases = new Databases(client);
@@ -29,11 +29,11 @@ databases.listDocuments(
         Query.equal('title', ['Avatar', 'Lord of the Rings']),
         Query.greaterThan('year', 1999)
     ]
-);`);r($,e)},$$slots:{default:!0}});var c=n(i);l(c,{content:`import 'package:appwrite/appwrite.dart';
+);`);r($,e)},$$slots:{default:!0}});var c=n(i);l(c,{content:`import 'package:backrush/backrush.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+        .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
         .setProject('<PROJECT_ID>');
 
     final databases = Databases(client);
@@ -51,11 +51,11 @@ void main() async {
         print(e);
     }
 }
-`,language:"client-flutter",process:!0,children:($,y)=>{a();var e=s(`import 'package:appwrite/appwrite.dart';
+`,language:"client-flutter",process:!0,children:($,y)=>{a();var e=s(`import 'package:backrush/backrush.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+        .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
         .setProject('<PROJECT_ID>');
 
     final databases = Databases(client);
@@ -77,7 +77,7 @@ import BackrushModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
         .setProject("<PROJECT_ID>")
 
     let databases = Databases(client)
@@ -100,7 +100,7 @@ import BackrushModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
         .setProject("<PROJECT_ID>")
 
     let databases = Databases(client)
@@ -117,13 +117,13 @@ func main() async throws {
     } catch {
         print(error.localizedDescription)
     }
-}`);r($,e)},$$slots:{default:!0}});var p=n(v);l(p,{content:`import io.appwrite.Client
-import io.appwrite.Query
-import io.appwrite.services.Databases
+}`);r($,e)},$$slots:{default:!0}});var p=n(v);l(p,{content:`import io.backrush.Client
+import io.backrush.Query
+import io.backrush.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+        .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
         .setProject('<PROJECT_ID>');
 
     val databases = Databases(client)
@@ -141,13 +141,13 @@ suspend fun main() {
         Log.e("Backrush", e.message)
     }
 }
-`,language:"client-android-kotlin",process:!0,children:($,y)=>{a();var e=s(`import io.appwrite.Client
-import io.appwrite.Query
-import io.appwrite.services.Databases
+`,language:"client-android-kotlin",process:!0,children:($,y)=>{a();var e=s(`import io.backrush.Client
+import io.backrush.Query
+import io.backrush.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+        .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
         .setProject('<PROJECT_ID>');
 
     val databases = Databases(client)

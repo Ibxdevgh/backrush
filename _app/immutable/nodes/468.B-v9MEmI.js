@@ -1,7 +1,7 @@
-import{t as v,b as i,a as e}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6l.js";import{c as M,s as a,f as D,n as t,r as z}from"../chunks/NgVQVlRK.js";import{n as Y}from"../chunks/B4IyMRKX.js";import{H as E}from"../chunks/CXsRaEhZ.js";import{M as G}from"../chunks/hMT8fFzP.js";import{I as j}from"../chunks/BypEz2Fd.js";import"../chunks/NwRJ91PD.js";/* empty css                */import"../chunks/BZUG4Puk.js";/* empty css                */import"../chunks/D9bBQFLV.js";import{F as I}from"../chunks/OFUKRh55.js";import"../chunks/POtwinrL.js";import"../chunks/CbbZjpT6.js";/* empty css                */import{P as _}from"../chunks/D8YsId2T.js";import{S as f}from"../chunks/yHjwcyUH.js";import{L as h}from"../chunks/yh4_9ChP.js";import{A as U}from"../chunks/CqOphJLh.js";const F={layout:"article",title:"Documents",description:"Master document management with Backrush Databases. Learn how to create, update, and query documents within your collections for dynamic data storage."};var H=v("You must grant <!> permissions to users at the <!> before users can create documents. <!>",1),K=v("<!><!><!><!><!>",1),V=v("During testing, you might prefer to create documents in the Backrush Console. To do so, navigate to the <!> tab of your collection and click the <!> button.",1),W=v("You must grant <!> permissions to users at the <!> before users can read documents. <!>",1),X=v("Documents can be retrieved using the <!> endpoint.",1),Z=v("Results can be filtered, sorted, and paginated using Backrush&#39;s shared set of query methods. You can find a full guide on querying in the <!>.",1),tt=v("By default, results are limited to the <!>. You can change this through <!>.",1),et=v("<!><!><!><!><!>",1),nt=v("<!>.",1),at=v("<article><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!></article>");function wt(k){U(k,Y(F,{children:(J,ot)=>{var b=at(),A=M(b);_(A,{children:(o,u)=>{t();var n=i("Each piece of data or information in Backrush Databases is a document. Documents have a structure defined by the parent collection.");e(o,n)},$$slots:{default:!0}});var C=a(A);E(C,{id:"create-documents",level:1,children:(o,u)=>{t();var n=i("Create documents");e(o,n)},$$slots:{default:!0}});var w=a(C);j(w,{title:"Permissions required",children:(o,u)=>{_(o,{children:(n,p)=>{t();var c=H(),l=a(D(c));f(l,{marker:"**",children:(r,$)=>{t();var s=i("create");e(r,s)},$$slots:{default:!0}});var d=a(l,2);f(d,{marker:"**",children:(r,$)=>{t();var s=i("collection level");e(r,s)},$$slots:{default:!0}});var m=a(d,2);h(m,{href:"#permissions",children:(r,$)=>{t();var s=i("Learn more about permissions");e(r,s)},$$slots:{default:!0}}),e(n,c)},$$slots:{default:!0}})}});var g=a(w);_(g,{children:(o,u)=>{t();var n=i("In most use cases, you will create documents programmatically.");e(o,n)},$$slots:{default:!0}});var P=a(g);G(P,{children:(o,u)=>{var n=K(),p=D(n);I(p,{content:`import { Client, Databases, ID } from "appwrite";
+import{t as v,b as i,a as e}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6l.js";import{c as M,s as a,f as D,n as t,r as z}from"../chunks/NgVQVlRK.js";import{n as Y}from"../chunks/B4IyMRKX.js";import{H as E}from"../chunks/CXsRaEhZ.js";import{M as G}from"../chunks/hMT8fFzP.js";import{I as j}from"../chunks/BypEz2Fd.js";import"../chunks/NwRJ91PD.js";/* empty css                */import"../chunks/BZUG4Puk.js";/* empty css                */import"../chunks/D9bBQFLV.js";import{F as I}from"../chunks/OFUKRh55.js";import"../chunks/POtwinrL.js";import"../chunks/CbbZjpT6.js";/* empty css                */import{P as _}from"../chunks/D8YsId2T.js";import{S as f}from"../chunks/yHjwcyUH.js";import{L as h}from"../chunks/yh4_9ChP.js";import{A as U}from"../chunks/CqOphJLh.js";const F={layout:"article",title:"Documents",description:"Master document management with Backrush Databases. Learn how to create, update, and query documents within your collections for dynamic data storage."};var H=v("You must grant <!> permissions to users at the <!> before users can create documents. <!>",1),K=v("<!><!><!><!><!>",1),V=v("During testing, you might prefer to create documents in the Backrush Console. To do so, navigate to the <!> tab of your collection and click the <!> button.",1),W=v("You must grant <!> permissions to users at the <!> before users can read documents. <!>",1),X=v("Documents can be retrieved using the <!> endpoint.",1),Z=v("Results can be filtered, sorted, and paginated using Backrush&#39;s shared set of query methods. You can find a full guide on querying in the <!>.",1),tt=v("By default, results are limited to the <!>. You can change this through <!>.",1),et=v("<!><!><!><!><!>",1),nt=v("<!>.",1),at=v("<article><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!><!></article>");function wt(k){U(k,Y(F,{children:(J,ot)=>{var b=at(),A=M(b);_(A,{children:(o,u)=>{t();var n=i("Each piece of data or information in Backrush Databases is a document. Documents have a structure defined by the parent collection.");e(o,n)},$$slots:{default:!0}});var C=a(A);E(C,{id:"create-documents",level:1,children:(o,u)=>{t();var n=i("Create documents");e(o,n)},$$slots:{default:!0}});var w=a(C);j(w,{title:"Permissions required",children:(o,u)=>{_(o,{children:(n,p)=>{t();var c=H(),l=a(D(c));f(l,{marker:"**",children:(r,$)=>{t();var s=i("create");e(r,s)},$$slots:{default:!0}});var d=a(l,2);f(d,{marker:"**",children:(r,$)=>{t();var s=i("collection level");e(r,s)},$$slots:{default:!0}});var m=a(d,2);h(m,{href:"#permissions",children:(r,$)=>{t();var s=i("Learn more about permissions");e(r,s)},$$slots:{default:!0}}),e(n,c)},$$slots:{default:!0}})}});var g=a(w);_(g,{children:(o,u)=>{t();var n=i("In most use cases, you will create documents programmatically.");e(o,n)},$$slots:{default:!0}});var P=a(g);G(P,{children:(o,u)=>{var n=K(),p=D(n);I(p,{content:`import { Client, Databases, ID } from 'backrush';
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
     .setProject('<PROJECT_ID>');
 
 const databases = new Databases(client);
@@ -18,10 +18,10 @@ promise.then(function (response) {
 }, function (error) {
     console.log(error);
 });
-`,language:"client-web",process:!0,children:(r,$)=>{t();var s=i(`import { Client, Databases, ID } from "appwrite";
+`,language:"client-web",process:!0,children:(r,$)=>{t();var s=i(`import { Client, Databases, ID } from 'backrush';
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
     .setProject('<PROJECT_ID>');
 
 const databases = new Databases(client);
@@ -37,11 +37,11 @@ promise.then(function (response) {
     console.log(response);
 }, function (error) {
     console.log(error);
-});`);e(r,s)},$$slots:{default:!0}});var c=a(p);I(c,{content:`import 'package:appwrite/appwrite.dart';
+});`);e(r,s)},$$slots:{default:!0}});var c=a(p);I(c,{content:`import 'package:backrush/backrush.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+        .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
         .setProject('<PROJECT_ID>');
 
     final databases = Databases(client);
@@ -57,11 +57,11 @@ void main() async {
         print(e);
     }
 }
-`,language:"client-flutter",process:!0,children:(r,$)=>{t();var s=i(`import 'package:appwrite/appwrite.dart';
+`,language:"client-flutter",process:!0,children:(r,$)=>{t();var s=i(`import 'package:backrush/backrush.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+        .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
         .setProject('<PROJECT_ID>');
 
     final databases = Databases(client);
@@ -81,7 +81,7 @@ import BackrushModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
         .setProject("<PROJECT_ID>")
 
     let databases = Databases(client)
@@ -102,7 +102,7 @@ import BackrushModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
         .setProject("<PROJECT_ID>")
 
     let databases = Databases(client)
@@ -117,12 +117,12 @@ func main() async throws {
     } catch {
         print(error.localizedDescription)
     }
-}`);e(r,s)},$$slots:{default:!0}});var d=a(l);I(d,{content:`import io.appwrite.Client
-import io.appwrite.services.Databases
+}`);e(r,s)},$$slots:{default:!0}});var d=a(l);I(d,{content:`import io.backrush.Client
+import io.backrush.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
         .setProject("<PROJECT_ID>")
 
     val databases = Databases(client)
@@ -138,12 +138,12 @@ suspend fun main() {
         Log.e("Backrush", "Error: " + e.message)
     }
 }
-`,language:"client-android-kotlin",process:!0,children:(r,$)=>{t();var s=i(`import io.appwrite.Client
-import io.appwrite.services.Databases
+`,language:"client-android-kotlin",process:!0,children:(r,$)=>{t();var s=i(`import io.backrush.Client
+import io.backrush.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
         .setProject("<PROJECT_ID>")
 
     val databases = Databases(client)
@@ -189,10 +189,10 @@ suspend fun main() {
         _permissions
         data
     }
-}`);e(r,s)},$$slots:{default:!0}}),e(o,n)},$$slots:{default:!0}});var O=a(P);_(O,{children:(o,u)=>{t();var n=V(),p=a(D(n));f(p,{marker:"**",children:(l,d)=>{t();var m=i("Documents");e(l,m)},$$slots:{default:!0}});var c=a(p,2);f(c,{marker:"**",children:(l,d)=>{t();var m=i("Add document");e(l,m)},$$slots:{default:!0}}),t(),e(o,n)},$$slots:{default:!0}});var T=a(O);E(T,{id:"list-documents",level:1,children:(o,u)=>{t();var n=i("List documents");e(o,n)},$$slots:{default:!0}});var L=a(T);j(L,{title:"Permissions required",children:(o,u)=>{_(o,{children:(n,p)=>{t();var c=W(),l=a(D(c));f(l,{marker:"**",children:(r,$)=>{t();var s=i("read");e(r,s)},$$slots:{default:!0}});var d=a(l,2);f(d,{marker:"**",children:(r,$)=>{t();var s=i("collection level");e(r,s)},$$slots:{default:!0}});var m=a(d,2);h(m,{href:"#permissions",children:(r,$)=>{t();var s=i("Learn more about permissions");e(r,s)},$$slots:{default:!0}}),e(n,c)},$$slots:{default:!0}})}});var y=a(L);_(y,{children:(o,u)=>{t();var n=X(),p=a(D(n));h(p,{href:"/docs/references/cloud/client-web/databases#listDocuments",children:(c,l)=>{t();var d=i("List Document");e(c,d)},$$slots:{default:!0}}),t(),e(o,n)},$$slots:{default:!0}});var x=a(y);_(x,{children:(o,u)=>{t();var n=Z(),p=a(D(n));h(p,{href:"/docs/products/databases/queries",children:(c,l)=>{t();var d=i("Queries Guide");e(c,d)},$$slots:{default:!0}}),t(),e(o,n)},$$slots:{default:!0}});var N=a(x);_(N,{children:(o,u)=>{t();var n=tt(),p=a(D(n));f(p,{marker:"**",children:(l,d)=>{t();var m=i("first 25 items");e(l,m)},$$slots:{default:!0}});var c=a(p,2);h(c,{href:"/docs/products/databases/pagination",children:(l,d)=>{t();var m=i("pagination");e(l,m)},$$slots:{default:!0}}),t(),e(o,n)},$$slots:{default:!0}});var q=a(N);G(q,{children:(o,u)=>{var n=et(),p=D(n);I(p,{content:`import { Client, Databases, Query } from "appwrite";
+}`);e(r,s)},$$slots:{default:!0}}),e(o,n)},$$slots:{default:!0}});var O=a(P);_(O,{children:(o,u)=>{t();var n=V(),p=a(D(n));f(p,{marker:"**",children:(l,d)=>{t();var m=i("Documents");e(l,m)},$$slots:{default:!0}});var c=a(p,2);f(c,{marker:"**",children:(l,d)=>{t();var m=i("Add document");e(l,m)},$$slots:{default:!0}}),t(),e(o,n)},$$slots:{default:!0}});var T=a(O);E(T,{id:"list-documents",level:1,children:(o,u)=>{t();var n=i("List documents");e(o,n)},$$slots:{default:!0}});var L=a(T);j(L,{title:"Permissions required",children:(o,u)=>{_(o,{children:(n,p)=>{t();var c=W(),l=a(D(c));f(l,{marker:"**",children:(r,$)=>{t();var s=i("read");e(r,s)},$$slots:{default:!0}});var d=a(l,2);f(d,{marker:"**",children:(r,$)=>{t();var s=i("collection level");e(r,s)},$$slots:{default:!0}});var m=a(d,2);h(m,{href:"#permissions",children:(r,$)=>{t();var s=i("Learn more about permissions");e(r,s)},$$slots:{default:!0}}),e(n,c)},$$slots:{default:!0}})}});var y=a(L);_(y,{children:(o,u)=>{t();var n=X(),p=a(D(n));h(p,{href:"/docs/references/cloud/client-web/databases#listDocuments",children:(c,l)=>{t();var d=i("List Document");e(c,d)},$$slots:{default:!0}}),t(),e(o,n)},$$slots:{default:!0}});var x=a(y);_(x,{children:(o,u)=>{t();var n=Z(),p=a(D(n));h(p,{href:"/docs/products/databases/queries",children:(c,l)=>{t();var d=i("Queries Guide");e(c,d)},$$slots:{default:!0}}),t(),e(o,n)},$$slots:{default:!0}});var N=a(x);_(N,{children:(o,u)=>{t();var n=tt(),p=a(D(n));f(p,{marker:"**",children:(l,d)=>{t();var m=i("first 25 items");e(l,m)},$$slots:{default:!0}});var c=a(p,2);h(c,{href:"/docs/products/databases/pagination",children:(l,d)=>{t();var m=i("pagination");e(l,m)},$$slots:{default:!0}}),t(),e(o,n)},$$slots:{default:!0}});var q=a(N);G(q,{children:(o,u)=>{var n=et(),p=D(n);I(p,{content:`import { Client, Databases, Query } from 'backrush';
 
 const client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
     .setProject("<PROJECT_ID>")
 
 const databases = new Databases(client);
@@ -210,10 +210,10 @@ promise.then(function (response) {
 }, function (error) {
     console.log(error);
 });
-`,language:"client-web",process:!0,children:(r,$)=>{t();var s=i(`import { Client, Databases, Query } from "appwrite";
+`,language:"client-web",process:!0,children:(r,$)=>{t();var s=i(`import { Client, Databases, Query } from 'backrush';
 
 const client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
     .setProject("<PROJECT_ID>")
 
 const databases = new Databases(client);
@@ -230,11 +230,11 @@ promise.then(function (response) {
     console.log(response);
 }, function (error) {
     console.log(error);
-});`);e(r,s)},$$slots:{default:!0}});var c=a(p);I(c,{content:`import 'package:appwrite/appwrite.dart';
+});`);e(r,s)},$$slots:{default:!0}});var c=a(p);I(c,{content:`import 'package:backrush/backrush.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
         .setProject("<PROJECT_ID>")
 
     final databases = Databases(client);
@@ -251,11 +251,11 @@ void main() async {
         print(e);
     }
 }
-`,language:"client-flutter",process:!0,children:(r,$)=>{t();var s=i(`import 'package:appwrite/appwrite.dart';
+`,language:"client-flutter",process:!0,children:(r,$)=>{t();var s=i(`import 'package:backrush/backrush.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
         .setProject("<PROJECT_ID>")
 
     final databases = Databases(client);
@@ -276,7 +276,7 @@ import BackrushModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
         .setProject("<PROJECT_ID>")
 
     let databases = Databases(client)
@@ -298,7 +298,7 @@ import BackrushModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
         .setProject("<PROJECT_ID>")
 
     let databases = Databases(client)
@@ -314,13 +314,13 @@ func main() async throws {
     } catch {
         print(error.localizedDescription)
     }
-}`);e(r,s)},$$slots:{default:!0}});var d=a(l);I(d,{content:`import io.appwrite.Client
-import io.appwrite.Query
-import io.appwrite.services.Databases
+}`);e(r,s)},$$slots:{default:!0}});var d=a(l);I(d,{content:`import io.backrush.Client
+import io.backrush.Query
+import io.backrush.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
         .setProject("<PROJECT_ID>")
 
     val databases = Databases(client)
@@ -337,13 +337,13 @@ suspend fun main() {
         Log.e("Backrush", "Error: " + e.message)
     }
 }
-`,language:"client-android-kotlin",process:!0,children:(r,$)=>{t();var s=i(`import io.appwrite.Client
-import io.appwrite.Query
-import io.appwrite.services.Databases
+`,language:"client-android-kotlin",process:!0,children:(r,$)=>{t();var s=i(`import io.backrush.Client
+import io.backrush.Query
+import io.backrush.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
         .setProject("<PROJECT_ID>")
 
     val databases = Databases(client)

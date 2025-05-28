@@ -1,0 +1,1 @@
+import{r as e}from"../chunks/KjYeVjkE.js";const t=async()=>{e(303,"/docs/tutorials/sveltekit-csr-auth/step-1")},r=Object.freeze(Object.defineProperty({__proto__:null,load:t},Symbol.toStringTag,{value:"Module"}));export{r as universal};

@@ -1,0 +1,1 @@
+import{r as e}from"../chunks/KjYeVjkE.js";function t(){e(303,"/docs/tutorials/sveltekit-ssr-auth/step-1")}const r=Object.freeze(Object.defineProperty({__proto__:null,load:t},Symbol.toStringTag,{value:"Module"}));export{r as universal};
