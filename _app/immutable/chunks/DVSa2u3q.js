@@ -26,9 +26,9 @@ export const backrushConfig = {
 };
 
 export const client = new Client()
-	.setEndpoint(appwriteConfig.endpoint)
-	.setEndpointRealtime(appwriteConfig.endpoint)
-	.setProject(appwriteConfig.projectId);
+	.setEndpoint(backrushConfig.endpoint)
+	.setEndpointRealtime(backrushConfig.endpoint)
+	.setProject(backrushConfig.projectId);
 `,language:"js",process:!0,children:(n,l)=>{r();var e=o(`import { Client } from 'backrush';
 import {
 	PUBLIC_BACKRUSH_ENDPOINT,
@@ -45,9 +45,9 @@ export const backrushConfig = {
 };
 
 export const client = new Client()
-	.setEndpoint(appwriteConfig.endpoint)
-	.setEndpointRealtime(appwriteConfig.endpoint)
-	.setProject(appwriteConfig.projectId);`);a(n,e)},$$slots:{default:!0}});var Pe=t(ye);I(Pe,{level:3,children:(n,l)=>{r();var e=o("Setup RxDB");a(n,e)},$$slots:{default:!0}});var we=t(Pe);h(we,{children:(n,l)=>{r();var e=o("To set up RxDB, first install the RxDB library in your app by running the following command:");a(n,e)},$$slots:{default:!0}});var xe=t(we);E(xe,{content:`npm install rxdb
+	.setEndpoint(backrushConfig.endpoint)
+	.setEndpointRealtime(backrushConfig.endpoint)
+	.setProject(backrushConfig.projectId);`);a(n,e)},$$slots:{default:!0}});var Pe=t(ye);I(Pe,{level:3,children:(n,l)=>{r();var e=o("Setup RxDB");a(n,e)},$$slots:{default:!0}});var we=t(Pe);h(we,{children:(n,l)=>{r();var e=o("To set up RxDB, first install the RxDB library in your app by running the following command:");a(n,e)},$$slots:{default:!0}});var xe=t(we);E(xe,{content:`npm install rxdb
 `,language:"sh",process:!0,children:(n,l)=>{r();var e=o("npm install rxdb");a(n,e)},$$slots:{default:!0}});var je=t(xe);h(je,{children:(n,l)=>{r();var e=wn(),s=t(c(e));$(s,{content:"src/lib"});var d=t(s,2);$(d,{content:"databases.js"}),r(),a(n,e)},$$slots:{default:!0}});var De=t(je);E(De,{content:`// RxDB imports
 import { createRxDatabase, addRxPlugin, RxCollectionBase } from 'rxdb/plugins/core';
 import { RxDBQueryBuilderPlugin } from 'rxdb/plugins/query-builder';

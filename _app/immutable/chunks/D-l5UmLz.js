@@ -51,9 +51,9 @@ jobs:
 `,language:"bash",process:!0,children:(t,a)=>{r();var e=n("backrush login --email user@backrush.com --password password --mfa MFA_CODE");o(t,e)},$$slots:{default:!0}});var te=s(ee);p(te,{children:(t,a)=>{r();var e=n("Here’s how you might integrate headless login into a Jenkins pipeline:");o(t,e)},$$slots:{default:!0}});var re=s(te);I(re,{content:`pipeline {
     agent any
     environment {
-        BACKRUSH_EMAIL = credentials('appwrite-email')
-        BACKRUSH_PASSWORD = credentials('appwrite-password')
-        BACKRUSH_ENDPOINT = credentials('appwrite-endpoint')
+        BACKRUSH_EMAIL = credentials('backrush-email')
+        BACKRUSH_PASSWORD = credentials('backrush-password')
+        BACKRUSH_ENDPOINT = credentials('backrush-endpoint')
     }
     stages {
         stage('Login to Backrush') {
@@ -72,9 +72,9 @@ jobs:
 `,language:"groovy",process:!0,children:(t,a)=>{r();var e=n(`pipeline {
     agent any
     environment {
-        BACKRUSH_EMAIL = credentials('appwrite-email')
-        BACKRUSH_PASSWORD = credentials('appwrite-password')
-        BACKRUSH_ENDPOINT = credentials('appwrite-endpoint')
+        BACKRUSH_EMAIL = credentials('backrush-email')
+        BACKRUSH_PASSWORD = credentials('backrush-password')
+        BACKRUSH_ENDPOINT = credentials('backrush-endpoint')
     }
     stages {
         stage('Login to Backrush') {

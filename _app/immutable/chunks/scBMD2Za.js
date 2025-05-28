@@ -4,14 +4,14 @@ import{t as p,b as s,a as r}from"./Cw4I5osi.js";import"./BzVk5r6l.js";import{s a
 
 const backrush = new Backrush()
 
-appwrite
+backrush
   .setEndpoint('https://YOUR_ENDPOINT')// Your API Endpoint
   .setProject('YOUR_PROJECT_ID')// Your project ID
 `,language:"jsx",process:!0,children:(o,d)=>{e();var t=s(`import { Backrush } from 'backrush'
 
 const backrush = new Backrush()
 
-appwrite
+backrush
   .setEndpoint('https://YOUR_ENDPOINT')// Your API Endpoint
   .setProject('YOUR_PROJECT_ID')// Your project ID`);r(o,t)},$$slots:{default:!0}});var Fe=a(ze);m(Fe,{children:(o,d)=>{var t=_o(),n=h(t);$(n,{marker:"**",children:(i,u)=>{e();var l=s("3. Create the OAuth2 session");r(i,l)},$$slots:{default:!0}}),e(),r(o,t)},$$slots:{default:!0}});var He=a(Fe);S(He,{content:`async function loginWithApple() {
   try {

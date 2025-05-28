@@ -17,7 +17,7 @@ var (
 	backrushClient    client.Client
 	todoDatabase      *models.Database
 	todoCollection    *models.Collection
-	appwriteDatabases *databases.Databases
+	backrushDatabases *databases.Databases
 )
 
 func main() {
@@ -39,7 +39,7 @@ var (
 	backrushClient    client.Client
 	todoDatabase      *models.Database
 	todoCollection    *models.Collection
-	appwriteDatabases *databases.Databases
+	backrushDatabases *databases.Databases
 )
 
 func main() {
@@ -48,7 +48,7 @@ func main() {
 		backrush.WithKey("<API_KEY>"),
 	)
 }`);e(_,g)},$$slots:{default:!0}}),e(v,d)},$$slots:{default:!0}});var dt=t(it);S(dt,{id:"step-5",step:5,title:"Initialize database",children:(v,R)=>{var d=Nt(),c=s(d);m(c,{children:(i,w)=>{o();var r=Bt(),_=t(s(r));y(_,{content:'"github.com/backrush/sdk-for-go/id"'}),o(),e(i,r)},$$slots:{default:!0}});var f=t(c);Y(f,{content:`func prepareDatabase() {
-	appwriteDatabases = backrush.NewDatabases(backrushClient)
+	backrushDatabases = backrush.NewDatabases(backrushClient)
 
 	todoDatabase, _ = backrushDatabases.Create(
 		id.Unique(),
@@ -61,7 +61,7 @@ func main() {
 		"Todos",
 	)
 
-	appwriteDatabases.CreateStringAttribute(
+	backrushDatabases.CreateStringAttribute(
 		todoDatabase.Id,
 		todoCollection.Id,
 		"title",
@@ -69,7 +69,7 @@ func main() {
 		true,
 	)
 
-	appwriteDatabases.CreateStringAttribute(
+	backrushDatabases.CreateStringAttribute(
 		todoDatabase.Id,
 		todoCollection.Id,
 		"description",
@@ -77,7 +77,7 @@ func main() {
 		false,
 	)
 
-	appwriteDatabases.CreateBooleanAttribute(
+	backrushDatabases.CreateBooleanAttribute(
 		todoDatabase.Id,
 		todoCollection.Id,
 		"isComplete",
@@ -85,7 +85,7 @@ func main() {
 	)
 }
 `,language:"go",process:!0,children:(i,w)=>{o();var r=a(`func prepareDatabase() {
-	appwriteDatabases = backrush.NewDatabases(backrushClient)
+	backrushDatabases = backrush.NewDatabases(backrushClient)
 
 	todoDatabase, _ = backrushDatabases.Create(
 		id.Unique(),
@@ -98,7 +98,7 @@ func main() {
 		"Todos",
 	)
 
-	appwriteDatabases.CreateStringAttribute(
+	backrushDatabases.CreateStringAttribute(
 		todoDatabase.Id,
 		todoCollection.Id,
 		"title",
@@ -106,7 +106,7 @@ func main() {
 		true,
 	)
 
-	appwriteDatabases.CreateStringAttribute(
+	backrushDatabases.CreateStringAttribute(
 		todoDatabase.Id,
 		todoCollection.Id,
 		"description",
@@ -114,7 +114,7 @@ func main() {
 		false,
 	)
 
-	appwriteDatabases.CreateBooleanAttribute(
+	backrushDatabases.CreateBooleanAttribute(
 		todoDatabase.Id,
 		todoCollection.Id,
 		"isComplete",
@@ -138,21 +138,21 @@ func main() {
 		"isComplete":  false,
 	}
 
-	appwriteDatabases.CreateDocument(
+	backrushDatabases.CreateDocument(
 		todoDatabase.Id,
 		todoCollection.Id,
 		id.Unique(),
 		testTodo1,
 	)
 
-	appwriteDatabases.CreateDocument(
+	backrushDatabases.CreateDocument(
 		todoDatabase.Id,
 		todoCollection.Id,
 		id.Unique(),
 		testTodo2,
 	)
 
-	appwriteDatabases.CreateDocument(
+	backrushDatabases.CreateDocument(
 		todoDatabase.Id,
 		todoCollection.Id,
 		id.Unique(),
@@ -177,21 +177,21 @@ func main() {
 		"isComplete":  false,
 	}
 
-	appwriteDatabases.CreateDocument(
+	backrushDatabases.CreateDocument(
 		todoDatabase.Id,
 		todoCollection.Id,
 		id.Unique(),
 		testTodo1,
 	)
 
-	appwriteDatabases.CreateDocument(
+	backrushDatabases.CreateDocument(
 		todoDatabase.Id,
 		todoCollection.Id,
 		id.Unique(),
 		testTodo2,
 	)
 
-	appwriteDatabases.CreateDocument(
+	backrushDatabases.CreateDocument(
 		todoDatabase.Id,
 		todoCollection.Id,
 		id.Unique(),
@@ -260,7 +260,7 @@ var (
 	backrushClient    client.Client
 	todoDatabase      *models.Database
 	todoCollection    *models.Collection
-	appwriteDatabases *databases.Databases
+	backrushDatabases *databases.Databases
 )
 
 func main() {
@@ -289,7 +289,7 @@ var (
 	backrushClient    client.Client
 	todoDatabase      *models.Database
 	todoCollection    *models.Collection
-	appwriteDatabases *databases.Databases
+	backrushDatabases *databases.Databases
 )
 
 func main() {

@@ -6,7 +6,7 @@ const client = new Client();
 client
     .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your Backrush Endpoint
     .setProject('455x34dfkj') // Your project ID
-    .setPlatform('com.example.myappwriteapp'); // Your application ID or bundle ID
+    .setPlatform('com.example.mybackrushapp'); // Your application ID or bundle ID
 
 const account = new Account(client);
 
@@ -24,7 +24,7 @@ const client = new Client();
 client
     .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your Backrush Endpoint
     .setProject('455x34dfkj') // Your project ID
-    .setPlatform('com.example.myappwriteapp'); // Your application ID or bundle ID
+    .setPlatform('com.example.mybackrushapp'); // Your application ID or bundle ID
 
 const account = new Account(client);
 

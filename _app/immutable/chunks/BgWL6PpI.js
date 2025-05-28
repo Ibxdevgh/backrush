@@ -65,7 +65,7 @@ func main() {
 backrushClient := client.NewClient()
 backrushClient.SetProject("<PROJECT_ID>")
 backrushClient.SetKey(“<API_KEY>”)
-appwriteDatabases := databases.NewDatabases(backrushClient)
+backrushDatabases := databases.NewDatabases(backrushClient)
 
 response, err := backrushDatabases.Create("unique()", "Pokemon")
 
@@ -88,7 +88,7 @@ func main() {
 backrushClient := client.NewClient()
 backrushClient.SetProject("<PROJECT_ID>")
 backrushClient.SetKey(“<API_KEY>”)
-appwriteDatabases := databases.NewDatabases(backrushClient)
+backrushDatabases := databases.NewDatabases(backrushClient)
 
 response, err := backrushDatabases.Create("unique()", "Pokemon")
 
