@@ -1,0 +1,1 @@
+import{t as s,a as n}from"./Cw4I5osi.js";import{s as e}from"./Bo6lCraI.js";import{c as l,r as m}from"./NgVQVlRK.js";var p=s('<strong class="font-bold"><!></strong>');function c(r,t){var o=p(),a=l(o);e(a,t,"default",{},null),m(o),n(r,o)}export{c as S};
