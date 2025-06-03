@@ -316,7 +316,7 @@ promise.then(function (response) {
 import (
 	"fmt"
 
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 )
 
 func main() {
@@ -345,7 +345,7 @@ func main() {
 import (
 	"fmt"
 
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 )
 
 func main() {
@@ -1060,7 +1060,7 @@ promise.then(function (response) {
 import (
 	"fmt"
 
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 )
 
 func main() {
@@ -1090,7 +1090,7 @@ func main() {
 import (
 	"fmt"
 
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 )
 
 func main() {

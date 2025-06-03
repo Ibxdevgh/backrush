@@ -339,7 +339,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 
@@ -385,7 +385,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 
@@ -2488,8 +2488,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/backrush/sdk-for-go/backrush"
-	"github.com/backrush/sdk-for-go/id"
+	"github.com/Back-rush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/id"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 
@@ -2522,8 +2522,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/backrush/sdk-for-go/backrush"
-	"github.com/backrush/sdk-for-go/id"
+	"github.com/Back-rush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/id"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 
@@ -3135,8 +3135,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/backrush/sdk-for-go/backrush"
-	"github.com/backrush/sdk-for-go/id"
+	"github.com/Back-rush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/id"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 
@@ -3174,8 +3174,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/backrush/sdk-for-go/backrush"
-	"github.com/backrush/sdk-for-go/id"
+	"github.com/Back-rush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/id"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 

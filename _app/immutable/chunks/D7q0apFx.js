@@ -64,9 +64,9 @@ let package = Package(
     ]
 )`);r(t,e)},$$slots:{default:!0}});var q=a(G);u(q,{children:(t,n)=>{o();var e=Ke(),i=a(g(e));y(i,{marker:"**",children:(f,v)=>{o();var l=s("library");r(f,l)},$$slots:{default:!0}});var d=a(i,2);p(d,{content:"TestPackage"});var h=a(d,2);y(h,{marker:"**",children:(f,v)=>{o();var l=s("target");r(f,l)},$$slots:{default:!0}}),o(),r(t,e)},$$slots:{default:!0}});var W=a(q);_(W,{level:2,children:(t,n)=>{o();var e=s("The first build");r(t,e)},$$slots:{default:!0}});var N=a(W);u(N,{children:(t,n)=>{o();var e=s("Now that the package has been created let’s build it for the first time with the build command:");r(t,e)},$$slots:{default:!0}});var z=a(N);k(z,{content:`$ swift build
 
-`,process:!0,children:(t,n)=>{o();var e=s("$ swift build");r(t,e)},$$slots:{default:!0}});var K=a(z);u(K,{children:(t,n)=>{o();var e=s("Because the package has no dependencies or code yet, this should be completed almost instantly, displaying “Build Completed!” on success.");r(t,e)},$$slots:{default:!0}});var V=a(K);_(V,{level:2,children:(t,n)=>{o();var e=s("Adding dependencies");r(t,e)},$$slots:{default:!0}});var X=a(V);u(X,{children:(t,n)=>{o();var e=Ve(),i=a(g(e));p(i,{content:"Package.swift"}),o(),r(t,e)},$$slots:{default:!0}});var Z=a(X);k(Z,{content:`.package(name: "Backrush", url: "https://github.com/backrush/sdk-for-swift", from: "0.1.0")
+`,process:!0,children:(t,n)=>{o();var e=s("$ swift build");r(t,e)},$$slots:{default:!0}});var K=a(z);u(K,{children:(t,n)=>{o();var e=s("Because the package has no dependencies or code yet, this should be completed almost instantly, displaying “Build Completed!” on success.");r(t,e)},$$slots:{default:!0}});var V=a(K);_(V,{level:2,children:(t,n)=>{o();var e=s("Adding dependencies");r(t,e)},$$slots:{default:!0}});var X=a(V);u(X,{children:(t,n)=>{o();var e=Ve(),i=a(g(e));p(i,{content:"Package.swift"}),o(),r(t,e)},$$slots:{default:!0}});var Z=a(X);k(Z,{content:`.package(name: "Backrush", url: "https://github.com/Back-rush/sdk-for-swift", from: "0.1.0")
 
-`,language:"swift",process:!0,children:(t,n)=>{o();var e=s('.package(name: "Backrush", url: "https://github.com/backrush/sdk-for-swift", from: "0.1.0")');r(t,e)},$$slots:{default:!0}});var J=a(Z);u(J,{children:(t,n)=>{o();var e=Xe(),i=a(g(e));p(i,{content:"Backrush"});var d=a(i,2);p(d,{content:"sdk-for-swift"});var h=a(d,2);p(h,{content:"0.1.0"}),o(),r(t,e)},$$slots:{default:!0}});var Q=a(J);k(Q,{content:`.target(
+`,language:"swift",process:!0,children:(t,n)=>{o();var e=s('.package(name: "Backrush", url: "https://github.com/Back-rush/sdk-for-swift", from: "0.1.0")');r(t,e)},$$slots:{default:!0}});var J=a(Z);u(J,{children:(t,n)=>{o();var e=Xe(),i=a(g(e));p(i,{content:"Backrush"});var d=a(i,2);p(d,{content:"sdk-for-swift"});var h=a(d,2);p(h,{content:"0.1.0"}),o(),r(t,e)},$$slots:{default:!0}});var Q=a(J);k(Q,{content:`.target(
     name: "FooPackage",
     dependencies: [
         "Backrush"
@@ -91,7 +91,7 @@ let package = Package(
             targets: ["FooPackage"]),
     ],
     dependencies: [
-        .package(name: "Backrush", url: "https://github.com/backrush/sdk-for-swift", from: "0.1.0")
+        .package(name: "Backrush", url: "https://github.com/Back-rush/sdk-for-swift", from: "0.1.0")
     ],
     targets: [
         .target(
@@ -122,7 +122,7 @@ let package = Package(
             targets: ["FooPackage"]),
     ],
     dependencies: [
-        .package(name: "Backrush", url: "https://github.com/backrush/sdk-for-swift", from: "0.1.0")
+        .package(name: "Backrush", url: "https://github.com/Back-rush/sdk-for-swift", from: "0.1.0")
     ],
     targets: [
         .target(

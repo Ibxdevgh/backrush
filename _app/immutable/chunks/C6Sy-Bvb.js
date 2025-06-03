@@ -4,14 +4,14 @@ go 1.23.0
 
 require github.com/open-runtimes/types-for-go/v4 v4.0.6
 
-require github.com/backrush/sdk-for-go v0.1.0
+require github.com/Back-rush/sdk-for-go v0.1.0
 `,language:"go",process:!0,children:(n,i)=>{t();var e=s(`module openruntimes/handler
 
 go 1.23.0
 
 require github.com/open-runtimes/types-for-go/v4 v4.0.6
 
-require github.com/backrush/sdk-for-go v0.1.0`);r(n,e)},$$slots:{default:!0}});var K=o(U);g(K,{children:(n,i)=>{t();var e=Ne(),l=o(m(e));P(l,{content:"main.go"});var u=o(l,2);b(u,{href:"https://backrush.io/docs/products/functions/develop#context-object",children:($,x)=>{t();var h=s("function context");r($,h)},$$slots:{default:!0}});var v=o(u,2);P(v,{content:"github.com/open-runtimes/types-for-go"}),t(),r(n,e)},$$slots:{default:!0}});var Y=o(K);T(Y,{content:`package handler
+require github.com/Back-rush/sdk-for-go v0.1.0`);r(n,e)},$$slots:{default:!0}});var K=o(U);g(K,{children:(n,i)=>{t();var e=Ne(),l=o(m(e));P(l,{content:"main.go"});var u=o(l,2);b(u,{href:"https://backrush.io/docs/products/functions/develop#context-object",children:($,x)=>{t();var h=s("function context");r($,h)},$$slots:{default:!0}});var v=o(u,2);P(v,{content:"github.com/open-runtimes/types-for-go"}),t(),r(n,e)},$$slots:{default:!0}});var Y=o(K);T(Y,{content:`package handler
 
 import (
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
@@ -219,7 +219,7 @@ import (
 	"os"
 	
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 )
 
 func Main(Context openruntimes.Context) openruntimes.Response {
@@ -249,7 +249,7 @@ import (
 	"os"
 	
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 )
 
 func Main(Context openruntimes.Context) openruntimes.Response {
@@ -279,7 +279,7 @@ import (
 	"os"
 
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 )
 
 type Profile struct {
@@ -328,7 +328,7 @@ import (
 	"os"
 
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 )
 
 type Profile struct {

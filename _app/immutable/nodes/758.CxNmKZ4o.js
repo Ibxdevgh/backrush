@@ -174,7 +174,7 @@ export default ({ req, res, log, error }: any) => {
 import (
 	"fmt"
 	"os"
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 

@@ -138,7 +138,7 @@ func Main(Context openruntimes.Context) openruntimes.Response {
 		"ok":    false,
 		"error": "Bad request",
 	}, Context.Res.WithStatusCode(400))
-}`);r(t,e)},$$slots:{default:!0}});var Q=n(Z);d(Q,{children:(t,s)=>{o();var e=Te(),i=n(h(e));u(i,{content:"backrush deploy function"}),o(),r(t,e)},$$slots:{default:!0}});var V=n(Q);g(V,{level:2,children:(t,s)=>{o();var e=a("Example 2: HTML Resume");r(t,e)},$$slots:{default:!0}});var X=n(V);d(X,{children:(t,s)=>{o();var e=a("The second example is an online HTML-based resume that you can deliver online through the function.");r(t,e)},$$slots:{default:!0}});var ee=n(X);d(ee,{children:(t,s)=>{o();var e=Ee(),i=n(h(e));u(i,{content:"static"});var l=n(i,2);u(l,{content:"resume.html"});var m=n(l,2);b(m,{href:"https://github.com/backrush-community/go-function-examples/blob/main/functions/go-resume/static/resume.html",children:(p,x)=>{o();var v=a("copy our template");r(p,v)},$$slots:{default:!0}}),o(),r(t,e)},$$slots:{default:!0}});var te=n(ee);d(te,{children:(t,s)=>{o();var e=qe(),i=n(h(e));u(i,{content:"main.go"}),o(),r(t,e)},$$slots:{default:!0}});var ne=n(te);_(ne,{content:`package handler
+}`);r(t,e)},$$slots:{default:!0}});var Q=n(Z);d(Q,{children:(t,s)=>{o();var e=Te(),i=n(h(e));u(i,{content:"backrush deploy function"}),o(),r(t,e)},$$slots:{default:!0}});var V=n(Q);g(V,{level:2,children:(t,s)=>{o();var e=a("Example 2: HTML Resume");r(t,e)},$$slots:{default:!0}});var X=n(V);d(X,{children:(t,s)=>{o();var e=a("The second example is an online HTML-based resume that you can deliver online through the function.");r(t,e)},$$slots:{default:!0}});var ee=n(X);d(ee,{children:(t,s)=>{o();var e=Ee(),i=n(h(e));u(i,{content:"static"});var l=n(i,2);u(l,{content:"resume.html"});var m=n(l,2);b(m,{href:"https://github.com/Back-rush-community/go-function-examples/blob/main/functions/go-resume/static/resume.html",children:(p,x)=>{o();var v=a("copy our template");r(p,v)},$$slots:{default:!0}}),o(),r(t,e)},$$slots:{default:!0}});var te=n(ee);d(te,{children:(t,s)=>{o();var e=qe(),i=n(h(e));u(i,{content:"main.go"}),o(),r(t,e)},$$slots:{default:!0}});var ne=n(te);_(ne,{content:`package handler
 
 import (
 	"embed"
@@ -193,8 +193,8 @@ func Main(Context openruntimes.Context) openruntimes.Response {
 }`);r(t,e)},$$slots:{default:!0}});var oe=n(ne);d(oe,{children:(t,s)=>{o();var e=Ue(),i=n(h(e));u(i,{content:"backrush deploy function"}),o(),r(t,e)},$$slots:{default:!0}});var re=n(oe);g(re,{level:2,children:(t,s)=>{o();var e=a("Example 3: URL Shortener");r(t,e)},$$slots:{default:!0}});var se=n(re);d(se,{children:(t,s)=>{o();var e=a("The third example is a personal URL shortener that stores your shortened URL path and long URL in an Backrush Database and redirects the consumer to the appropriate long URL on pinging the shortened URL.");r(t,e)},$$slots:{default:!0}});var ae=n(se);d(ae,{children:(t,s)=>{o();var e=De(),i=n(h(e));u(i,{content:"services"});var l=n(i,2);u(l,{content:"setup.go"}),o(),r(t,e)},$$slots:{default:!0}});var ie=n(ae);_(ie,{content:`package services
 
 import (
-	"github.com/backrush/sdk-for-go/databases"
-	"github.com/backrush/sdk-for-go/permission"
+	"github.com/Back-rush/sdk-for-go/databases"
+	"github.com/Back-rush/sdk-for-go/permission"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 
@@ -255,8 +255,8 @@ func InitialiseDatabase(Context openruntimes.Context, dbs databases.Databases, d
 `,language:"go",process:!0,children:(t,s)=>{o();var e=a(`package services
 
 import (
-	"github.com/backrush/sdk-for-go/databases"
-	"github.com/backrush/sdk-for-go/permission"
+	"github.com/Back-rush/sdk-for-go/databases"
+	"github.com/Back-rush/sdk-for-go/permission"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 
@@ -319,7 +319,7 @@ import (
 	"openruntimes/handler/services"
 	"os"
 
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 
@@ -410,7 +410,7 @@ import (
 	"openruntimes/handler/services"
 	"os"
 
-	"github.com/backrush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/backrush"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 
@@ -493,4 +493,4 @@ func Main(Context openruntimes.Context) openruntimes.Response {
 		return Context.Res.Redirect(responseBody.LongUrl, Context.Res.WithStatusCode(302))
 	}
 	return Context.Res.Empty()
-}`);r(t,e)},$$slots:{default:!0}});var ue=n(le);d(ue,{children:(t,s)=>{o();var e=Be(),i=n(h(e));u(i,{content:"backrush deploy function"}),o(),r(t,e)},$$slots:{default:!0}});var pe=n(ue);d(pe,{children:(t,s)=>{o();var e=Le(),i=n(h(e));u(i,{content:"databases.read"});var l=n(i,2);u(l,{content:"databases.write"});var m=n(l,2);u(m,{content:"collections.read"});var p=n(m,2);u(p,{content:"collections.write"});var x=n(p,2);u(x,{content:"attributes.read"});var v=n(x,2);u(v,{content:"attributes.write"});var f=n(v,2);u(f,{content:"documents.read"});var $=n(f,2);u($,{content:"documents.write"}),o(),r(t,e)},$$slots:{default:!0}});var ce=n(pe);g(ce,{level:1,children:(t,s)=>{o();var e=a("More resources");r(t,e)},$$slots:{default:!0}});var he=n(ce);d(he,{children:(t,s)=>{o();var e=Se(),i=n(h(e));b(i,{href:"https://github.com/backrush-community/go-function-examples",children:(l,m)=>{o();var p=a("GitHub repo");r(l,p)},$$slots:{default:!0}}),o(),r(t,e)},$$slots:{default:!0}});var me=n(he);d(me,{children:(t,s)=>{o();var e=a("If you enjoyed reading this blog, here are some more resources to help you get started with Backrush Functions and Go:");r(t,e)},$$slots:{default:!0}});var $e=n(me);_e($e,{ordered:!1,marker:"-",children:(t,s)=>{var e=ke(),i=h(e);R(i,{children:(p,x)=>{b(p,{href:"https://backrush.io/docs/functions",children:(v,f)=>{o();var $=a("Backrush Functions docs");r(v,$)},$$slots:{default:!0}})},$$slots:{default:!0}});var l=n(i);R(l,{children:(p,x)=>{b(p,{href:"https://go.dev/doc/",children:(v,f)=>{o();var $=a("Go docs");r(v,$)},$$slots:{default:!0}})},$$slots:{default:!0}});var m=n(l);R(m,{children:(p,x)=>{b(p,{href:"https://backrush.io/discord",children:(v,f)=>{o();var $=a("Backrush Discord");r(v,$)},$$slots:{default:!0}})},$$slots:{default:!0}}),r(t,e)},$$slots:{default:!0}}),xe(y),r(ve,y)},$$slots:{default:!0}}))}const dt=Object.freeze(Object.defineProperty({__proto__:null,default:Me,frontmatter:fe},Symbol.toStringTag,{value:"Module"}));export{dt as _,Me as a};
+}`);r(t,e)},$$slots:{default:!0}});var ue=n(le);d(ue,{children:(t,s)=>{o();var e=Be(),i=n(h(e));u(i,{content:"backrush deploy function"}),o(),r(t,e)},$$slots:{default:!0}});var pe=n(ue);d(pe,{children:(t,s)=>{o();var e=Le(),i=n(h(e));u(i,{content:"databases.read"});var l=n(i,2);u(l,{content:"databases.write"});var m=n(l,2);u(m,{content:"collections.read"});var p=n(m,2);u(p,{content:"collections.write"});var x=n(p,2);u(x,{content:"attributes.read"});var v=n(x,2);u(v,{content:"attributes.write"});var f=n(v,2);u(f,{content:"documents.read"});var $=n(f,2);u($,{content:"documents.write"}),o(),r(t,e)},$$slots:{default:!0}});var ce=n(pe);g(ce,{level:1,children:(t,s)=>{o();var e=a("More resources");r(t,e)},$$slots:{default:!0}});var he=n(ce);d(he,{children:(t,s)=>{o();var e=Se(),i=n(h(e));b(i,{href:"https://github.com/Back-rush-community/go-function-examples",children:(l,m)=>{o();var p=a("GitHub repo");r(l,p)},$$slots:{default:!0}}),o(),r(t,e)},$$slots:{default:!0}});var me=n(he);d(me,{children:(t,s)=>{o();var e=a("If you enjoyed reading this blog, here are some more resources to help you get started with Backrush Functions and Go:");r(t,e)},$$slots:{default:!0}});var $e=n(me);_e($e,{ordered:!1,marker:"-",children:(t,s)=>{var e=ke(),i=h(e);R(i,{children:(p,x)=>{b(p,{href:"https://backrush.io/docs/functions",children:(v,f)=>{o();var $=a("Backrush Functions docs");r(v,$)},$$slots:{default:!0}})},$$slots:{default:!0}});var l=n(i);R(l,{children:(p,x)=>{b(p,{href:"https://go.dev/doc/",children:(v,f)=>{o();var $=a("Go docs");r(v,$)},$$slots:{default:!0}})},$$slots:{default:!0}});var m=n(l);R(m,{children:(p,x)=>{b(p,{href:"https://backrush.io/discord",children:(v,f)=>{o();var $=a("Backrush Discord");r(v,$)},$$slots:{default:!0}})},$$slots:{default:!0}}),r(t,e)},$$slots:{default:!0}}),xe(y),r(ve,y)},$$slots:{default:!0}}))}const dt=Object.freeze(Object.defineProperty({__proto__:null,default:Me,frontmatter:fe},Symbol.toStringTag,{value:"Module"}));export{dt as _,Me as a};

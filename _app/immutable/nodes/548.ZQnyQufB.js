@@ -207,8 +207,8 @@ const response = await tokens.createFileToken(
 
 import (
     "fmt"
-    "github.com/backrush/sdk-for-go/client"
-    "github.com/backrush/sdk-for-go/tokens"
+    "github.com/Back-rush/sdk-for-go/client"
+    "github.com/Back-rush/sdk-for-go/tokens"
 )
 
 func main() {
@@ -235,8 +235,8 @@ func main() {
 
 import (
     "fmt"
-    "github.com/backrush/sdk-for-go/client"
-    "github.com/backrush/sdk-for-go/tokens"
+    "github.com/Back-rush/sdk-for-go/client"
+    "github.com/Back-rush/sdk-for-go/tokens"
 )
 
 func main() {
@@ -620,8 +620,8 @@ const response = await tokens.list(
 
 import (
     "fmt"
-    "github.com/backrush/sdk-for-go/client"
-    "github.com/backrush/sdk-for-go/tokens"
+    "github.com/Back-rush/sdk-for-go/client"
+    "github.com/Back-rush/sdk-for-go/tokens"
 )
 
 func main() {
@@ -648,8 +648,8 @@ func main() {
 
 import (
     "fmt"
-    "github.com/backrush/sdk-for-go/client"
-    "github.com/backrush/sdk-for-go/tokens"
+    "github.com/Back-rush/sdk-for-go/client"
+    "github.com/Back-rush/sdk-for-go/tokens"
 )
 
 func main() {
@@ -1089,8 +1089,8 @@ const response = await tokens.update(
 
 import (
     "fmt"
-    "github.com/backrush/sdk-for-go/client"
-    "github.com/backrush/sdk-for-go/tokens"
+    "github.com/Back-rush/sdk-for-go/client"
+    "github.com/Back-rush/sdk-for-go/tokens"
 )
 
 func main() {
@@ -1116,8 +1116,8 @@ func main() {
 
 import (
     "fmt"
-    "github.com/backrush/sdk-for-go/client"
-    "github.com/backrush/sdk-for-go/tokens"
+    "github.com/Back-rush/sdk-for-go/client"
+    "github.com/Back-rush/sdk-for-go/tokens"
 )
 
 func main() {
@@ -1464,8 +1464,8 @@ const response = await tokens.delete(
 
 import (
     "fmt"
-    "github.com/backrush/sdk-for-go/client"
-    "github.com/backrush/sdk-for-go/tokens"
+    "github.com/Back-rush/sdk-for-go/client"
+    "github.com/Back-rush/sdk-for-go/tokens"
 )
 
 func main() {
@@ -1490,8 +1490,8 @@ func main() {
 
 import (
     "fmt"
-    "github.com/backrush/sdk-for-go/client"
-    "github.com/backrush/sdk-for-go/tokens"
+    "github.com/Back-rush/sdk-for-go/client"
+    "github.com/Back-rush/sdk-for-go/tokens"
 )
 
 func main() {

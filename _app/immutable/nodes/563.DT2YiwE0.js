@@ -3,14 +3,14 @@ cd my-app
 go mod init go-backrush/main
 `,language:"sh",process:!0,children:(i,w)=>{o();var r=a(`mkdir my-app
 cd my-app
-go mod init go-backrush/main`);e(i,r)},$$slots:{default:!0}}),e(v,d)},$$slots:{default:!0}});var st=t(nt);S(st,{id:"step-3",step:3,title:"Install Backrush",children:(v,R)=>{var d=Ut(),c=s(d);m(c,{children:(i,w)=>{o();var r=a("Install the Go Backrush SDK.");e(i,r)},$$slots:{default:!0}});var f=t(c);Y(f,{content:`go get github.com/backrush/sdk-for-go
-`,language:"sh",process:!0,children:(i,w)=>{o();var r=a("go get github.com/backrush/sdk-for-go");e(i,r)},$$slots:{default:!0}}),e(v,d)},$$slots:{default:!0}});var it=t(st);S(it,{id:"step-4",step:4,title:"Import Backrush",children:(v,R)=>{var d=Gt(),c=s(d);m(c,{children:(_,h)=>{o();var g=Yt(),A=t(s(g));V(A,{marker:"**",children:(I,p)=>{o();var P=a("Settings");e(I,P)},$$slots:{default:!0}});var l=t(A,2);V(l,{marker:"**",children:(I,p)=>{o();var P=a("View API Keys");e(I,P)},$$slots:{default:!0}}),o(),e(_,g)},$$slots:{default:!0}});var f=t(c);tt(f,{children:(_,h)=>{m(_,{children:(g,A)=>{W(g,{src:"/images/docs/quick-starts/dark/project-id.png",alt:"Project settings screen"})},$$slots:{default:!0}})}});var i=t(f);et(i,{children:(_,h)=>{m(_,{children:(g,A)=>{W(g,{src:"/images/docs/quick-starts/project-id.png",alt:"Project settings screen"})},$$slots:{default:!0}})}});var w=t(i);m(w,{children:(_,h)=>{o();var g=Wt(),A=t(s(g));y(A,{content:"app.go"});var l=t(A,2);y(l,{content:"<PROJECT_ID>"});var I=t(l,2);y(I,{content:"<YOUR_API_KEY>"}),o(),e(_,g)},$$slots:{default:!0}});var r=t(w);Y(r,{content:`package main
+go mod init go-backrush/main`);e(i,r)},$$slots:{default:!0}}),e(v,d)},$$slots:{default:!0}});var st=t(nt);S(st,{id:"step-3",step:3,title:"Install Backrush",children:(v,R)=>{var d=Ut(),c=s(d);m(c,{children:(i,w)=>{o();var r=a("Install the Go Backrush SDK.");e(i,r)},$$slots:{default:!0}});var f=t(c);Y(f,{content:`go get github.com/Back-rush/sdk-for-go
+`,language:"sh",process:!0,children:(i,w)=>{o();var r=a("go get github.com/Back-rush/sdk-for-go");e(i,r)},$$slots:{default:!0}}),e(v,d)},$$slots:{default:!0}});var it=t(st);S(it,{id:"step-4",step:4,title:"Import Backrush",children:(v,R)=>{var d=Gt(),c=s(d);m(c,{children:(_,h)=>{o();var g=Yt(),A=t(s(g));V(A,{marker:"**",children:(I,p)=>{o();var P=a("Settings");e(I,P)},$$slots:{default:!0}});var l=t(A,2);V(l,{marker:"**",children:(I,p)=>{o();var P=a("View API Keys");e(I,P)},$$slots:{default:!0}}),o(),e(_,g)},$$slots:{default:!0}});var f=t(c);tt(f,{children:(_,h)=>{m(_,{children:(g,A)=>{W(g,{src:"/images/docs/quick-starts/dark/project-id.png",alt:"Project settings screen"})},$$slots:{default:!0}})}});var i=t(f);et(i,{children:(_,h)=>{m(_,{children:(g,A)=>{W(g,{src:"/images/docs/quick-starts/project-id.png",alt:"Project settings screen"})},$$slots:{default:!0}})}});var w=t(i);m(w,{children:(_,h)=>{o();var g=Wt(),A=t(s(g));y(A,{content:"app.go"});var l=t(A,2);y(l,{content:"<PROJECT_ID>"});var I=t(l,2);y(I,{content:"<YOUR_API_KEY>"}),o(),e(_,g)},$$slots:{default:!0}});var r=t(w);Y(r,{content:`package main
 
 import (
-	"github.com/backrush/sdk-for-go/backrush"
-	"github.com/backrush/sdk-for-go/client"
-	"github.com/backrush/sdk-for-go/databases"
-	"github.com/backrush/sdk-for-go/models"
+	"github.com/Back-rush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/client"
+	"github.com/Back-rush/sdk-for-go/databases"
+	"github.com/Back-rush/sdk-for-go/models"
 )
 
 var (
@@ -29,10 +29,10 @@ func main() {
 `,language:"go",process:!0,children:(_,h)=>{o();var g=a(`package main
 
 import (
-	"github.com/backrush/sdk-for-go/backrush"
-	"github.com/backrush/sdk-for-go/client"
-	"github.com/backrush/sdk-for-go/databases"
-	"github.com/backrush/sdk-for-go/models"
+	"github.com/Back-rush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/client"
+	"github.com/Back-rush/sdk-for-go/databases"
+	"github.com/Back-rush/sdk-for-go/models"
 )
 
 var (
@@ -47,7 +47,7 @@ func main() {
 		backrush.WithProject("<PROJECT_KEY>"),
 		backrush.WithKey("<API_KEY>"),
 	)
-}`);e(_,g)},$$slots:{default:!0}}),e(v,d)},$$slots:{default:!0}});var dt=t(it);S(dt,{id:"step-5",step:5,title:"Initialize database",children:(v,R)=>{var d=Nt(),c=s(d);m(c,{children:(i,w)=>{o();var r=Bt(),_=t(s(r));y(_,{content:'"github.com/backrush/sdk-for-go/id"'}),o(),e(i,r)},$$slots:{default:!0}});var f=t(c);Y(f,{content:`func prepareDatabase() {
+}`);e(_,g)},$$slots:{default:!0}}),e(v,d)},$$slots:{default:!0}});var dt=t(it);S(dt,{id:"step-5",step:5,title:"Initialize database",children:(v,R)=>{var d=Nt(),c=s(d);m(c,{children:(i,w)=>{o();var r=Bt(),_=t(s(r));y(_,{content:'"github.com/Back-rush/sdk-for-go/id"'}),o(),e(i,r)},$$slots:{default:!0}});var f=t(c);Y(f,{content:`func prepareDatabase() {
 	backrushDatabases = backrush.NewDatabases(backrushClient)
 
 	todoDatabase, _ = backrushDatabases.Create(
@@ -249,11 +249,11 @@ func getTodos() {
 import (
 	"fmt"
 
-	"github.com/backrush/sdk-for-go/backrush"
-	"github.com/backrush/sdk-for-go/client"
-	"github.com/backrush/sdk-for-go/databases"
-	"github.com/backrush/sdk-for-go/id"
-	"github.com/backrush/sdk-for-go/models"
+	"github.com/Back-rush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/client"
+	"github.com/Back-rush/sdk-for-go/databases"
+	"github.com/Back-rush/sdk-for-go/id"
+	"github.com/Back-rush/sdk-for-go/models"
 )
 
 var (
@@ -278,11 +278,11 @@ func main() {
 import (
 	"fmt"
 
-	"github.com/backrush/sdk-for-go/backrush"
-	"github.com/backrush/sdk-for-go/client"
-	"github.com/backrush/sdk-for-go/databases"
-	"github.com/backrush/sdk-for-go/id"
-	"github.com/backrush/sdk-for-go/models"
+	"github.com/Back-rush/sdk-for-go/backrush"
+	"github.com/Back-rush/sdk-for-go/client"
+	"github.com/Back-rush/sdk-for-go/databases"
+	"github.com/Back-rush/sdk-for-go/id"
+	"github.com/Back-rush/sdk-for-go/models"
 )
 
 var (

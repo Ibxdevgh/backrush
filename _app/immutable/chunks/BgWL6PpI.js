@@ -3,8 +3,8 @@ import{t as h,b as s,a as o}from"./Cw4I5osi.js";import"./BzVk5r6l.js";import{c a
 import (
 	"fmt"
 
-	"github.com/backrush/sdk-for-go/account"
-	"github.com/backrush/sdk-for-go/client"
+	"github.com/Back-rush/sdk-for-go/account"
+	"github.com/Back-rush/sdk-for-go/client"
 )
 
 func main() {
@@ -31,8 +31,8 @@ func main() {
 import (
 	"fmt"
 
-	"github.com/backrush/sdk-for-go/account"
-	"github.com/backrush/sdk-for-go/client"
+	"github.com/Back-rush/sdk-for-go/account"
+	"github.com/Back-rush/sdk-for-go/client"
 )
 
 func main() {
@@ -57,8 +57,8 @@ func main() {
 
 import (
 "fmt"
-"github.com/backrush/sdk-for-go/client"
-"github.com/backrush/sdk-for-go/databases"
+"github.com/Back-rush/sdk-for-go/client"
+"github.com/Back-rush/sdk-for-go/databases"
 )
 
 func main() {
@@ -80,8 +80,8 @@ fmt.Println(response)
 
 import (
 "fmt"
-"github.com/backrush/sdk-for-go/client"
-"github.com/backrush/sdk-for-go/databases"
+"github.com/Back-rush/sdk-for-go/client"
+"github.com/Back-rush/sdk-for-go/databases"
 )
 
 func main() {
@@ -103,8 +103,8 @@ fmt.Println(response)
 import (
 	"fmt"
 
-	"github.com/backrush/sdk-for-go/account"
-	"github.com/backrush/sdk-for-go/client"
+	"github.com/Back-rush/sdk-for-go/account"
+	"github.com/Back-rush/sdk-for-go/client"
 )
 
 func main() {
@@ -132,8 +132,8 @@ func main() {
 import (
 	"fmt"
 
-	"github.com/backrush/sdk-for-go/account"
-	"github.com/backrush/sdk-for-go/client"
+	"github.com/Back-rush/sdk-for-go/account"
+	"github.com/Back-rush/sdk-for-go/client"
 )
 
 func main() {
