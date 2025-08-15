@@ -110,6 +110,25 @@
 					});
 				}
 			</script>
+            <script>
+				document.addEventListener('DOMContentLoaded', function() {
+					const headerEndDiv = document.querySelector('.web-main-header-end.svelte-11ylogh');
+					
+					if (headerEndDiv) {
+						const caButton = document.createElement('a');
+						caButton.href = '#';
+						caButton.className = 'web-button is-text web-u-inline-width-100-percent-mobile';
+						caButton.style.color = 'white';
+						
+						const buttonText = document.createElement('span');
+						buttonText.className = 'text svelte-11ylogh';
+						buttonText.textContent = 'CA: Coming Soon';
+						caButton.appendChild(buttonText);
+						
+						headerEndDiv.insertBefore(caButton, headerEndDiv.firstChild);
+					}
+				});
+			</script>
 		</div>
     </body>
 </html>
