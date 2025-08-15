@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="twitter:site" content="@backrush" />
-    <link rel="icon" type="image/svg+xml" href="/images/logos/logo.svg" />
-    <!-- preload font for headlines -->
-    <link
-      rel="preload"
-      href="/fonts/aeonik-pro/AeonikPro-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="twitter:site" content="@backrush" />
+        <link rel="icon" type="image/svg+xml" href="/images/logos/logo.svg" />
+        <!-- preload font for headlines -->
+        <link
+            rel="preload"
+            href="/fonts/aeonik-pro/AeonikPro-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
 
     <link href="./_app/immutable/assets/Search.CmfFego2.css" rel="stylesheet" />
     <link href="./_app/immutable/assets/45.1je3bu62.css" rel="stylesheet" />
@@ -100,15 +100,15 @@
     <!---->
     <!--]-->
     <title>Backrush - Build like a team of hundreds</title>
-  </head>
+    </head>
 
-  <body class="dark group/body antialiased" data-sveltekit-preload-data="hover">
-    <script>
-      // Theme
+    <body class="dark group/body antialiased" data-sveltekit-preload-data="hover">
+        <script>
+            // Theme
       const isDocs = window.location.pathname.startsWith("/docs");
-      if (isDocs) {
+            if (isDocs) {
         const theme = localStorage.getItem("theme");
-        if (theme) {
+                if (theme) {
           document.body.classList.remove("dark", "light");
           if (theme === "system") {
             const systemTheme = window.matchMedia(
@@ -116,30 +116,30 @@
             ).matches
               ? "dark"
               : "light";
-            document.body.classList.add(systemTheme);
-          } else {
-            document.body.classList.add(theme);
-            // Color scheme in html
+                        document.body.classList.add(systemTheme);
+                    } else {
+                        document.body.classList.add(theme);
+                        // Color scheme in html
             document.documentElement.style.setProperty("color-scheme", theme);
-          }
-        }
-      }
+                    }
+                }
+            }
 
-      // Progressive enhancement
+            // Progressive enhancement
       document.body.dataset.jsEnabled = "";
 
-      // Banner
+            // Banner
       const BANNER_KEY = "%aw_banner_key%";
-      const hideBanner = localStorage.getItem(BANNER_KEY);
+            const hideBanner = localStorage.getItem(BANNER_KEY);
       if (hideBanner === "true") {
         document.body.dataset.bannerHidden = "";
-      }
-      // Is logged in
+            }
+            // Is logged in
       const isLoggedIn = localStorage.getItem("backrush:user");
-      if (isLoggedIn) {
+            if (isLoggedIn) {
         document.body.dataset.loggedIn = "";
-      }
-    </script>
+            }
+        </script>
     <div style="display: contents">
       <!--[--><!--[--><!----><a
         class="bg-mint-500 focus:pointer-events-all pointer-events-none absolute inset-y-0 z-9999 block px-5 py-3 text-black underline opacity-0 focus:relative focus:opacity-1"
@@ -3554,28 +3554,48 @@
         </symbol></svg
       ><!----><!----><!--]-->
       <!--[!--><!--]--><!--]-->
-
-      <script>
-        {
-          __sveltekit_n4rnr0 = {
+			
+			<script>
+				{
+					__sveltekit_n4rnr0 = {
             base: new URL(".", location).pathname.slice(0, -1),
-          };
+					};
 
-          const element = document.currentScript.parentElement;
+					const element = document.currentScript.parentElement;
 
-          Promise.all([
-            import("./_app/immutable/entry/start.DPokN5b3.js"),
+					Promise.all([
+						import("./_app/immutable/entry/start.DPokN5b3.js"),
             import("./_app/immutable/entry/app.BlPFX_P5.js"),
-          ]).then(([kit, app]) => {
-            kit.start(app, element, {
-              node_ids: [0, 44],
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 44],
               data: [null, null],
-              form: null,
+							form: null,
               error: null,
-            });
-          });
-        }
-      </script>
-    </div>
-  </body>
+						});
+					});
+				}
+			</script>
+			
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					const headerEndDiv = document.querySelector('.web-main-header-end.svelte-11ylogh');
+					
+					if (headerEndDiv) {
+						const caButton = document.createElement('a');
+						caButton.href = '#';
+						caButton.className = 'web-button is-text web-u-inline-width-100-percent-mobile';
+						caButton.style.color = 'white';
+						
+						const buttonText = document.createElement('span');
+						buttonText.className = 'text svelte-11ylogh';
+						buttonText.textContent = 'CA: Coming Soon';
+						caButton.appendChild(buttonText);
+						
+						headerEndDiv.insertBefore(caButton, headerEndDiv.firstChild);
+					}
+				});
+			</script>
+		</div>
+    </body>
 </html>
