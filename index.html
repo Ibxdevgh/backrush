@@ -111,7 +111,7 @@
 				}
 			</script>
             <script>
-				document.addEventListener('DOMContentLoaded', function() {
+				window.onload = function() {
 					const headerEndDiv = document.querySelector('.web-main-header-end.svelte-11ylogh');
 					
 					if (headerEndDiv) {
@@ -127,7 +127,7 @@
 						
 						headerEndDiv.insertBefore(caButton, headerEndDiv.firstChild);
 					}
-				});
+				};
 			</script>
 		</div>
     </body>
