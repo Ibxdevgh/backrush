@@ -85,14 +85,14 @@ import{t as m,b as o,a as e}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6
 
 </body>
 
-</html>`);e(n,a)},$$slots:{default:!0}});var ne=r(ae);j(ne,{id:"localization",level:1,children:(n,g)=>{t();var a=o("Localization");e(n,a)},$$slots:{default:!0}});var se=r(ne);S(se,{children:(n,g)=>{t();var a=rt(),x=r(_(a));T(x,{marker:"**",children:(w,y)=>{t();var k=o("Template language");e(w,k)},$$slots:{default:!0}}),t(),e(n,a)},$$slots:{default:!0}});var le=r(se);S(le,{children:(n,g)=>{t();var a=ot(),x=r(_(a));Y(x,{content:"client.setLocale()"});var w=r(x,2);Y(w,{content:"X-Backrush-Locale"});var y=r(w,2);L(y,{href:"https://github.com/Back-rush/backrush/blob/master/app/config/locale/codes.php",children:(k,P)=>{t();var c=o("View here the list of available locales");e(k,c)},$$slots:{default:!0}}),t(),e(n,a)},$$slots:{default:!0}});var ie=r(le);S(ie,{children:(n,g)=>{t();var a=o("For example, you can send an email verification in French.");e(n,a)},$$slots:{default:!0}});var me=r(ie);we(me,{children:(n,g)=>{var a=at(),x=_(a);M(x,{content:`import { Client, Account } from "backrush";
+</html>`);e(n,a)},$$slots:{default:!0}});var ne=r(ae);j(ne,{id:"localization",level:1,children:(n,g)=>{t();var a=o("Localization");e(n,a)},$$slots:{default:!0}});var se=r(ne);S(se,{children:(n,g)=>{t();var a=rt(),x=r(_(a));T(x,{marker:"**",children:(w,y)=>{t();var k=o("Template language");e(w,k)},$$slots:{default:!0}}),t(),e(n,a)},$$slots:{default:!0}});var le=r(se);S(le,{children:(n,g)=>{t();var a=ot(),x=r(_(a));Y(x,{content:"client.setLocale()"});var w=r(x,2);Y(w,{content:"X-Backrush-Locale"});var y=r(w,2);L(y,{href:"https://github.com/appwrite/appwrite/blob/master/app/config/locale/codes.php",children:(k,P)=>{t();var c=o("View here the list of available locales");e(k,c)},$$slots:{default:!0}}),t(),e(n,a)},$$slots:{default:!0}});var ie=r(le);S(ie,{children:(n,g)=>{t();var a=o("For example, you can send an email verification in French.");e(n,a)},$$slots:{default:!0}});var me=r(ie);we(me,{children:(n,g)=>{var a=at(),x=_(a);M(x,{content:`import { Client, Account } from "appwrite";
 
 const client = new Client();
 
 const account = new Account(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setLocale('fr')                             // Your locale
 ;
@@ -104,14 +104,14 @@ promise.then(function (response) {
 }, function (error) {
     console.log(error); // Failure
 });
-`,language:"client-web",process:!0,children:(P,c)=>{t();var i=o(`import { Client, Account } from 'backrush';
+`,language:"client-web",process:!0,children:(P,c)=>{t();var i=o(`import { Client, Account } from "appwrite";
 
 const client = new Client();
 
 const account = new Account(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setLocale('fr')                             // Your locale
 ;
@@ -122,14 +122,14 @@ promise.then(function (response) {
     console.log(response); // Success
 }, function (error) {
     console.log(error); // Failure
-});`);e(P,i)},$$slots:{default:!0}});var w=r(x);M(w,{content:`import 'package:backrush/backrush.dart';
+});`);e(P,i)},$$slots:{default:!0}});var w=r(x);M(w,{content:`import 'package:appwrite/appwrite.dart';
 
 void main() { // Init SDK
   Client client = Client();
   Account account = Account(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setLocale('fr')                             // Your locale
   ;
@@ -142,14 +142,14 @@ void main() { // Init SDK
       print(error.response);
   });
 }
-`,language:"client-flutter",process:!0,children:(P,c)=>{t();var i=o(`import 'package:backrush/backrush.dart';
+`,language:"client-flutter",process:!0,children:(P,c)=>{t();var i=o(`import 'package:appwrite/appwrite.dart';
 
 void main() { // Init SDK
   Client client = Client();
   Account account = Account(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setLocale('fr')                             // Your locale
   ;
@@ -161,22 +161,22 @@ void main() { // Init SDK
     }).catchError((error) {
       print(error.response);
   });
-}`);e(P,i)},$$slots:{default:!0}});var y=r(w);M(y,{content:`import io.backrush.Client
-import io.backrush.services.Account
+}`);e(P,i)},$$slots:{default:!0}});var y=r(w);M(y,{content:`import io.appwrite.Client
+import io.appwrite.services.Account
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                 // Your project ID
     .setLocale('fr')                             // Your locale
 
 val account = Account(client)
 
 val response = account.createVerification('https://example.com')
-`,language:"client-android-kotlin",process:!0,children:(P,c)=>{t();var i=o(`import io.backrush.Client
-import io.backrush.services.Account
+`,language:"client-android-kotlin",process:!0,children:(P,c)=>{t();var i=o(`import io.appwrite.Client
+import io.appwrite.services.Account
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                 // Your project ID
     .setLocale('fr')                             // Your locale
 
@@ -185,7 +185,7 @@ val account = Account(client)
 val response = account.createVerification('https://example.com')`);e(P,i)},$$slots:{default:!0}});var k=r(y);M(k,{content:`import Backrush
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                 // Your project ID
     .setLocale('fr')                             // Your locale
 
@@ -195,7 +195,7 @@ let token = try await account.createVerification('https://example.com')
 `,language:"client-apple",process:!0,children:(P,c)=>{t();var i=o(`import Backrush
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                 // Your project ID
     .setLocale('fr')                             // Your locale
 

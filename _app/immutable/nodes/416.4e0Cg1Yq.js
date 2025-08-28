@@ -139,10 +139,10 @@ import{t as u,b as o,a as e}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6
     {
         "query": "query GetLocale { localeGet { ip } }"
     }
-]`);e(a,n)},$$slots:{default:!0}});var ke=r(Le);P(ke,{children:(a,i)=>{t();var n=o("This allows you to execute complex actions in a single network request.");e(a,n)},$$slots:{default:!0}});var Oe=r(ke);T(Oe,{id:"sdk-usage",level:1,children:(a,i)=>{t();var n=o("SDK usage");e(a,n)},$$slots:{default:!0}});var Qe=r(Oe);P(Qe,{children:(a,i)=>{t();var n=o("Backrush SDKs also support GraphQL in addition to the REST services.");e(a,n)},$$slots:{default:!0}});var Ye=r(Qe);Be(Ye,{children:(a,i)=>{var n=Rt(),s=$(n);S(s,{content:`import { Client, Graphql } from 'backrush';
+]`);e(a,n)},$$slots:{default:!0}});var ke=r(Le);P(ke,{children:(a,i)=>{t();var n=o("This allows you to execute complex actions in a single network request.");e(a,n)},$$slots:{default:!0}});var Oe=r(ke);T(Oe,{id:"sdk-usage",level:1,children:(a,i)=>{t();var n=o("SDK usage");e(a,n)},$$slots:{default:!0}});var Qe=r(Oe);P(Qe,{children:(a,i)=>{t();var n=o("Backrush SDKs also support GraphQL in addition to the REST services.");e(a,n)},$$slots:{default:!0}});var Ye=r(Qe);Be(Ye,{children:(a,i)=>{var n=Rt(),s=$(n);S(s,{content:`import { Client, Graphql } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your Backrush Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your Backrush Endpoint
     .setProject('<PROJECT_ID>');                // Your project ID
 
 const graphql = new Graphql(client);
@@ -174,10 +174,10 @@ mutation.then(response => {
 }).catch(error => {
     console.log(error);
 });
-`,language:"client-web",process:!0,children:(p,q)=>{t();var w=o(`import { Client, Graphql } from 'backrush';
+`,language:"client-web",process:!0,children:(p,q)=>{t();var w=o(`import { Client, Graphql } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your Backrush Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your Backrush Endpoint
     .setProject('<PROJECT_ID>');                // Your project ID
 
 const graphql = new Graphql(client);
@@ -208,10 +208,10 @@ mutation.then(response => {
     console.log(response);
 }).catch(error => {
     console.log(error);
-});`);e(p,w)},$$slots:{default:!0}});var v=r(s);S(v,{content:`import 'package:backrush/backrush.dart';
+});`);e(p,w)},$$slots:{default:!0}});var v=r(s);S(v,{content:`import 'package:appwrite/appwrite.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your Backrush Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your Backrush Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 final graphql = Graphql(client);
@@ -243,10 +243,10 @@ mutation.then((response) {
 }).catchError((error) {
     print(error.message);
 });
-`,language:"client-flutter",process:!0,children:(p,q)=>{t();var w=o(`import 'package:backrush/backrush.dart';
+`,language:"client-flutter",process:!0,children:(p,q)=>{t();var w=o(`import 'package:appwrite/appwrite.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your Backrush Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your Backrush Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 final graphql = Graphql(client);
@@ -280,7 +280,7 @@ mutation.then((response) {
 });`);e(p,w)},$$slots:{default:!0}});var c=r(v);S(c,{content:`import Backrush
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                // Your project ID
 
 let graphql = Graphql(client)
@@ -318,7 +318,7 @@ do {
 `,language:"client-apple",process:!0,children:(p,q)=>{t();var w=o(`import Backrush
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                // Your project ID
 
 let graphql = Graphql(client)
@@ -352,11 +352,11 @@ do {
     print(String(describing: response))
 } catch {
     print(error.localizedDescription)
-}`);e(p,w)},$$slots:{default:!0}});var m=r(c);S(m,{content:`import io.backrush.Client
-import io.backrush.services.Graphql
+}`);e(p,w)},$$slots:{default:!0}});var m=r(c);S(m,{content:`import io.appwrite.Client
+import io.appwrite.services.Graphql
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                // Your project ID
 
 val graphql = Graphql(client)
@@ -388,11 +388,11 @@ try {
 } catch (ex: BackrushException) {
     ex.printStackTrace()
 }
-`,language:"client-android-kotlin",process:!0,children:(p,q)=>{t();var w=o(`import io.backrush.Client
-import io.backrush.services.Graphql
+`,language:"client-android-kotlin",process:!0,children:(p,q)=>{t();var w=o(`import io.appwrite.Client
+import io.appwrite.services.Graphql
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                // Your project ID
 
 val graphql = Graphql(client)

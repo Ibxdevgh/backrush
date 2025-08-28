@@ -1,4 +1,4 @@
-import{t as d,b as n,a as e}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6l.js";import{c as ie,s as t,f as h,n as r,r as ue}from"../chunks/NgVQVlRK.js";import{n as pe}from"../chunks/B4IyMRKX.js";import{S as N}from"../chunks/B6JyFckC.js";import{M as j}from"../chunks/hMT8fFzP.js";import{I as de}from"../chunks/BypEz2Fd.js";import{T as oe,a as Q}from"../chunks/BHbEtIoO.js";/* empty css                */import"../chunks/BZUG4Puk.js";/* empty css                */import"../chunks/D9bBQFLV.js";import{C as O}from"../chunks/DXp9_3zM.js";import{F as o}from"../chunks/OFUKRh55.js";import"../chunks/NwRJ91PD.js";import"../chunks/POtwinrL.js";import"../chunks/CbbZjpT6.js";/* empty css                */import{P as M}from"../chunks/D8YsId2T.js";import{S as he}from"../chunks/yHjwcyUH.js";import{L as ae}from"../chunks/yh4_9ChP.js";import{A as $e}from"../chunks/CqOphJLh.js";const ve={layout:"article",title:"Multi-factor authentication",description:"Add multiple layers of authentication to your applications powered by Backrush Authentication."};var fe=d("This page covers MFA for your app&#39;s end-users. If you are looking for MFA on your Backrush Console account, please refer to the <!>.",1),ge=d("Initialize your Backrush SDK&#39;s <!>, <!>, and <!>. You&#39;ll use Avatars API to generate a QR code for the TOTP authenticator app, you can skip this import if you&#39;re not using TOTP.",1),_e=d("<!><!><!><!>",1),me=d("Before enabling MFA, you should display recovery codes to the user. The codes are single use passwords the user can use to access their account if they lose access to their MFA email, phone, or authenticator app. These codes can <!>, warn the users to save them.",1),we=d("These codes can be used to complete the <!> step if the user loses access to their MFA factors. Generate the recovery codes by calling <!>.",1),Pe=d("<!><!><!><!><!>",1),ye=d("<!><!><!><!><!><!><!>",1),Ee=d("<!><!><!><!><!>",1),Ce=d("Then, initiate verification for the email by calling <!>. Calling <!> will send a verification email to the user&#39;s email address with a link with the query parameter <!> and <!>.",1),Ie=d("<!><!><!><!><!>",1),xe=d("After the user clicks the link in the email, they will be redirected to your site with the query parameters <!> and <!>. If you&#39;re on a mobile platform, you will need to create the appropriate deep link to handle the verification.",1),Ae=d("Finally, verify the email by calling <!> with <!> and <!>.",1),Me=d("<!><!><!><!><!>",1),Se=d("<!><!><!><!><!><!><!>",1),be=d("<!><!><!><!><!>",1),Re=d("Then, initiate verification for the phone number by calling <!>.",1),De=d("<!><!><!><!><!>",1),Fe=d("After the user receives the verification code, they can verify their phone number by calling <!>.",1),Te=d("<!><!><!><!><!>",1),ke=d("<!><!><!><!><!><!>",1),Oe=d("First, add a TOTP authenticator to the user&#39;s account by calling <!>.",1),Le=d("<!><!><!><!><!>",1),Ve=d("You can generate a QR code for the user to scan by calling <!>.",1),Ue=d("<!><!><!><!><!>",1),Ye=d("If the user is unable to scan QR codes, you can display the <!> to the user.",1),je=d("Finally prompt the user to enter a TOTP from their authenticator app, then verify the authenticator by calling <!>.",1),Ge=d("<!><!><!><!><!>",1),Ne=d("<!><!><!><!><!><!><!><!>",1),Qe=d("<!><!><!>",1),ze=d("<!><!>",1),He=d("You can enable MFA on your account by calling <!>. You will need to have added more than 1 factors of authentication to an account before the MFA is enforced.",1),qe=d("<!><!><!><!>",1),Be=d("<!><!>",1),Je=d("<!><!><!><!>",1),Ke=d("<!><!>",1),We=d("Upon successful login in the first authentication step, check the status of the login by calling <!>. If more than one factors are required, you will receive the error <!>. Redirect the user in your app to perform the MFA challenge.",1),Xe=d("<!><!><!><!><!>",1),Ze=d("<!><!>",1),et=d("You can check which factors are enabled for an account using <!>. The returned object will be formatted like this.",1),tt=d("<!><!><!><!>",1),rt=d("<!><!><!>",1),nt=d("<!><!><!><!>",1),ot=d("<!><!>",1),at=d("<!><!><!><!>",1),st=d("<!><!>",1),lt=d("<!><!><!><!>",1),ct=d("<!><!>",1),it=d("<!><!><!>",1),ut=d("<!><!>",1),pt=d("<!><!><!><!>",1),dt=d("After completing the challenge, the user is now authenticated and all requests will be authorized. You can confirm this by running <!>",1),ht=d("<!><!><!>",1),$t=d("In case your user needs to recover their account, they can use the recovery codes generated in the first step with the recovery code factor. Initialize the challenge by calling <!> with the factor <!>.",1),vt=d("<!><!><!><!>",1),ft=d("Then complete the challenge by calling <!> with the challenge ID and the recovery code.",1),gt=d("<!><!><!><!>",1),_t=d("<!><!><!><!>",1),mt=d("<article><!><!><!><!><!><!><!><!><!><!><!><!><!></article>");function Nt(se){$e(se,pe(ve,{children:(le,wt)=>{var z=mt(),H=ie(z);M(H,{children:(V,G)=>{r();var A=n("Multi-factor authentication (MFA) greatly increases the security of your apps by adding additional layers of protection. When MFA is enabled, a malicious actor needs to compromise multiple authentication factors to gain unauthorized access. Backrush Authentication lets you easily implement MFA in your apps, letting you build more securely and quickly.");e(V,A)},$$slots:{default:!0}});var q=t(H);de(q,{title:"Looking for MFA on your Console account?",children:(V,G)=>{M(V,{children:(A,k)=>{r();var Y=fe(),S=t(h(Y));ae(S,{href:"/docs/advanced/security/mfa",children:(T,g)=>{r();var _=n("Console MFA page");e(T,_)},$$slots:{default:!0}}),r(),e(A,Y)},$$slots:{default:!0}})}});var B=t(q);M(B,{children:(V,G)=>{r();var A=n("Backrush currently allows two factors of authentication. More factors of authentication will be available soon.");e(V,A)},$$slots:{default:!0}});var J=t(B);M(J,{children:(V,G)=>{r();var A=n("Here are the steps to implement MFA in your application.");e(V,A)},$$slots:{default:!0}});var K=t(J);N(K,{id:"display-recover-code",step:1,title:"Display recovery codes",children:(V,G)=>{var A=ye(),k=h(A);M(k,{children:(y,C)=>{r();var $=ge(),l=t(h($));O(l,{content:"Client"});var a=t(l,2);O(a,{content:"Account"});var p=t(a,2);O(p,{content:"Avatars"}),r(),e(y,$)},$$slots:{default:!0}});var Y=t(k);j(Y,{children:(y,C)=>{var $=_e(),l=h($);o(l,{content:`import { Client, Account, Avatars } from 'backrush';
+import{t as d,b as n,a as e}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6l.js";import{c as ie,s as t,f as h,n as r,r as ue}from"../chunks/NgVQVlRK.js";import{n as pe}from"../chunks/B4IyMRKX.js";import{S as N}from"../chunks/B6JyFckC.js";import{M as j}from"../chunks/hMT8fFzP.js";import{I as de}from"../chunks/BypEz2Fd.js";import{T as oe,a as Q}from"../chunks/BHbEtIoO.js";/* empty css                */import"../chunks/BZUG4Puk.js";/* empty css                */import"../chunks/D9bBQFLV.js";import{C as O}from"../chunks/DXp9_3zM.js";import{F as o}from"../chunks/OFUKRh55.js";import"../chunks/NwRJ91PD.js";import"../chunks/POtwinrL.js";import"../chunks/CbbZjpT6.js";/* empty css                */import{P as M}from"../chunks/D8YsId2T.js";import{S as he}from"../chunks/yHjwcyUH.js";import{L as ae}from"../chunks/yh4_9ChP.js";import{A as $e}from"../chunks/CqOphJLh.js";const ve={layout:"article",title:"Multi-factor authentication",description:"Add multiple layers of authentication to your applications powered by Backrush Authentication."};var fe=d("This page covers MFA for your app&#39;s end-users. If you are looking for MFA on your Backrush Console account, please refer to the <!>.",1),ge=d("Initialize your Backrush SDK&#39;s <!>, <!>, and <!>. You&#39;ll use Avatars API to generate a QR code for the TOTP authenticator app, you can skip this import if you&#39;re not using TOTP.",1),_e=d("<!><!><!><!>",1),me=d("Before enabling MFA, you should display recovery codes to the user. The codes are single use passwords the user can use to access their account if they lose access to their MFA email, phone, or authenticator app. These codes can <!>, warn the users to save them.",1),we=d("These codes can be used to complete the <!> step if the user loses access to their MFA factors. Generate the recovery codes by calling <!>.",1),Pe=d("<!><!><!><!><!>",1),ye=d("<!><!><!><!><!><!><!>",1),Ee=d("<!><!><!><!><!>",1),Ce=d("Then, initiate verification for the email by calling <!>. Calling <!> will send a verification email to the user&#39;s email address with a link with the query parameter <!> and <!>.",1),Ie=d("<!><!><!><!><!>",1),xe=d("After the user clicks the link in the email, they will be redirected to your site with the query parameters <!> and <!>. If you&#39;re on a mobile platform, you will need to create the appropriate deep link to handle the verification.",1),Ae=d("Finally, verify the email by calling <!> with <!> and <!>.",1),Me=d("<!><!><!><!><!>",1),Se=d("<!><!><!><!><!><!><!>",1),be=d("<!><!><!><!><!>",1),Re=d("Then, initiate verification for the phone number by calling <!>.",1),De=d("<!><!><!><!><!>",1),Fe=d("After the user receives the verification code, they can verify their phone number by calling <!>.",1),Te=d("<!><!><!><!><!>",1),ke=d("<!><!><!><!><!><!>",1),Oe=d("First, add a TOTP authenticator to the user&#39;s account by calling <!>.",1),Le=d("<!><!><!><!><!>",1),Ve=d("You can generate a QR code for the user to scan by calling <!>.",1),Ue=d("<!><!><!><!><!>",1),Ye=d("If the user is unable to scan QR codes, you can display the <!> to the user.",1),je=d("Finally prompt the user to enter a TOTP from their authenticator app, then verify the authenticator by calling <!>.",1),Ge=d("<!><!><!><!><!>",1),Ne=d("<!><!><!><!><!><!><!><!>",1),Qe=d("<!><!><!>",1),ze=d("<!><!>",1),He=d("You can enable MFA on your account by calling <!>. You will need to have added more than 1 factors of authentication to an account before the MFA is enforced.",1),qe=d("<!><!><!><!>",1),Be=d("<!><!>",1),Je=d("<!><!><!><!>",1),Ke=d("<!><!>",1),We=d("Upon successful login in the first authentication step, check the status of the login by calling <!>. If more than one factors are required, you will receive the error <!>. Redirect the user in your app to perform the MFA challenge.",1),Xe=d("<!><!><!><!><!>",1),Ze=d("<!><!>",1),et=d("You can check which factors are enabled for an account using <!>. The returned object will be formatted like this.",1),tt=d("<!><!><!><!>",1),rt=d("<!><!><!>",1),nt=d("<!><!><!><!>",1),ot=d("<!><!>",1),at=d("<!><!><!><!>",1),st=d("<!><!>",1),lt=d("<!><!><!><!>",1),ct=d("<!><!>",1),it=d("<!><!><!>",1),ut=d("<!><!>",1),pt=d("<!><!><!><!>",1),dt=d("After completing the challenge, the user is now authenticated and all requests will be authorized. You can confirm this by running <!>",1),ht=d("<!><!><!>",1),$t=d("In case your user needs to recover their account, they can use the recovery codes generated in the first step with the recovery code factor. Initialize the challenge by calling <!> with the factor <!>.",1),vt=d("<!><!><!><!>",1),ft=d("Then complete the challenge by calling <!> with the challenge ID and the recovery code.",1),gt=d("<!><!><!><!>",1),_t=d("<!><!><!><!>",1),mt=d("<article><!><!><!><!><!><!><!><!><!><!><!><!><!></article>");function Nt(se){$e(se,pe(ve,{children:(le,wt)=>{var z=mt(),H=ie(z);M(H,{children:(V,G)=>{r();var A=n("Multi-factor authentication (MFA) greatly increases the security of your apps by adding additional layers of protection. When MFA is enabled, a malicious actor needs to compromise multiple authentication factors to gain unauthorized access. Backrush Authentication lets you easily implement MFA in your apps, letting you build more securely and quickly.");e(V,A)},$$slots:{default:!0}});var q=t(H);de(q,{title:"Looking for MFA on your Console account?",children:(V,G)=>{M(V,{children:(A,k)=>{r();var Y=fe(),S=t(h(Y));ae(S,{href:"/docs/advanced/security/mfa",children:(T,g)=>{r();var _=n("Console MFA page");e(T,_)},$$slots:{default:!0}}),r(),e(A,Y)},$$slots:{default:!0}})}});var B=t(q);M(B,{children:(V,G)=>{r();var A=n("Backrush currently allows two factors of authentication. More factors of authentication will be available soon.");e(V,A)},$$slots:{default:!0}});var J=t(B);M(J,{children:(V,G)=>{r();var A=n("Here are the steps to implement MFA in your application.");e(V,A)},$$slots:{default:!0}});var K=t(J);N(K,{id:"display-recover-code",step:1,title:"Display recovery codes",children:(V,G)=>{var A=ye(),k=h(A);M(k,{children:(y,C)=>{r();var $=ge(),l=t(h($));O(l,{content:"Client"});var a=t(l,2);O(a,{content:"Account"});var p=t(a,2);O(p,{content:"Avatars"}),r(),e(y,$)},$$slots:{default:!0}});var Y=t(k);j(Y,{children:(y,C)=>{var $=_e(),l=h($);o(l,{content:`import { Client, Account, Avatars } from "appwrite";
 
 const client = new Client();
 
@@ -6,10 +6,10 @@ const account = new Account(client);
 const avatars = new Avatars(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>') // Your project ID
 ;
-`,language:"client-web",process:!0,children:(L,I)=>{r();var D=n(`import { Client, Account, Avatars } from 'backrush';
+`,language:"client-web",process:!0,children:(L,I)=>{r();var D=n(`import { Client, Account, Avatars } from "appwrite";
 
 const client = new Client();
 
@@ -17,9 +17,9 @@ const account = new Account(client);
 const avatars = new Avatars(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>') // Your project ID
-;`);e(L,D)},$$slots:{default:!0}});var a=t(l);o(a,{content:`import 'package:backrush/backrush.dart';
+;`);e(L,D)},$$slots:{default:!0}});var a=t(l);o(a,{content:`import 'package:appwrite/appwrite.dart';
 
 void main() { // Init SDK
   Client client = Client();
@@ -27,11 +27,11 @@ void main() { // Init SDK
   Avatars avatars = Avatars(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')             // Your project ID
   ;
 }
-`,language:"client-flutter",process:!0,children:(L,I)=>{r();var D=n(`import 'package:backrush/backrush.dart';
+`,language:"client-flutter",process:!0,children:(L,I)=>{r();var D=n(`import 'package:appwrite/appwrite.dart';
 
 void main() { // Init SDK
   Client client = Client();
@@ -39,13 +39,13 @@ void main() { // Init SDK
   Avatars avatars = Avatars(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')             // Your project ID
   ;
 }`);e(L,D)},$$slots:{default:!0}});var p=t(a);o(p,{content:`import Backrush
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
 
 let account = Account(client)
@@ -53,24 +53,24 @@ let avatars = Avatars(client)
 `,language:"client-apple",process:!0,children:(L,I)=>{r();var D=n(`import Backrush
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
 
 let account = Account(client)
-let avatars = Avatars(client)`);e(L,D)},$$slots:{default:!0}});var m=t(p);o(m,{content:`import io.backrush.Client
-import io.backrush.services.Account
+let avatars = Avatars(client)`);e(L,D)},$$slots:{default:!0}});var m=t(p);o(m,{content:`import io.appwrite.Client
+import io.appwrite.services.Account
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
 
 val account = Account(client)
 val avatars = Avatars(client)
-`,language:"client-android-kotlin",process:!0,children:(L,I)=>{r();var D=n(`import io.backrush.Client
-import io.backrush.services.Account
+`,language:"client-android-kotlin",process:!0,children:(L,I)=>{r();var D=n(`import io.appwrite.Client
+import io.appwrite.services.Account
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
 
 val account = Account(client)

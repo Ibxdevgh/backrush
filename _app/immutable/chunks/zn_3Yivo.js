@@ -147,17 +147,17 @@ converter = tf.lite.TFLiteConverter.from_keras_model(model)
 tflite_model = converter.convert()
 
 with open('model.tflite', 'wb') as f:
-  f.write(tflite_model)`);r(t,e)},$$slots:{default:!0}});var te=o(ee);i(te,{children:(t,s)=>{n();var e=a("This code will download a bunch of sample images of flowers, create two groups of images for training and validation with an 80/20 split, and then build a standard convolutional neural network and train it. Finally, it will export the trained model into a TensorFlow Lite model.");r(t,e)},$$slots:{default:!0}});var ne=o(te);p(ne,{level:3,children:(t,s)=>{n();var e=a("Step 2: Create a new function");r(t,e)},$$slots:{default:!0}});var oe=o(ne);i(oe,{children:(t,s)=>{n();var e=a("Next, initialize a new function using the Backrush CLI by using:");r(t,e)},$$slots:{default:!0}});var re=o(oe);w(re,{content:`backrush init project # Use if you don't already have an backrush.json
-backrush init function
-`,language:"bash",process:!0,children:(t,s)=>{n();var e=a(`backrush init project # Use if you don't already have an backrush.json
-backrush init function`);r(t,e)},$$slots:{default:!0}});var ae=o(re);i(ae,{children:(t,s)=>{n();var e=Le(),l=o(g(e));$(l,{content:"Python (ML)"}),n(),r(t,e)},$$slots:{default:!0}});var se=o(ae);p(se,{level:3,children:(t,s)=>{n();var e=a("Step 3: Add our inference code to the function");r(t,e)},$$slots:{default:!0}});var ie=o(se);i(ie,{children:(t,s)=>{n();var e=Oe(),l=o(g(e));$(l,{content:"main.py"}),n(),r(t,e)},$$slots:{default:!0}});var le=o(ie);w(le,{content:`import os
+  f.write(tflite_model)`);r(t,e)},$$slots:{default:!0}});var te=o(ee);i(te,{children:(t,s)=>{n();var e=a("This code will download a bunch of sample images of flowers, create two groups of images for training and validation with an 80/20 split, and then build a standard convolutional neural network and train it. Finally, it will export the trained model into a TensorFlow Lite model.");r(t,e)},$$slots:{default:!0}});var ne=o(te);p(ne,{level:3,children:(t,s)=>{n();var e=a("Step 2: Create a new function");r(t,e)},$$slots:{default:!0}});var oe=o(ne);i(oe,{children:(t,s)=>{n();var e=a("Next, initialize a new function using the Backrush CLI by using:");r(t,e)},$$slots:{default:!0}});var re=o(oe);w(re,{content:`appwrite init project # Use if you don't already have an appwrite.json
+appwrite init function
+`,language:"bash",process:!0,children:(t,s)=>{n();var e=a(`appwrite init project # Use if you don't already have an appwrite.json
+appwrite init function`);r(t,e)},$$slots:{default:!0}});var ae=o(re);i(ae,{children:(t,s)=>{n();var e=Le(),l=o(g(e));$(l,{content:"Python (ML)"}),n(),r(t,e)},$$slots:{default:!0}});var se=o(ae);p(se,{level:3,children:(t,s)=>{n();var e=a("Step 3: Add our inference code to the function");r(t,e)},$$slots:{default:!0}});var ie=o(se);i(ie,{children:(t,s)=>{n();var e=Oe(),l=o(g(e));$(l,{content:"main.py"}),n(),r(t,e)},$$slots:{default:!0}});var le=o(ie);w(le,{content:`import os
 import json
 import numpy as np
 import tensorflow as tf
 from PIL import Image
 from io import BytesIO
-from backrush.client import Client
-from backrush.services.storage import Storage
+from appwrite.client import Client
+from appwrite.services.storage import Storage
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 TF_MODEL_FILE_PATH = os.path.join(script_dir, 'model.tflite')
@@ -181,12 +181,12 @@ def main(context):
 
     client = (
         Client()
-        .set_endpoint("https://<REGION>.cloud.backrush.io/v1")
-        .set_project(os.environ["BACKRUSH_FUNCTION_PROJECT_ID"])
-        .set_key(os.environ["BACKRUSH_API_KEY"])
+        .set_endpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .set_project(os.environ["APPWRITE_FUNCTION_PROJECT_ID"])
+        .set_key(os.environ["APPWRITE_API_KEY"])
     )
 
-    bucketId = os.environ["BACKRUSH_BUCKET_ID"]
+    bucketId = os.environ["APPWRITE_BUCKET_ID"]
 
     storage = Storage(client)
 
@@ -222,8 +222,8 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 from io import BytesIO
-from backrush.client import Client
-from backrush.services.storage import Storage
+from appwrite.client import Client
+from appwrite.services.storage import Storage
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 TF_MODEL_FILE_PATH = os.path.join(script_dir, 'model.tflite')
@@ -247,12 +247,12 @@ def main(context):
 
     client = (
         Client()
-        .set_endpoint("https://<REGION>.cloud.backrush.io/v1")
-        .set_project(os.environ["BACKRUSH_FUNCTION_PROJECT_ID"])
-        .set_key(os.environ["BACKRUSH_API_KEY"])
+        .set_endpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .set_project(os.environ["APPWRITE_FUNCTION_PROJECT_ID"])
+        .set_key(os.environ["APPWRITE_API_KEY"])
     )
 
-    bucketId = os.environ["BACKRUSH_BUCKET_ID"]
+    bucketId = os.environ["APPWRITE_BUCKET_ID"]
 
     storage = Storage(client)
 
@@ -288,5 +288,5 @@ Pillow
 `,language:"text",process:!0,children:(t,s)=>{n();var e=a(`tensorflow
 appwrite
 numpy
-Pillow`);r(t,e)},$$slots:{default:!0}});var pe=o(ce);p(pe,{level:3,children:(t,s)=>{n();var e=a("Step 4: Deploy your function");r(t,e)},$$slots:{default:!0}});var ue=o(pe);i(ue,{children:(t,s)=>{n();var e=Ue(),l=o(g(e));$(l,{content:"model.tflite"});var d=o(l,2);$(d,{content:"main.py"});var h=o(d,2);$(h,{content:"backrush.json"});var c=o(h,2);$(c,{content:"model.tflite"});var f=o(c,2);$(f,{content:"getFileDownload"}),n(),r(t,e)},$$slots:{default:!0}});var he=o(ue);i(he,{children:(t,s)=>{n();var e=a("With the file now copied, run backrush deploy function and select the function to deploy it to Backrush.");r(t,e)},$$slots:{default:!0}});var me=o(he);p(me,{level:3,children:(t,s)=>{n();var e=a("Step 5: Update your environment variables");r(t,e)},$$slots:{default:!0}});var fe=o(me);i(fe,{children:(t,s)=>{n();var e=je(),l=o(g(e));$(l,{content:"BACKRUSH_API_KEY"});var d=o(l,2);$(d,{content:"BACKRUSH_BUCKET_ID"}),n(),r(t,e)},$$slots:{default:!0}});var _e=o(fe);p(_e,{level:3,children:(t,s)=>{n();var e=a("Step 6: Test your function");r(t,e)},$$slots:{default:!0}});var ge=o(_e);i(ge,{children:(t,s)=>{n();var e=Me(),l=o(g(e));$(l,{content:"POST"}),n(),r(t,e)},$$slots:{default:!0}});var $e=o(ge);w($e,{content:`{"$id": "66503a9e00246481a92c"}
-`,language:"json",process:!0,children:(t,s)=>{n();var e=a('{"$id": "66503a9e00246481a92c"}');r(t,e)},$$slots:{default:!0}});var ve=o($e);i(ve,{children:(t,s)=>{n();var e=a("The classification result will be returned shortly as a response. This function can also accept a file event. To build on this function, you may want to upload the result to the database to identify images uploaded to your instance automatically.");r(t,e)},$$slots:{default:!0}});var we=o(ve);p(we,{level:1,children:(t,s)=>{n();var e=a("Conclusion");r(t,e)},$$slots:{default:!0}});var ye=o(we);i(ye,{children:(t,s)=>{n();var e=qe(),l=o(g(e));u(l,{href:"https://backrush.io/discord",children:(d,h)=>{n();var c=a("Discord server");r(d,c)},$$slots:{default:!0}}),n(),r(t,e)},$$slots:{default:!0}});var Pe=o(ye);i(Pe,{children:(t,s)=>{n();var e=a("Check out the resources below to learn how to integrate AI into your Backrush-powered application. We can’t wait to see what you build!");r(t,e)},$$slots:{default:!0}});var Ce=o(Pe);Ee(Ce,{ordered:!1,marker:"-",children:(t,s)=>{var e=Ve(),l=g(e);P(l,{children:(c,f)=>{u(c,{href:"https://backrush.io/docs/products/ai",children:(_,be)=>{n();var v=a("Backrush AI integrations documentation");r(_,v)},$$slots:{default:!0}})},$$slots:{default:!0}});var d=o(l);P(d,{children:(c,f)=>{u(c,{href:"https://backrush.io/blog/post/personal-chatbot-gpt-4o",children:(_,be)=>{n();var v=a("Build an intelligent chatbot with GPT-4o and Backrush Functions");r(_,v)},$$slots:{default:!0}})},$$slots:{default:!0}});var h=o(d);P(h,{children:(c,f)=>{u(c,{href:"https://backrush.io/blog/post/building-with-ai-function-templates",children:(_,be)=>{n();var v=a("Learn how to build with Backrush AI Function templates");r(_,v)},$$slots:{default:!0}})},$$slots:{default:!0}}),r(t,e)},$$slots:{default:!0}}),ke(y),r(Ie,y)},$$slots:{default:!0}}))}const ht=Object.freeze(Object.defineProperty({__proto__:null,default:We,frontmatter:xe},Symbol.toStringTag,{value:"Module"}));export{ht as _,We as a};
+Pillow`);r(t,e)},$$slots:{default:!0}});var pe=o(ce);p(pe,{level:3,children:(t,s)=>{n();var e=a("Step 4: Deploy your function");r(t,e)},$$slots:{default:!0}});var ue=o(pe);i(ue,{children:(t,s)=>{n();var e=Ue(),l=o(g(e));$(l,{content:"model.tflite"});var d=o(l,2);$(d,{content:"main.py"});var h=o(d,2);$(h,{content:"appwrite.json"});var c=o(h,2);$(c,{content:"model.tflite"});var f=o(c,2);$(f,{content:"getFileDownload"}),n(),r(t,e)},$$slots:{default:!0}});var he=o(ue);i(he,{children:(t,s)=>{n();var e=a("With the file now copied, run appwrite deploy function and select the function to deploy it to Backrush.");r(t,e)},$$slots:{default:!0}});var me=o(he);p(me,{level:3,children:(t,s)=>{n();var e=a("Step 5: Update your environment variables");r(t,e)},$$slots:{default:!0}});var fe=o(me);i(fe,{children:(t,s)=>{n();var e=je(),l=o(g(e));$(l,{content:"APPWRITE_API_KEY"});var d=o(l,2);$(d,{content:"APPWRITE_BUCKET_ID"}),n(),r(t,e)},$$slots:{default:!0}});var _e=o(fe);p(_e,{level:3,children:(t,s)=>{n();var e=a("Step 6: Test your function");r(t,e)},$$slots:{default:!0}});var ge=o(_e);i(ge,{children:(t,s)=>{n();var e=Me(),l=o(g(e));$(l,{content:"POST"}),n(),r(t,e)},$$slots:{default:!0}});var $e=o(ge);w($e,{content:`{"$id": "66503a9e00246481a92c"}
+`,language:"json",process:!0,children:(t,s)=>{n();var e=a('{"$id": "66503a9e00246481a92c"}');r(t,e)},$$slots:{default:!0}});var ve=o($e);i(ve,{children:(t,s)=>{n();var e=a("The classification result will be returned shortly as a response. This function can also accept a file event. To build on this function, you may want to upload the result to the database to identify images uploaded to your instance automatically.");r(t,e)},$$slots:{default:!0}});var we=o(ve);p(we,{level:1,children:(t,s)=>{n();var e=a("Conclusion");r(t,e)},$$slots:{default:!0}});var ye=o(we);i(ye,{children:(t,s)=>{n();var e=qe(),l=o(g(e));u(l,{href:"https://appwrite.io/discord",children:(d,h)=>{n();var c=a("Discord server");r(d,c)},$$slots:{default:!0}}),n(),r(t,e)},$$slots:{default:!0}});var Pe=o(ye);i(Pe,{children:(t,s)=>{n();var e=a("Check out the resources below to learn how to integrate AI into your Backrush-powered application. We can’t wait to see what you build!");r(t,e)},$$slots:{default:!0}});var Ce=o(Pe);Ee(Ce,{ordered:!1,marker:"-",children:(t,s)=>{var e=Ve(),l=g(e);P(l,{children:(c,f)=>{u(c,{href:"https://appwrite.io/docs/products/ai",children:(_,be)=>{n();var v=a("Backrush AI integrations documentation");r(_,v)},$$slots:{default:!0}})},$$slots:{default:!0}});var d=o(l);P(d,{children:(c,f)=>{u(c,{href:"https://appwrite.io/blog/post/personal-chatbot-gpt-4o",children:(_,be)=>{n();var v=a("Build an intelligent chatbot with GPT-4o and Backrush Functions");r(_,v)},$$slots:{default:!0}})},$$slots:{default:!0}});var h=o(d);P(h,{children:(c,f)=>{u(c,{href:"https://appwrite.io/blog/post/building-with-ai-function-templates",children:(_,be)=>{n();var v=a("Learn how to build with Backrush AI Function templates");r(_,v)},$$slots:{default:!0}})},$$slots:{default:!0}}),r(t,e)},$$slots:{default:!0}}),ke(y),r(Ie,y)},$$slots:{default:!0}}))}const ht=Object.freeze(Object.defineProperty({__proto__:null,default:We,frontmatter:xe},Symbol.toStringTag,{value:"Module"}));export{ht as _,We as a};

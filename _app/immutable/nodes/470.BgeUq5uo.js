@@ -1,7 +1,7 @@
-import{t as D,b as i,a as t}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6l.js";import{s as n,f as I,c as N,n as r,r as S}from"../chunks/NgVQVlRK.js";import{n as q}from"../chunks/B4IyMRKX.js";import{H as w}from"../chunks/CXsRaEhZ.js";import{M as L}from"../chunks/hMT8fFzP.js";import"../chunks/NwRJ91PD.js";/* empty css                */import"../chunks/BZUG4Puk.js";/* empty css                */import"../chunks/D9bBQFLV.js";import{C as _}from"../chunks/DXp9_3zM.js";import{F as c}from"../chunks/OFUKRh55.js";import"../chunks/POtwinrL.js";import"../chunks/CbbZjpT6.js";/* empty css                */import{P as y}from"../chunks/D8YsId2T.js";import{L as T}from"../chunks/yh4_9ChP.js";import{A as B}from"../chunks/CqOphJLh.js";const R={layout:"article",title:"Order",description:'Understand how to do data ordering in Backrush Databases. Learn how to order and sort your database records for efficient data retrieval."'};var j=D("You can order results returned by Backrush Databases by using an order query. For best performance, create an <!> on the column you plan to order by.",1),G=D("When querying using the <!> endpoint, you can specify the order of the documents returned using the <!> and <!> query methods.",1),J=D("<!><!><!><!><!>",1),K=D("In the example below, the movies returned will be first sorted by <!> in ascending order, then sorted by <!> in descending order.",1),k=D("<!><!><!><!><!>",1),F=D("<article><!><!><!><!><!><!><!><!></article>");function pe(x){B(x,q(R,{children:(P,M)=>{var $=F(),f=N($);y(f,{children:(o,b)=>{r();var a=j(),d=n(I(a));T(d,{href:"/docs/products/databases/collections#indexes",children:(l,m)=>{r();var p=i("index");t(l,p)},$$slots:{default:!0}}),r(),t(o,a)},$$slots:{default:!0}});var v=n(f);w(v,{id:"one-column",level:1,children:(o,b)=>{r();var a=i("Ordering one column");t(o,a)},$$slots:{default:!0}});var g=n(v);y(g,{children:(o,b)=>{r();var a=G(),d=n(I(a));T(d,{href:"/docs/references/cloud/client-web/databases#listDocuments",children:(p,A)=>{r();var e=i("listDocuments");t(p,e)},$$slots:{default:!0}});var l=n(d,2);_(l,{content:"Query.orderAsc()"});var m=n(l,2);_(m,{content:"Query.orderDesc()"}),r(),t(o,a)},$$slots:{default:!0}});var E=n(g);L(E,{children:(o,b)=>{var a=J(),d=I(a);c(d,{content:`import { Client, Databases, Query } from 'backrush';
+import{t as D,b as i,a as t}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6l.js";import{s as n,f as I,c as N,n as r,r as S}from"../chunks/NgVQVlRK.js";import{n as q}from"../chunks/B4IyMRKX.js";import{H as w}from"../chunks/CXsRaEhZ.js";import{M as L}from"../chunks/hMT8fFzP.js";import"../chunks/NwRJ91PD.js";/* empty css                */import"../chunks/BZUG4Puk.js";/* empty css                */import"../chunks/D9bBQFLV.js";import{C as _}from"../chunks/DXp9_3zM.js";import{F as c}from"../chunks/OFUKRh55.js";import"../chunks/POtwinrL.js";import"../chunks/CbbZjpT6.js";/* empty css                */import{P as y}from"../chunks/D8YsId2T.js";import{L as T}from"../chunks/yh4_9ChP.js";import{A as B}from"../chunks/CqOphJLh.js";const R={layout:"article",title:"Order",description:'Understand how to do data ordering in Backrush Databases. Learn how to order and sort your database records for efficient data retrieval."'};var j=D("You can order results returned by Backrush Databases by using an order query. For best performance, create an <!> on the column you plan to order by.",1),G=D("When querying using the <!> endpoint, you can specify the order of the documents returned using the <!> and <!> query methods.",1),J=D("<!><!><!><!><!>",1),K=D("In the example below, the movies returned will be first sorted by <!> in ascending order, then sorted by <!> in descending order.",1),k=D("<!><!><!><!><!>",1),F=D("<article><!><!><!><!><!><!><!><!></article>");function pe(x){B(x,q(R,{children:(P,M)=>{var $=F(),f=N($);y(f,{children:(o,b)=>{r();var a=j(),d=n(I(a));T(d,{href:"/docs/products/databases/collections#indexes",children:(l,m)=>{r();var p=i("index");t(l,p)},$$slots:{default:!0}}),r(),t(o,a)},$$slots:{default:!0}});var v=n(f);w(v,{id:"one-column",level:1,children:(o,b)=>{r();var a=i("Ordering one column");t(o,a)},$$slots:{default:!0}});var g=n(v);y(g,{children:(o,b)=>{r();var a=G(),d=n(I(a));T(d,{href:"/docs/references/cloud/client-web/databases#listDocuments",children:(p,A)=>{r();var e=i("listDocuments");t(p,e)},$$slots:{default:!0}});var l=n(d,2);_(l,{content:"Query.orderAsc()"});var m=n(l,2);_(m,{content:"Query.orderDesc()"}),r(),t(o,a)},$$slots:{default:!0}});var E=n(g);L(E,{children:(o,b)=>{var a=J(),d=I(a);c(d,{content:`import { Client, Databases, Query } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
     .setProject('<PROJECT_ID>');
 
 const databases = new Databases(client);
@@ -13,10 +13,10 @@ databases.listDocuments(
         Query.orderAsc('title'),
     ]
 );
-`,language:"client-web",process:!0,children:(e,u)=>{r();var s=i(`import { Client, Databases, Query } from 'backrush';
+`,language:"client-web",process:!0,children:(e,u)=>{r();var s=i(`import { Client, Databases, Query } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
     .setProject('<PROJECT_ID>');
 
 const databases = new Databases(client);
@@ -27,11 +27,11 @@ databases.listDocuments(
     [
         Query.orderAsc('title'),
     ]
-);`);t(e,s)},$$slots:{default:!0}});var l=n(d);c(l,{content:`import 'package:backrush/backrush.dart';
+);`);t(e,s)},$$slots:{default:!0}});var l=n(d);c(l,{content:`import 'package:appwrite/appwrite.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
+        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
         .setProject('<PROJECT_ID>');
 
     final databases = Databases(client);
@@ -48,11 +48,11 @@ void main() async {
         print(e);
     }
 }
-`,language:"client-flutter",process:!0,children:(e,u)=>{r();var s=i(`import 'package:backrush/backrush.dart';
+`,language:"client-flutter",process:!0,children:(e,u)=>{r();var s=i(`import 'package:appwrite/appwrite.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
+        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
         .setProject('<PROJECT_ID>');
 
     final databases = Databases(client);
@@ -73,7 +73,7 @@ import BackrushModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
+        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
         .setProject('<PROJECT_ID>');
 
     let databases = Databases(client)
@@ -95,7 +95,7 @@ import BackrushModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
+        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
         .setProject('<PROJECT_ID>');
 
     let databases = Databases(client)
@@ -111,13 +111,13 @@ func main() async throws {
     } catch {
         print(error.localizedDescription)
     }
-}`);t(e,s)},$$slots:{default:!0}});var p=n(m);c(p,{content:`import io.backrush.Client
-import io.backrush.Query
-import io.backrush.services.Databases
+}`);t(e,s)},$$slots:{default:!0}});var p=n(m);c(p,{content:`import io.appwrite.Client
+import io.appwrite.Query
+import io.appwrite.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
+        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
         .setProject('<PROJECT_ID>');
 
     val databases = Databases(client)
@@ -134,13 +134,13 @@ suspend fun main() {
         Log.e("Backrush", e.message)
     }
 }
-`,language:"client-android-kotlin",process:!0,children:(e,u)=>{r();var s=i(`import io.backrush.Client
-import io.backrush.Query
-import io.backrush.services.Databases
+`,language:"client-android-kotlin",process:!0,children:(e,u)=>{r();var s=i(`import io.appwrite.Client
+import io.appwrite.Query
+import io.appwrite.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint('https://<REGION>.cloud.backrush.io/v1')
+        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
         .setProject('<PROJECT_ID>');
 
     val databases = Databases(client)

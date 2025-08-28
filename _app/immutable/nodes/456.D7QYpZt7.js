@@ -1,7 +1,7 @@
-import{t as i,b as o,a as t}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6l.js";import{c as ut,s as n,f as s,n as e,r as pt}from"../chunks/NgVQVlRK.js";import{n as dt}from"../chunks/B4IyMRKX.js";import{S as K}from"../chunks/B6JyFckC.js";import{M as Z}from"../chunks/hMT8fFzP.js";import{T as ot,a as J}from"../chunks/BHbEtIoO.js";/* empty css                */import{A as mt,a as at}from"../chunks/ftq6Xrtz.js";import"../chunks/BZUG4Puk.js";/* empty css                */import"../chunks/D9bBQFLV.js";import{C as y}from"../chunks/DXp9_3zM.js";import{F as p}from"../chunks/OFUKRh55.js";import"../chunks/NwRJ91PD.js";import"../chunks/POtwinrL.js";import"../chunks/CbbZjpT6.js";/* empty css                */import{P as g}from"../chunks/D8YsId2T.js";import{S as vt}from"../chunks/yHjwcyUH.js";import{L as M}from"../chunks/yh4_9ChP.js";import{A as gt}from"../chunks/CqOphJLh.js";const ft={layout:"article",title:"Start with Authentication",description:"Effortlessly add authentication to your apps - simple signup & login in just minutes with Backrush Authentication"};var ht=i("You can use the Backrush <!> to create an account using email and password.",1),$t=i("<!><!><!><!><!><!>",1),_t=i("<!><!>",1),wt=i("After you&#39;ve created your account, users can be logged in using the <!> method.",1),Pt=i("<!><!><!><!><!><!>",1),At=i("<!><!>",1),xt=i("Backrush&#39;s SDKs are stateless, so you need to manage the session state in your app. You can use the <!> method to check if the user is logged in.",1),St=i("<!><!><!><!><!><!>",1),bt=i("<!><!><!>",1),It=i("A common pattern is to use route guards to redirect users to the login page if they are not authenticated. You can check the authentication state on app launch and before entering a protected route by calling <!>.",1),Ct=i("Route guard implementations are <!> and depend on the platform and frame you are using. Take a look at some example usages from different platforms as inspiration.",1),yt=i("You can use <!> to check if the user is logged in before rendering a route.",1),Et=i("You can find a similar example in this <!>.",1),Rt=i("<!><!><!>",1),kt=i("You can use <!> wiht a <!> to check if the user is logged in before rendering a route.",1),Nt=i("<!><!><!><!><!>",1),Lt=i("In the root level <!> file, you can check the authentication state before rendering a route.",1),Dt=i("This will be accessible in the <!> function of each child route.",1),Ot=i("<!><!><!><!>",1),Ut=i("<!><!><!><!>",1),Tt=i("<!><!>",1),jt=i("First, create a <!> to manage the authentication state.",1),Gt=i("<!><!><!><!><!>",1),Yt=i("For Apple platforms, this example uses a <!> but you can use similar concepts with other navigation methods.",1),Mt=i("Initialize Backrush and create an <!>.",1),Bt=i("On launch, you can display a <!> while you verify the authentication state.",1),Jt=i("<!><!><!><!><!><!><!>",1),qt=i("Create some Backrush Service, for example, <!> to manage the authentication state. You can find a version of this example in the <!>.",1),Vt=i("Wrap your routes in some view, for example, <!>, to check the authentication state before rendering a route.",1),Ft=i("In the <!> class, initialize the Backrush service and display the <!> based on the authentication state.",1),Wt=i("<!><!><!><!><!><!><!><!>",1),zt=i("This example will use <!> and <!> to manage the authentication state and redirect users to the login page if they are not authenticated. You can find a version of this example in the <!>.",1),Kt=i("Create a <!> to manage the authentication state.",1),Qt=i("Then, consume the <!> in your <!> component to check the authentication state before rendering a route.",1),Ht=i("<!><!><!><!><!>",1),Xt=i("<!><!><!><!>",1),Zt=i("<!><!>",1),te=i("<!><!>",1),ee=i("<!><!><!>",1),ne=i("<article><!><!><!><!><!></article>");function Ce(it){gt(it,dt(ft,{children:(st,re)=>{var Q=ne(),tt=ut(Q);g(tt,{children:(j,z)=>{e();var L=o("You can get up and running with Backrush Authentication in minutes. You can add basic email and password authentication to your app with just a few lines of code.");t(j,L)},$$slots:{default:!0}});var et=n(tt);K(et,{id:"sign-up",step:1,title:"Signup",children:(j,z)=>{var L=_t(),O=s(L);g(O,{children:(U,E)=>{e();var I=ht(),h=n(s(I));M(h,{href:"/docs/sdks#client",children:(A,C)=>{e();var b=o("Client SDKs");t(A,b)},$$slots:{default:!0}}),e(),t(U,I)},$$slots:{default:!0}});var G=n(O);Z(G,{children:(U,E)=>{var I=$t(),h=s(I);p(h,{content:`import { Client, Account, ID } from 'backrush';
+import{t as i,b as o,a as t}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6l.js";import{c as ut,s as n,f as s,n as e,r as pt}from"../chunks/NgVQVlRK.js";import{n as dt}from"../chunks/B4IyMRKX.js";import{S as K}from"../chunks/B6JyFckC.js";import{M as Z}from"../chunks/hMT8fFzP.js";import{T as ot,a as J}from"../chunks/BHbEtIoO.js";/* empty css                */import{A as mt,a as at}from"../chunks/ftq6Xrtz.js";import"../chunks/BZUG4Puk.js";/* empty css                */import"../chunks/D9bBQFLV.js";import{C as y}from"../chunks/DXp9_3zM.js";import{F as p}from"../chunks/OFUKRh55.js";import"../chunks/NwRJ91PD.js";import"../chunks/POtwinrL.js";import"../chunks/CbbZjpT6.js";/* empty css                */import{P as g}from"../chunks/D8YsId2T.js";import{S as vt}from"../chunks/yHjwcyUH.js";import{L as M}from"../chunks/yh4_9ChP.js";import{A as gt}from"../chunks/CqOphJLh.js";const ft={layout:"article",title:"Start with Authentication",description:"Effortlessly add authentication to your apps - simple signup & login in just minutes with Backrush Authentication"};var ht=i("You can use the Backrush <!> to create an account using email and password.",1),$t=i("<!><!><!><!><!><!>",1),_t=i("<!><!>",1),wt=i("After you&#39;ve created your account, users can be logged in using the <!> method.",1),Pt=i("<!><!><!><!><!><!>",1),At=i("<!><!>",1),xt=i("Backrush&#39;s SDKs are stateless, so you need to manage the session state in your app. You can use the <!> method to check if the user is logged in.",1),St=i("<!><!><!><!><!><!>",1),bt=i("<!><!><!>",1),It=i("A common pattern is to use route guards to redirect users to the login page if they are not authenticated. You can check the authentication state on app launch and before entering a protected route by calling <!>.",1),Ct=i("Route guard implementations are <!> and depend on the platform and frame you are using. Take a look at some example usages from different platforms as inspiration.",1),yt=i("You can use <!> to check if the user is logged in before rendering a route.",1),Et=i("You can find a similar example in this <!>.",1),Rt=i("<!><!><!>",1),kt=i("You can use <!> wiht a <!> to check if the user is logged in before rendering a route.",1),Nt=i("<!><!><!><!><!>",1),Lt=i("In the root level <!> file, you can check the authentication state before rendering a route.",1),Dt=i("This will be accessible in the <!> function of each child route.",1),Ot=i("<!><!><!><!>",1),Ut=i("<!><!><!><!>",1),Tt=i("<!><!>",1),jt=i("First, create a <!> to manage the authentication state.",1),Gt=i("<!><!><!><!><!>",1),Yt=i("For Apple platforms, this example uses a <!> but you can use similar concepts with other navigation methods.",1),Mt=i("Initialize Backrush and create an <!>.",1),Bt=i("On launch, you can display a <!> while you verify the authentication state.",1),Jt=i("<!><!><!><!><!><!><!>",1),qt=i("Create some Backrush Service, for example, <!> to manage the authentication state. You can find a version of this example in the <!>.",1),Vt=i("Wrap your routes in some view, for example, <!>, to check the authentication state before rendering a route.",1),Ft=i("In the <!> class, initialize the Backrush service and display the <!> based on the authentication state.",1),Wt=i("<!><!><!><!><!><!><!><!>",1),zt=i("This example will use <!> and <!> to manage the authentication state and redirect users to the login page if they are not authenticated. You can find a version of this example in the <!>.",1),Kt=i("Create a <!> to manage the authentication state.",1),Qt=i("Then, consume the <!> in your <!> component to check the authentication state before rendering a route.",1),Ht=i("<!><!><!><!><!>",1),Xt=i("<!><!><!><!>",1),Zt=i("<!><!>",1),te=i("<!><!>",1),ee=i("<!><!><!>",1),ne=i("<article><!><!><!><!><!></article>");function Ce(it){gt(it,dt(ft,{children:(st,re)=>{var Q=ne(),tt=ut(Q);g(tt,{children:(j,z)=>{e();var L=o("You can get up and running with Backrush Authentication in minutes. You can add basic email and password authentication to your app with just a few lines of code.");t(j,L)},$$slots:{default:!0}});var et=n(tt);K(et,{id:"sign-up",step:1,title:"Signup",children:(j,z)=>{var L=_t(),O=s(L);g(O,{children:(U,E)=>{e();var I=ht(),h=n(s(I));M(h,{href:"/docs/sdks#client",children:(A,C)=>{e();var b=o("Client SDKs");t(A,b)},$$slots:{default:!0}}),e(),t(U,I)},$$slots:{default:!0}});var G=n(O);Z(G,{children:(U,E)=>{var I=$t(),h=s(I);p(h,{content:`import { Client, Account, ID } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const account = new Account(client);
@@ -11,10 +11,10 @@ const user = await account.create(
     'email@example.com', 
     'password'
 );
-`,language:"client-web",process:!0,children:(m,f)=>{e();var c=o(`import { Client, Account, ID } from 'backrush';
+`,language:"client-web",process:!0,children:(m,f)=>{e();var c=o(`import { Client, Account, ID } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const account = new Account(client);
@@ -23,10 +23,10 @@ const user = await account.create(
     ID.unique(), 
     'email@example.com', 
     'password'
-);`);t(m,c)},$$slots:{default:!0}});var A=n(h);p(A,{content:`import 'package:backrush/backrush.dart';
+);`);t(m,c)},$$slots:{default:!0}});var A=n(h);p(A,{content:`import 'package:appwrite/appwrite.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 final account = Account(client);
@@ -36,10 +36,10 @@ final user = await account.create(
     email: 'email@example.com',
     password: 'password',
 );
-`,language:"client-flutter",process:!0,children:(m,f)=>{e();var c=o(`import 'package:backrush/backrush.dart';
+`,language:"client-flutter",process:!0,children:(m,f)=>{e();var c=o(`import 'package:appwrite/appwrite.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 final account = Account(client);
@@ -51,7 +51,7 @@ final user = await account.create(
 );`);t(m,c)},$$slots:{default:!0}});var C=n(A);p(C,{content:`import Backrush
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 let account = Account(client)
@@ -64,7 +64,7 @@ let user = try await account.create(
 `,language:"client-apple",process:!0,children:(m,f)=>{e();var c=o(`import Backrush
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 let account = Account(client)
@@ -73,12 +73,12 @@ let user = try await account.create(
     userId: ID.unique(),
     email: "email@example.com",
     password: "password"
-)`);t(m,c)},$$slots:{default:!0}});var b=n(C);p(b,{content:`import io.backrush.Client
-import io.backrush.services.Account
-import io.backrush.ID
+)`);t(m,c)},$$slots:{default:!0}});var b=n(C);p(b,{content:`import io.appwrite.Client
+import io.appwrite.services.Account
+import io.appwrite.ID
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 val account = Account(client)
@@ -88,12 +88,12 @@ val user = account.create(
     email = "email@example.com",
     password = "password"
 )
-`,language:"client-android-kotlin",process:!0,children:(m,f)=>{e();var c=o(`import io.backrush.Client
-import io.backrush.services.Account
-import io.backrush.ID
+`,language:"client-android-kotlin",process:!0,children:(m,f)=>{e();var c=o(`import io.appwrite.Client
+import io.appwrite.services.Account
+import io.appwrite.ID
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 val account = Account(client)
@@ -115,9 +115,9 @@ val user = account.create(
         email
         name
     }
-}`);t(m,c)},$$slots:{default:!0}});var D=n(N);p(D,{content:`import { Client, Account, ID } from 'backrush';
+}`);t(m,c)},$$slots:{default:!0}});var D=n(N);p(D,{content:`import { Client, Account, ID } from "appwrite";
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const account = new Account(client);
@@ -127,9 +127,9 @@ const user = await account.create(
     'email@example.com', 
     'password'
 );
-`,language:"client-react-native",process:!0,children:(m,f)=>{e();var c=o(`import { Client, Account, ID } from 'backrush';
+`,language:"client-react-native",process:!0,children:(m,f)=>{e();var c=o(`import { Client, Account, ID } from "appwrite";
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const account = new Account(client);
@@ -290,7 +290,7 @@ import "./index.css";
 
 import Login from "./Login";
 import Protected from "./Protected";
-import { account } from "./lib/backrush";
+import { account } from "./lib/appwrite";
 import { redirect } from "react-router-dom";
 
 
@@ -325,7 +325,7 @@ import "./index.css";
 
 import Login from "./Login";
 import Protected from "./Protected";
-import { account } from "./lib/backrush";
+import { account } from "./lib/appwrite";
 import { redirect } from "react-router-dom";
 
 
@@ -351,7 +351,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;`);t(w,a)},$$slots:{default:!0}}),t(k,$)},$$slots:{default:!0}});var F=n(V);J(F,{id:"vue-router",title:"Vue router",children:(k,q)=>{var $=Nt(),x=s($);g(x,{children:(a,d)=>{e();var r=kt(),l=n(s(r));M(l,{href:"https://router.vuejs.org/",children:(v,T)=>{e();var B=o("Vue router");t(v,B)},$$slots:{default:!0}});var u=n(l,2);M(u,{href:"https://pinia.vuejs.org/",children:(v,T)=>{e();var B=o("Pinia store");t(v,B)},$$slots:{default:!0}}),e(),t(a,r)},$$slots:{default:!0}});var _=n(x);g(_,{children:(a,d)=>{e();var r=o("First, create a simple Pinia store to manage the authentication state.");t(a,r)},$$slots:{default:!0}});var S=n(_);p(S,{content:`import { account, ID, type Models } from '@/lib/backrush'
+export default router;`);t(w,a)},$$slots:{default:!0}}),t(k,$)},$$slots:{default:!0}});var F=n(V);J(F,{id:"vue-router",title:"Vue router",children:(k,q)=>{var $=Nt(),x=s($);g(x,{children:(a,d)=>{e();var r=kt(),l=n(s(r));M(l,{href:"https://router.vuejs.org/",children:(v,T)=>{e();var B=o("Vue router");t(v,B)},$$slots:{default:!0}});var u=n(l,2);M(u,{href:"https://pinia.vuejs.org/",children:(v,T)=>{e();var B=o("Pinia store");t(v,B)},$$slots:{default:!0}}),e(),t(a,r)},$$slots:{default:!0}});var _=n(x);g(_,{children:(a,d)=>{e();var r=o("First, create a simple Pinia store to manage the authentication state.");t(a,r)},$$slots:{default:!0}});var S=n(_);p(S,{content:`import { account, ID, type Models } from '@/lib/appwrite'
 import type { register } from 'module';
 import { defineStore } from 'pinia'
 
@@ -377,7 +377,7 @@ getters: {
     // ... other operations
   },
 })
-`,language:"client-web",process:!0,children:(a,d)=>{e();var r=o(`import { account, ID, type Models } from '@/lib/backrush'
+`,language:"client-web",process:!0,children:(a,d)=>{e();var r=o(`import { account, ID, type Models } from '@/lib/appwrite'
 import type { register } from 'module';
 import { defineStore } from 'pinia'
 
@@ -455,7 +455,7 @@ auth.init().then(() => {
 import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
 import { Observable, from, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
-import { account } from './lib/backrush';
+import { account } from './lib/appwrite';
 
 @Injectable({
   providedIn: 'root'
@@ -483,7 +483,7 @@ export class AuthGuardGuard implements CanActivate {
 import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
 import { Observable, from, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
-import { account } from './lib/backrush';
+import { account } from './lib/appwrite';
 
 @Injectable({
   providedIn: 'root'
@@ -507,7 +507,7 @@ export class AuthGuardGuard implements CanActivate {
     );
   }
 }`);t($,_)},$$slots:{default:!0}})},$$slots:{default:!0}});var H=n(W);J(H,{id:"svelte",title:"Svelte",children:(k,q)=>{var $=Ot(),x=s($);g(x,{children:(P,a)=>{e();var d=Lt(),r=n(s(d));y(r,{content:"+layout.svelte"}),e(),t(P,d)},$$slots:{default:!0}});var _=n(x);p(_,{content:`// src/routes/+layout.js
-import { backrush } from "$lib/backrush";
+import { appwrite } from "$lib/appwrite";
 
 // Turn off SSR globally, turning the project into a static site
 export const ssr = false;
@@ -515,7 +515,7 @@ export const ssr = false;
 export const load = async () => {
   try {
     return {
-      account: await backrush.account.get(),
+      account: await appwrite.account.get(),
     };
   } catch {
     return {
@@ -524,7 +524,7 @@ export const load = async () => {
   }
 };
 `,language:"client-web",process:!0,children:(P,a)=>{e();var d=o(`// src/routes/+layout.js
-import { backrush } from "$lib/backrush";
+import { appwrite } from "$lib/appwrite";
 
 // Turn off SSR globally, turning the project into a static site
 export const ssr = false;
@@ -532,7 +532,7 @@ export const ssr = false;
 export const load = async () => {
   try {
     return {
-      account: await backrush.account.get(),
+      account: await appwrite.account.get(),
     };
   } catch {
     return {
@@ -559,9 +559,9 @@ export async function load({ parent }) {
 		throw redirect(303, '/login');
 	}
 }`);t(P,d)},$$slots:{default:!0}}),t(k,$)},$$slots:{default:!0}}),t(c,Y)},$$slots:{default:!0}}),t(b,D)}});var C=n(A);at(C,{title:"Mobile and native",children:(b,N)=>{var D=Zt(),m=s(D);g(m,{children:(c,R)=>{e();var Y=o("With mobile apps, you can apply similar logic to check the authentication state before displaying a screen or view.");t(c,Y)},$$slots:{default:!0}});var f=n(m);ot(f,{children:(c,R)=>{var Y=Xt(),V=s(Y);J(V,{id:"flutter-go-router",title:"Flutter Go router",children:(k,q)=>{var $=Gt(),x=s($);g(x,{children:(a,d)=>{e();var r=o("This example uses the Flutter Go router as an example, but the same concepts apply to other routing libraries.");t(a,r)},$$slots:{default:!0}});var _=n(x);g(_,{children:(a,d)=>{e();var r=jt(),l=n(s(r));y(l,{content:"ChangeNotifier"}),e(),t(a,r)},$$slots:{default:!0}});var S=n(_);p(S,{content:`import 'package:flutter/material.dart';
-import 'package:backrush/backrush.dart' show Client, ID;
-import 'package:backrush/backrush.dart' as Backrush;
-import 'package:backrush/models.dart' show User;
+import 'package:appwrite/appwrite.dart' show Client, ID;
+import 'package:appwrite/appwrite.dart' as Backrush;
+import 'package:appwrite/models.dart' show User;
 
 class Account extends ChangeNotifier {
   final Backrush.Account _account;
@@ -584,9 +584,9 @@ class Account extends ChangeNotifier {
   // ... other operations
 }
 `,language:"client-flutter",process:!0,children:(a,d)=>{e();var r=o(`import 'package:flutter/material.dart';
-import 'package:backrush/backrush.dart' show Client, ID;
-import 'package:backrush/backrush.dart' as Backrush;
-import 'package:backrush/models.dart' show User;
+import 'package:appwrite/appwrite.dart' show Client, ID;
+import 'package:appwrite/appwrite.dart' as Backrush;
+import 'package:appwrite/models.dart' show User;
 
 class Account extends ChangeNotifier {
   final Backrush.Account _account;
@@ -678,7 +678,7 @@ class Backrush {
 
     public init() {
         self.client = Client()
-            .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
+            .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
             .setProject("<PROJECT_ID>")
         
         self.account = Account(client)
@@ -704,7 +704,7 @@ class Backrush {
 
     public init() {
         self.client = Client()
-            .setEndpoint("https://<REGION>.cloud.backrush.io/v1")
+            .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
             .setProject("<PROJECT_ID>")
         
         self.account = Account(client)
@@ -795,7 +795,7 @@ struct SplashView: View {
 }`);t(r,u)},$$slots:{default:!0}}),t(k,$)},$$slots:{default:!0}});var W=n(F);J(W,{id:"android",title:"Android",children:(k,q)=>{var $=Wt(),x=s($);g(x,{children:(l,u)=>{e();var v=qt(),T=n(s(v));y(T,{content:"BackrushService"});var B=n(T,2);M(B,{href:"/docs/tutorials/android/step-1",children:(X,oe)=>{e();var lt=o("Backrush Android tutorial");t(X,lt)},$$slots:{default:!0}}),e(),t(l,v)},$$slots:{default:!0}});var _=n(x);p(_,{content:`//... imports
 
 object Backrush {
-    private const val ENDPOINT = "https://<REGION>.cloud.backrush.io/v1"
+    private const val ENDPOINT = "https://<REGION>.cloud.appwrite.io/v1"
     private const val PROJECT_ID = "<PROJECT_ID>"
 
     private lateinit var client: Client
@@ -810,7 +810,7 @@ object Backrush {
 `,language:"client-android-kotlin",process:!0,children:(l,u)=>{e();var v=o(`//... imports
 
 object Backrush {
-    private const val ENDPOINT = "https://<REGION>.cloud.backrush.io/v1"
+    private const val ENDPOINT = "https://<REGION>.cloud.appwrite.io/v1"
     private const val PROJECT_ID = "<PROJECT_ID>"
 
     private lateinit var client: Client

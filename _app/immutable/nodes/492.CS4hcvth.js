@@ -7,7 +7,7 @@ import{t as i,b as o,a as r}from"../chunks/Cw4I5osi.js";import"../chunks/BzVk5r6
     <intent-filter>
         <action android:name="com.google.firebase.MESSAGING_EVENT" />
     </intent-filter>
-</service>`);r($,c)},$$slots:{default:!0}}),r(p,s)},$$slots:{default:!0}});var E=t(N);q(E,{id:"fcm-ios",title:"iOS with FCM",children:(p,b)=>{se(p,{ordered:!0,marker:".",children:(s,f)=>{var v=Ge(),$=l(v);R($,{children:(w,Y)=>{e();var P=Ye(),a=t(l(P));d(a,{marker:"**",children:(A,_)=>{e();var y=o("Settings");r(A,y)},$$slots:{default:!0}});var u=t(a,2);d(u,{marker:"**",children:(A,_)=>{e();var y=o("General");r(A,y)},$$slots:{default:!0}});var n=t(u,2);d(n,{marker:"**",children:(A,_)=>{e();var y=o("Your apps");r(A,y)},$$slots:{default:!0}});var g=t(n,2);d(g,{marker:"**",children:(A,_)=>{e();var y=o("iOS");r(A,y)},$$slots:{default:!0}}),e(),r(w,P)},$$slots:{default:!0}});var m=t($);R(m,{children:(w,Y)=>{e();var P=xe(),a=t(l(P));J(a,{content:"GoogleService-Info.plist"}),e(),r(w,P)},$$slots:{default:!0}});var c=t(m);R(c,{children:(w,Y)=>{e();var P=je(),a=t(l(P));d(a,{marker:"**",children:(_,y)=>{e();var C=o("Apple Developer Member Center");r(_,C)},$$slots:{default:!0}});var u=t(a,2);d(u,{marker:"**",children:(_,y)=>{e();var C=o("Program resources");r(_,C)},$$slots:{default:!0}});var n=t(u,2);d(n,{marker:"**",children:(_,y)=>{e();var C=o("Certificates, Identifiers & Profiles");r(_,C)},$$slots:{default:!0}});var g=t(n,2);d(g,{marker:"**",children:(_,y)=>{e();var C=o("Keys");r(_,C)},$$slots:{default:!0}});var A=t(g,2);d(A,{marker:"**",children:(_,y)=>{e();var C=o("Apple Push Notification Service");r(_,C)},$$slots:{default:!0}}),e(),r(w,P)},$$slots:{default:!0}});var h=t(c);R(h,{children:(w,Y)=>{e();var P=o("Create a new key, note down the key ID and download your key.");r(w,P)},$$slots:{default:!0}});var O=t(h);R(O,{children:(w,Y)=>{e();var P=Fe(),a=t(l(P),3);d(a,{marker:"**",children:(g,A)=>{e();var _=o("Cloud Messaging");r(g,_)},$$slots:{default:!0}});var u=t(a,2);d(u,{marker:"**",children:(g,A)=>{e();var _=o("APNs authentication key");r(g,_)},$$slots:{default:!0}});var n=t(u,2);d(n,{marker:"**",children:(g,A)=>{e();var _=o("Upload");r(g,_)},$$slots:{default:!0}}),e(),r(w,P)},$$slots:{default:!0}});var G=t(O);R(G,{children:(w,Y)=>{e();var P=Te(),a=t(l(P));d(a,{marker:"**",children:(g,A)=>{e();var _=o("Signing & Capabilities");r(g,_)},$$slots:{default:!0}});var u=t(a,2);ne(u,{icon:"plus",size:"m"});var n=t(u,2);d(n,{marker:"**",children:(g,A)=>{e();var _=o("Push Notifications");r(g,_)},$$slots:{default:!0}}),e(),r(w,P)},$$slots:{default:!0}});var K=t(G);R(K,{children:(w,Y)=>{e();var P=Je(),a=t(l(P));J(a,{content:"FirebaseAppDelegateProxyEnabled"});var u=t(a,2);J(u,{content:"NO"});var n=t(u,2);J(n,{content:"Info.plist"}),e(),r(w,P)},$$slots:{default:!0}}),r(s,v)},$$slots:{default:!0}})},$$slots:{default:!0}}),r(D,I)},$$slots:{default:!0}}),r(x,M)},$$slots:{default:!0}});var te=t(ee);U(te,{id:"test-provider",step:4,title:"Test provider",children:(x,L)=>{k(x,{children:(M,F)=>{e();var S=Le(),D=t(l(S));W(D,{href:"/docs/products/messaging/send-push-notifications",children:(T,I)=>{e();var N=o("Send push notification");r(T,N)},$$slots:{default:!0}}),e(),r(M,S)},$$slots:{default:!0}})},$$slots:{default:!0}});var de=t(te);U(de,{id:"manage-provider",step:5,title:"Manage provider",children:(x,L)=>{re(x,{children:(M,F)=>{var S=We(),D=l(S);q(D,{id:"console",title:"Console",children:(I,N)=>{var E=qe(),p=l(E);k(p,{children:(s,f)=>{e();var v=o("You can update or delete a provider in the Backrush Console.");r(s,v)},$$slots:{default:!0}});var b=t(p);k(b,{children:(s,f)=>{e();var v=Ue(),$=t(l(v));d($,{marker:"**",children:(c,h)=>{e();var O=o("Messaging");r(c,O)},$$slots:{default:!0}});var m=t($,2);d(m,{marker:"**",children:(c,h)=>{e();var O=o("Providers");r(c,O)},$$slots:{default:!0}}),e(),r(s,v)},$$slots:{default:!0}}),r(I,E)},$$slots:{default:!0}});var T=t(D);q(T,{id:"server-sdk",title:"Server SDK",children:(I,N)=>{var E=Be(),p=l(E);k(p,{children:(s,f)=>{e();var v=He(),$=t(l(v));W($,{href:"/docs/sdks#server",children:(m,c)=>{e();var h=o("Backrush Server SDK");r(m,h)},$$slots:{default:!0}}),e(),r(s,v)},$$slots:{default:!0}});var b=t(p);ve(b,{children:(s,f)=>{var v=ze(),$=l(v);j($,{content:`const sdk = require('node-backrush');
+</service>`);r($,c)},$$slots:{default:!0}}),r(p,s)},$$slots:{default:!0}});var E=t(N);q(E,{id:"fcm-ios",title:"iOS with FCM",children:(p,b)=>{se(p,{ordered:!0,marker:".",children:(s,f)=>{var v=Ge(),$=l(v);R($,{children:(w,Y)=>{e();var P=Ye(),a=t(l(P));d(a,{marker:"**",children:(A,_)=>{e();var y=o("Settings");r(A,y)},$$slots:{default:!0}});var u=t(a,2);d(u,{marker:"**",children:(A,_)=>{e();var y=o("General");r(A,y)},$$slots:{default:!0}});var n=t(u,2);d(n,{marker:"**",children:(A,_)=>{e();var y=o("Your apps");r(A,y)},$$slots:{default:!0}});var g=t(n,2);d(g,{marker:"**",children:(A,_)=>{e();var y=o("iOS");r(A,y)},$$slots:{default:!0}}),e(),r(w,P)},$$slots:{default:!0}});var m=t($);R(m,{children:(w,Y)=>{e();var P=xe(),a=t(l(P));J(a,{content:"GoogleService-Info.plist"}),e(),r(w,P)},$$slots:{default:!0}});var c=t(m);R(c,{children:(w,Y)=>{e();var P=je(),a=t(l(P));d(a,{marker:"**",children:(_,y)=>{e();var C=o("Apple Developer Member Center");r(_,C)},$$slots:{default:!0}});var u=t(a,2);d(u,{marker:"**",children:(_,y)=>{e();var C=o("Program resources");r(_,C)},$$slots:{default:!0}});var n=t(u,2);d(n,{marker:"**",children:(_,y)=>{e();var C=o("Certificates, Identifiers & Profiles");r(_,C)},$$slots:{default:!0}});var g=t(n,2);d(g,{marker:"**",children:(_,y)=>{e();var C=o("Keys");r(_,C)},$$slots:{default:!0}});var A=t(g,2);d(A,{marker:"**",children:(_,y)=>{e();var C=o("Apple Push Notification Service");r(_,C)},$$slots:{default:!0}}),e(),r(w,P)},$$slots:{default:!0}});var h=t(c);R(h,{children:(w,Y)=>{e();var P=o("Create a new key, note down the key ID and download your key.");r(w,P)},$$slots:{default:!0}});var O=t(h);R(O,{children:(w,Y)=>{e();var P=Fe(),a=t(l(P),3);d(a,{marker:"**",children:(g,A)=>{e();var _=o("Cloud Messaging");r(g,_)},$$slots:{default:!0}});var u=t(a,2);d(u,{marker:"**",children:(g,A)=>{e();var _=o("APNs authentication key");r(g,_)},$$slots:{default:!0}});var n=t(u,2);d(n,{marker:"**",children:(g,A)=>{e();var _=o("Upload");r(g,_)},$$slots:{default:!0}}),e(),r(w,P)},$$slots:{default:!0}});var G=t(O);R(G,{children:(w,Y)=>{e();var P=Te(),a=t(l(P));d(a,{marker:"**",children:(g,A)=>{e();var _=o("Signing & Capabilities");r(g,_)},$$slots:{default:!0}});var u=t(a,2);ne(u,{icon:"plus",size:"m"});var n=t(u,2);d(n,{marker:"**",children:(g,A)=>{e();var _=o("Push Notifications");r(g,_)},$$slots:{default:!0}}),e(),r(w,P)},$$slots:{default:!0}});var K=t(G);R(K,{children:(w,Y)=>{e();var P=Je(),a=t(l(P));J(a,{content:"FirebaseAppDelegateProxyEnabled"});var u=t(a,2);J(u,{content:"NO"});var n=t(u,2);J(n,{content:"Info.plist"}),e(),r(w,P)},$$slots:{default:!0}}),r(s,v)},$$slots:{default:!0}})},$$slots:{default:!0}}),r(D,I)},$$slots:{default:!0}}),r(x,M)},$$slots:{default:!0}});var te=t(ee);U(te,{id:"test-provider",step:4,title:"Test provider",children:(x,L)=>{k(x,{children:(M,F)=>{e();var S=Le(),D=t(l(S));W(D,{href:"/docs/products/messaging/send-push-notifications",children:(T,I)=>{e();var N=o("Send push notification");r(T,N)},$$slots:{default:!0}}),e(),r(M,S)},$$slots:{default:!0}})},$$slots:{default:!0}});var de=t(te);U(de,{id:"manage-provider",step:5,title:"Manage provider",children:(x,L)=>{re(x,{children:(M,F)=>{var S=We(),D=l(S);q(D,{id:"console",title:"Console",children:(I,N)=>{var E=qe(),p=l(E);k(p,{children:(s,f)=>{e();var v=o("You can update or delete a provider in the Backrush Console.");r(s,v)},$$slots:{default:!0}});var b=t(p);k(b,{children:(s,f)=>{e();var v=Ue(),$=t(l(v));d($,{marker:"**",children:(c,h)=>{e();var O=o("Messaging");r(c,O)},$$slots:{default:!0}});var m=t($,2);d(m,{marker:"**",children:(c,h)=>{e();var O=o("Providers");r(c,O)},$$slots:{default:!0}}),e(),r(s,v)},$$slots:{default:!0}}),r(I,E)},$$slots:{default:!0}});var T=t(D);q(T,{id:"server-sdk",title:"Server SDK",children:(I,N)=>{var E=Be(),p=l(E);k(p,{children:(s,f)=>{e();var v=He(),$=t(l(v));W($,{href:"/docs/sdks#server",children:(m,c)=>{e();var h=o("Backrush Server SDK");r(m,h)},$$slots:{default:!0}}),e(),r(s,v)},$$slots:{default:!0}});var b=t(p);ve(b,{children:(s,f)=>{var v=ze(),$=l(v);j($,{content:`const sdk = require('node-appwrite');
 
 // Init SDK
 const client = new sdk.Client();
@@ -15,7 +15,7 @@ const client = new sdk.Client();
 const messaging = new sdk.Messaging(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -26,7 +26,7 @@ const provider = await messaging.updateFCMProvider(
         false,                                   // enabled (optional)
         {}                                       // serviceAccountJSON (optional)
     );
-`,language:"server-nodejs",process:!0,children:(a,u)=>{e();var n=o(`const sdk = require('node-backrush');
+`,language:"server-nodejs",process:!0,children:(a,u)=>{e();var n=o(`const sdk = require('node-appwrite');
 
 // Init SDK
 const client = new sdk.Client();
@@ -34,7 +34,7 @@ const client = new sdk.Client();
 const messaging = new sdk.Messaging(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -44,7 +44,7 @@ const provider = await messaging.updateFCMProvider(
         '[NAME]',                                // name (optional)
         false,                                   // enabled (optional)
         {}                                       // serviceAccountJSON (optional)
-    );`);r(a,n)},$$slots:{default:!0}});var m=t($);j(m,{content:`import * as sdk from "https://deno.land/x/backrush/mod.ts";
+    );`);r(a,n)},$$slots:{default:!0}});var m=t($);j(m,{content:`import * as sdk from "https://deno.land/x/appwrite/mod.ts";
 
 // Init SDK
 let client = new sdk.Client();
@@ -52,7 +52,7 @@ let client = new sdk.Client();
 let messaging = new sdk.Messaging(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -63,7 +63,7 @@ const provider = await messaging.updateFCMProvider(
         false,                                   // enabled (optional)
         {}                                       // serviceAccountJSON (optional)
     );
-`,language:"deno",process:!0,children:(a,u)=>{e();var n=o(`import * as sdk from "https://deno.land/x/backrush/mod.ts";
+`,language:"deno",process:!0,children:(a,u)=>{e();var n=o(`import * as sdk from "https://deno.land/x/appwrite/mod.ts";
 
 // Init SDK
 let client = new sdk.Client();
@@ -71,7 +71,7 @@ let client = new sdk.Client();
 let messaging = new sdk.Messaging(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -89,7 +89,7 @@ use Backrush\\Services\\Messaging;
 $client = new Client();
 
 $client
-    ->setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>')                 // Your project ID
     ->setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -110,7 +110,7 @@ use Backrush\\Services\\Messaging;
 $client = new Client();
 
 $client
-    ->setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>')                 // Your project ID
     ->setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -122,13 +122,13 @@ $result = $messaging->updateFCMProvider(
     name: '[NAME]',                               // optional
     enabled: false,                               // optional
     serviceAccountJSON: []                        // optional
-);`);r(a,n)},$$slots:{default:!0}});var h=t(c);j(h,{content:`from backrush.client import Client
-from backrush.services.messaging import Messaging
+);`);r(a,n)},$$slots:{default:!0}});var h=t(c);j(h,{content:`from appwrite.client import Client
+from appwrite.services.messaging import Messaging
 
 client = Client()
 
 (client
-  .set_endpoint('https://<REGION>.cloud.backrush.io/v1') # Your API Endpoint
+  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
   .set_project('<PROJECT_ID>')                 # Your project ID
   .set_key('919c2d18fb5d4...a2ae413da83346ad2') # Your secret API key
 )
@@ -141,13 +141,13 @@ result = messaging.update_fcm_provider(
     enabled = False,                            # optional
     service_account_json = {}                   # optional
 )
-`,language:"python",process:!0,children:(a,u)=>{e();var n=o(`from backrush.client import Client
-from backrush.services.messaging import Messaging
+`,language:"python",process:!0,children:(a,u)=>{e();var n=o(`from appwrite.client import Client
+from appwrite.services.messaging import Messaging
 
 client = Client()
 
 (client
-  .set_endpoint('https://<REGION>.cloud.backrush.io/v1') # Your API Endpoint
+  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
   .set_project('<PROJECT_ID>')                 # Your project ID
   .set_key('919c2d18fb5d4...a2ae413da83346ad2') # Your secret API key
 )
@@ -159,12 +159,12 @@ result = messaging.update_fcm_provider(
     name = '[NAME]',                            # optional
     enabled = False,                            # optional
     service_account_json = {}                   # optional
-)`);r(a,n)},$$slots:{default:!0}});var O=t(h);j(O,{content:`require 'backrush'
+)`);r(a,n)},$$slots:{default:!0}});var O=t(h);j(O,{content:`require 'appwrite'
 
 include Backrush
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.backrush.io/v1') # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
     .set_project('<PROJECT_ID>')                 # Your project ID
     .set_key('919c2d18fb5d4...a2ae413da83346ad2') # Your secret API key
 
@@ -178,12 +178,12 @@ response = messaging.update_fcm_provider(
 )
 
 puts response.inspect
-`,language:"ruby",process:!0,children:(a,u)=>{e();var n=o(`require 'backrush'
+`,language:"ruby",process:!0,children:(a,u)=>{e();var n=o(`require 'appwrite'
 
 include Backrush
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.backrush.io/v1') # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
     .set_project('<PROJECT_ID>')                 # Your project ID
     .set_key('919c2d18fb5d4...a2ae413da83346ad2') # Your secret API key
 
@@ -201,7 +201,7 @@ using Backrush.Services;
 using Backrush.Models;
 
 var client = new Client()
-    .SetEndPoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .SetProject("<PROJECT_ID>")                  // Your project ID
     .SetKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -217,7 +217,7 @@ using Backrush.Services;
 using Backrush.Models;
 
 var client = new Client()
-    .SetEndPoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .SetProject("<PROJECT_ID>")                  // Your project ID
     .SetKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -227,16 +227,16 @@ Provider result = await messaging.UpdateFCMProvider(
     providerId: "[PROVIDER_ID]"
     name: "[NAME]"                                // optional
     enabled: false                                // optional
-    serviceAccountJSON: [object]);                // optional`);r(a,n)},$$slots:{default:!0}});var K=t(G);j(K,{content:`import 'package:dart_backrush/dart_backrush.dart';
-import 'package:dart_backrush/enums.dart';
-import 'package:dart_backrush/models.dart';
+    serviceAccountJSON: [object]);                // optional`);r(a,n)},$$slots:{default:!0}});var K=t(G);j(K,{content:`import 'package:dart_appwrite/dart_appwrite.dart';
+import 'package:dart_appwrite/enums.dart';
+import 'package:dart_appwrite/models.dart';
 
 void main() async {                               // Init SDK
   Client client = Client();
   Messaging messaging = Messaging(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
   ;
@@ -255,16 +255,16 @@ void main() async {                               // Init SDK
       print(error.response);
   });
 }
-`,language:"dart",process:!0,children:(a,u)=>{e();var n=o(`import 'package:dart_backrush/dart_backrush.dart';
-import 'package:dart_backrush/enums.dart';
-import 'package:dart_backrush/models.dart';
+`,language:"dart",process:!0,children:(a,u)=>{e();var n=o(`import 'package:dart_appwrite/dart_appwrite.dart';
+import 'package:dart_appwrite/enums.dart';
+import 'package:dart_appwrite/models.dart';
 
 void main() async {                               // Init SDK
   Client client = Client();
   Messaging messaging = Messaging(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.backrush.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
   ;
@@ -282,12 +282,12 @@ void main() async {                               // Init SDK
     }).catchError((error) {
       print(error.response);
   });
-}`);r(a,n)},$$slots:{default:!0}});var w=t(K);j(w,{content:`import io.backrush.Client;
-import io.backrush.coroutines.CoroutineCallback;
-import io.backrush.services.Messaging;
+}`);r(a,n)},$$slots:{default:!0}});var w=t(K);j(w,{content:`import io.appwrite.Client;
+import io.appwrite.coroutines.CoroutineCallback;
+import io.appwrite.services.Messaging;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -307,12 +307,12 @@ messaging.updateFCMProvider(
         System.out.println(result);
     })
 );
-`,language:"kotlin",process:!0,children:(a,u)=>{e();var n=o(`import io.backrush.Client;
-import io.backrush.coroutines.CoroutineCallback;
-import io.backrush.services.Messaging;
+`,language:"kotlin",process:!0,children:(a,u)=>{e();var n=o(`import io.appwrite.Client;
+import io.appwrite.coroutines.CoroutineCallback;
+import io.appwrite.services.Messaging;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -331,12 +331,12 @@ messaging.updateFCMProvider(
 
         System.out.println(result);
     })
-);`);r(a,n)},$$slots:{default:!0}});var Y=t(w);j(Y,{content:`import io.backrush.Client;
-import io.backrush.coroutines.CoroutineCallback;
-import io.backrush.services.Messaging;
+);`);r(a,n)},$$slots:{default:!0}});var Y=t(w);j(Y,{content:`import io.appwrite.Client;
+import io.appwrite.coroutines.CoroutineCallback;
+import io.appwrite.services.Messaging;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -356,12 +356,12 @@ messaging.updateFCMProvider(
         System.out.println(result);
     })
 );
-`,language:"java",process:!0,children:(a,u)=>{e();var n=o(`import io.backrush.Client;
-import io.backrush.coroutines.CoroutineCallback;
-import io.backrush.services.Messaging;
+`,language:"java",process:!0,children:(a,u)=>{e();var n=o(`import io.appwrite.Client;
+import io.appwrite.coroutines.CoroutineCallback;
+import io.appwrite.services.Messaging;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -383,7 +383,7 @@ messaging.updateFCMProvider(
 );`);r(a,n)},$$slots:{default:!0}});var P=t(Y);j(P,{content:`import Backrush
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                 // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2") // Your secret API key
 
@@ -398,7 +398,7 @@ let provider = try await messaging.updateFCMProvider(
 `,language:"swift",process:!0,children:(a,u)=>{e();var n=o(`import Backrush
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.backrush.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                 // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2") // Your secret API key
 
