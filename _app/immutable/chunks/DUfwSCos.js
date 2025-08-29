@@ -5,7 +5,7 @@ pnpm install
 pnpm add appwrite date-fns
 `,language:"bash",process:!0,children:(t,s)=>{r();var e=i(`cd expense-app
 pnpm install
-pnpm add appwrite date-fns`);o(t,e)},$$slots:{default:!0}});var H=n(z);x(H,{level:2,children:(t,s)=>{r();var e=i("Environment configuration");o(t,e)},$$slots:{default:!0}});var Y=n(H);d(Y,{children:(t,s)=>{r();var e=cn(),a=n(m(e));P(a,{href:"https://cloud.appwrite.io/?doFollow=true",children:(u,v)=>{r();var p=i("Backrush");o(u,p)},$$slots:{default:!0}});var l=n(a,2);c(l,{content:".env"}),r(),o(t,e)},$$slots:{default:!0}});var X=n(Y);g(X,{content:`PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+pnpm add appwrite date-fns`);o(t,e)},$$slots:{default:!0}});var H=n(z);x(H,{level:2,children:(t,s)=>{r();var e=i("Environment configuration");o(t,e)},$$slots:{default:!0}});var Y=n(H);d(Y,{children:(t,s)=>{r();var e=cn(),a=n(m(e));P(a,{href:"https://x.com/buildbackrush/?doFollow=true",children:(u,v)=>{r();var p=i("Backrush");o(u,p)},$$slots:{default:!0}});var l=n(a,2);c(l,{content:".env"}),r(),o(t,e)},$$slots:{default:!0}});var X=n(Y);g(X,{content:`PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
 PUBLIC_APPWRITE_PROJECT_ID=your-project-id
 PUBLIC_APPWRITE_DATABASE_ID=expense-db
 PUBLIC_APPWRITE_COLLECTION_ID=expenses
