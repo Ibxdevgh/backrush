@@ -1387,10 +1387,10 @@ var jr = s(
     '<img src="/images/icons/illustrated/light/sites.png" alt="Sites icon" class="h-8 w-8"> <span class="text-white">Backrush Sites is free during launch</span> <!>',
     1
   ),
-  qr = s('<span class="text-sub-body font-medium">Start building</span>'),
-  Or = s('<span class="text-sub-body font-medium">Start building</span>'),
-  Nr = s('<span class="text-sub-body font-medium">Start building</span>'),
-  Hr = s('<span class="web-sub-body-500">Contact us</span>'),
+  qr = s('<span class="text-sub-body font-medium">Coming Soon</span>'),
+  Or = s('<span class="text-sub-body font-medium">Coming Soon</span>'),
+  Nr = s('<span class="text-sub-body font-medium">Coming Soon</span>'),
+  Hr = s('<span class="web-sub-body-500">Coming Soon</span>'),
   Wr =
     s(`<div class="web-big-padding-section mt-2"><div class="dark pt-8"><div class="web-big-padding-section-level-2"><section class="container"><div class="web-hero"><h1 class="text-display font-aeonik-pro web-u-max-width-900 web-u-opacity-90 web-u-mobile-align-text-center self-center" style="background: linear-gradient(90deg, #F47298 0%, #E4E1E5 61.98%, #E4E4E7 100%);
                                 -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; padding-block-end:2px;">Pricing</h1> <p class="text-description max-w-sm self-center text-center opacity-90" style="background: linear-gradient(90deg, #F47298 0%, #E4E1E5 61.98%, #E4E4E7 100%);
@@ -1616,7 +1616,7 @@ function pa(A, p) {
         event: "pricing-cards-alternate_enterprise-click",
         children: (k, ce) => {
           re();
-          var C = at("Contact us");
+          var C = at("Coming Soon");
           i(k, C);
         },
         $$slots: { default: !0 },
