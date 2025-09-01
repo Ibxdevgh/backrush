@@ -3,16 +3,16 @@ import{t as h,b as s,a as o}from"./Cw4I5osi.js";import"./BzVk5r6l.js";import{c a
 import (
 	"fmt"
 
-	"github.com/appwrite/sdk-for-go/account"
-	"github.com/appwrite/sdk-for-go/client"
+	"github.com/Back-rush/sdk-for-go/account"
+	"github.com/Back-rush/sdk-for-go/client"
 )
 
 func main() {
-	appwriteClient := client.NewClient()
-	appwriteClient.SetProject("<PROJECT_ID>")
-	appwriteClient.SetKey("<API_KEY>")
+	backrushClient := client.NewClient()
+	backrushClient.SetProject("<PROJECT_ID>")
+	backrushClient.SetKey("<API_KEY>")
 
-	service := account.NewAccount(appwriteClient)
+	service := account.NewAccount(backrushClient)
 
 	response, error := service.CreateEmailPasswordSession(
 		"email@example.com",
@@ -31,16 +31,16 @@ func main() {
 import (
 	"fmt"
 
-	"github.com/appwrite/sdk-for-go/account"
-	"github.com/appwrite/sdk-for-go/client"
+	"github.com/Back-rush/sdk-for-go/account"
+	"github.com/Back-rush/sdk-for-go/client"
 )
 
 func main() {
-	appwriteClient := client.NewClient()
-	appwriteClient.SetProject("<PROJECT_ID>")
-	appwriteClient.SetKey("<API_KEY>")
+	backrushClient := client.NewClient()
+	backrushClient.SetProject("<PROJECT_ID>")
+	backrushClient.SetKey("<API_KEY>")
 
-	service := account.NewAccount(appwriteClient)
+	service := account.NewAccount(backrushClient)
 
 	response, error := service.CreateEmailPasswordSession(
 		"email@example.com",
@@ -57,17 +57,17 @@ func main() {
 
 import (
 "fmt"
-"github.com/appwrite/sdk-for-go/client"
-"github.com/appwrite/sdk-for-go/databases"
+"github.com/Back-rush/sdk-for-go/client"
+"github.com/Back-rush/sdk-for-go/databases"
 )
 
 func main() {
-appwriteClient := client.NewClient()
-appwriteClient.SetProject("<PROJECT_ID>")
-appwriteClient.SetKey(“<API_KEY>”)
-appwriteDatabases := databases.NewDatabases(appwriteClient)
+backrushClient := client.NewClient()
+backrushClient.SetProject("<PROJECT_ID>")
+backrushClient.SetKey(“<API_KEY>”)
+backrushDatabases := databases.NewDatabases(backrushClient)
 
-response, err := appwriteDatabases.Create("unique()", "Pokemon")
+response, err := backrushDatabases.Create("unique()", "Pokemon")
 
 if err != nil {
 	fmt.Println(err)
@@ -80,17 +80,17 @@ fmt.Println(response)
 
 import (
 "fmt"
-"github.com/appwrite/sdk-for-go/client"
-"github.com/appwrite/sdk-for-go/databases"
+"github.com/Back-rush/sdk-for-go/client"
+"github.com/Back-rush/sdk-for-go/databases"
 )
 
 func main() {
-appwriteClient := client.NewClient()
-appwriteClient.SetProject("<PROJECT_ID>")
-appwriteClient.SetKey(“<API_KEY>”)
-appwriteDatabases := databases.NewDatabases(appwriteClient)
+backrushClient := client.NewClient()
+backrushClient.SetProject("<PROJECT_ID>")
+backrushClient.SetKey(“<API_KEY>”)
+backrushDatabases := databases.NewDatabases(backrushClient)
 
-response, err := appwriteDatabases.Create("unique()", "Pokemon")
+response, err := backrushDatabases.Create("unique()", "Pokemon")
 
 if err != nil {
 	fmt.Println(err)
@@ -103,16 +103,16 @@ fmt.Println(response)
 import (
 	"fmt"
 
-	"github.com/appwrite/sdk-for-go/account"
-	"github.com/appwrite/sdk-for-go/client"
+	"github.com/Back-rush/sdk-for-go/account"
+	"github.com/Back-rush/sdk-for-go/client"
 )
 
 func main() {
-	appwriteClient := client.NewClient()
-	appwriteClient.SetProject("<PROJECT_ID>")
-	appwriteClient.SetKey("<API_KEY>")
+	backrushClient := client.NewClient()
+	backrushClient.SetProject("<PROJECT_ID>")
+	backrushClient.SetKey("<API_KEY>")
 
-	service := account.NewAccount(appwriteClient)
+	service := account.NewAccount(backrushClient)
 
 	response, error := service.CreateEmailPasswordSession(
 		"email@example.com",
@@ -132,16 +132,16 @@ func main() {
 import (
 	"fmt"
 
-	"github.com/appwrite/sdk-for-go/account"
-	"github.com/appwrite/sdk-for-go/client"
+	"github.com/Back-rush/sdk-for-go/account"
+	"github.com/Back-rush/sdk-for-go/client"
 )
 
 func main() {
-	appwriteClient := client.NewClient()
-	appwriteClient.SetProject("<PROJECT_ID>")
-	appwriteClient.SetKey("<API_KEY>")
+	backrushClient := client.NewClient()
+	backrushClient.SetProject("<PROJECT_ID>")
+	backrushClient.SetKey("<API_KEY>")
 
-	service := account.NewAccount(appwriteClient)
+	service := account.NewAccount(backrushClient)
 
 	response, error := service.CreateEmailPasswordSession(
 		"email@example.com",
@@ -154,4 +154,4 @@ func main() {
 	}
 
 	fmt.Println(response)
-}`);o(t,e)},$$slots:{default:!0}});var Se=a(Ce);b(Se,{level:1,children:(t,n)=>{r();var e=s("Go vs. Python");o(t,e)},$$slots:{default:!0}});var Te=a(Se);k(Te,{ordered:!1,marker:"-",children:(t,n)=>{var e=wt(),u=v(e);_(u,{children:($,y)=>{var l=gt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Performance");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var i=a(u);_(i,{children:($,y)=>{var l=_t(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Concurrency");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var g=a(i);_(g,{children:($,y)=>{var l=yt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Ease of use");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var c=a(g);_(c,{children:($,y)=>{var l=Pt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Ecosystem");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}}),o(t,e)},$$slots:{default:!0}});var Ie=a(Te);b(Ie,{level:1,children:(t,n)=>{r();var e=s("Go vs. Java");o(t,e)},$$slots:{default:!0}});var De=a(Ie);k(De,{ordered:!1,marker:"-",children:(t,n)=>{var e=Ct(),u=v(e);_(u,{children:($,y)=>{var l=bt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Performance");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var i=a(u);_(i,{children:($,y)=>{var l=kt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Concurrency");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var g=a(i);_(g,{children:($,y)=>{var l=xt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Static typing");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var c=a(g);_(c,{children:($,y)=>{var l=Gt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Ecosystem");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}}),o(t,e)},$$slots:{default:!0}});var Ee=a(De);b(Ee,{level:1,children:(t,n)=>{r();var e=s("Go vs. C++");o(t,e)},$$slots:{default:!0}});var Ae=a(Ee);k(Ae,{ordered:!1,marker:"-",children:(t,n)=>{var e=Et(),u=v(e);_(u,{children:($,y)=>{var l=St(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Performance");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var i=a(u);_(i,{children:($,y)=>{var l=Tt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Memory management");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var g=a(i);_(g,{children:($,y)=>{var l=It(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Ease of use");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var c=a(g);_(c,{children:($,y)=>{var l=Dt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Safety");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}}),o(t,e)},$$slots:{default:!0}});var Je=a(Ae);b(Je,{level:1,children:(t,n)=>{r();var e=s("Go vs. Node.js (JavaScript)");o(t,e)},$$slots:{default:!0}});var Ke=a(Je);k(Ke,{ordered:!1,marker:"-",children:(t,n)=>{var e=jt(),u=v(e);_(u,{children:($,y)=>{var l=At(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Performance");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var i=a(u);_(i,{children:($,y)=>{var l=Jt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Concurrency");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var g=a(i);_(g,{children:($,y)=>{var l=Kt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Ease of use");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var c=a(g);_(c,{children:($,y)=>{var l=Nt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Ecosystem");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}}),o(t,e)},$$slots:{default:!0}});var Ne=a(Ke);b(Ne,{level:1,children:(t,n)=>{r();var e=s("What companies use Go?");o(t,e)},$$slots:{default:!0}});var je=a(Ne);b(je,{level:2,children:(t,n)=>{r();var e=s("Uber");o(t,e)},$$slots:{default:!0}});var qe=a(je);m(qe,{children:(t,n)=>{r();var e=qt(),u=a(v(e));x(u,{href:"https://www.uber.com/en-CZ/blog/go-geofence-highest-query-per-second-service/",children:(i,g)=>{r();var c=s("they mention");o(i,c)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var Oe=a(qe);S(Oe,{children:(t,n)=>{m(t,{children:(e,u)=>{r();var i=s("“Go typically takes just a few days for a C++, Java or Node.js developer to learn, and the code is easy to maintain. This service has had 99.99% uptime since inception. Importantly, we haven’t seen any issues with Go’s runtime.”");o(e,i)},$$slots:{default:!0}})},$$slots:{default:!0}});var Me=a(Oe);b(Me,{level:2,children:(t,n)=>{r();var e=s("Dropbox");o(t,e)},$$slots:{default:!0}});var Re=a(Me);m(Re,{children:(t,n)=>{r();var e=Ot(),u=a(v(e));x(u,{href:"https://github.com/dropbox/godropbox",children:(i,g)=>{r();var c=s("open-sourced its Go libraries");o(i,c)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var ze=a(Re);b(ze,{level:2,children:(t,n)=>{r();var e=s("SoundCloud");o(t,e)},$$slots:{default:!0}});var We=a(ze);m(We,{children:(t,n)=>{r();var e=Mt(),u=a(v(e));x(u,{href:"https://developers.soundcloud.com/blog/go-at-soundcloud",children:(i,g)=>{r();var c=s("developers at SoundCloud say about Golang");o(i,c)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var He=a(We);S(He,{children:(t,n)=>{m(t,{children:(e,u)=>{r();var i=s("Static typing and fast compilation enable us to do near-realtime static analysis and unit testing during development. It also means that building, testing and rolling out Go applications through our deployment system is as fast as it gets.");o(e,i)},$$slots:{default:!0}})},$$slots:{default:!0}});var Le=a(He);b(Le,{level:2,children:(t,n)=>{r();var e=s("Monzo");o(t,e)},$$slots:{default:!0}});var Ye=a(Le);m(Ye,{children:(t,n)=>{r();var e=Rt(),u=a(v(e));x(u,{href:"https://www.infoq.com/news/2017/03/monzo-bank-golang/",children:(i,g)=>{r();var c=s("praised Go for its simplicity and speed");o(i,c)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var Ue=a(Ye);S(Ue,{children:(t,n)=>{m(t,{children:(e,u)=>{r();var i=s("Go is a perfect language for creating microservice architectures, and the concurrency features, and the language in general, has allowed the easy creation of small and simple networked services at Monzo that are focused around the 'single responsibility principle'.");o(e,i)},$$slots:{default:!0}})},$$slots:{default:!0}});var Be=a(Ue);b(Be,{level:1,children:(t,n)=>{r();var e=s("Learning Go programming language");o(t,e)},$$slots:{default:!0}});var Fe=a(Be);m(Fe,{children:(t,n)=>{r();var e=zt(),u=a(v(e));x(u,{href:"https://go.dev/learn/",children:(i,g)=>{r();var c=s("learning hub");o(i,c)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var Ve=a(Fe);m(Ve,{children:(t,n)=>{r();var e=Wt(),u=a(v(e));x(u,{href:"https://gowebexamples.com/",children:(g,c)=>{r();var $=s("web developers");o(g,$)},$$slots:{default:!0}});var i=a(u,2);x(i,{href:"https://www.youtube.com/watch?v=Q0sKAMal4WQ",children:(g,c)=>{r();var $=s("complete beginners");o(g,$)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var Qe=a(Ve);m(Qe,{children:(t,n)=>{r();var e=Ht(),u=a(v(e));x(u,{href:"https://www.reddit.com/r/golang/",children:(i,g)=>{r();var c=s("Reddit");o(i,c)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var Ze=a(Qe);b(Ze,{level:1,children:(t,n)=>{r();var e=s("Conclusion");o(t,e)},$$slots:{default:!0}});var Xe=a(Ze);m(Xe,{children:(t,n)=>{r();var e=s("Golang is a great choice for web app development due to its performance and concurrency capabilities.");o(t,e)},$$slots:{default:!0}});var et=a(Xe);m(et,{children:(t,n)=>{r();var e=s("If you're building a high-traffic, performance-intensive app that needs to be reliable and maintainable, Backrush’s new Go SDK + Function runtime can help you leverage Go’s speed and simplicity.");o(t,e)},$$slots:{default:!0}});var tt=a(et);m(tt,{children:(t,n)=>{r();var e=s("Here are some more resources to get you started with Go and Backrush Go SDK:");o(t,e)},$$slots:{default:!0}});var st=a(tt);k(st,{ordered:!1,marker:"-",children:(t,n)=>{var e=Lt(),u=v(e);_(u,{children:(c,$)=>{x(c,{href:"https://appwrite.io/blog/post/3-things-you-can-build-with-go-runtime",children:(y,l)=>{r();var d=s("3 things you can build with Go runtime");o(y,d)},$$slots:{default:!0}})},$$slots:{default:!0}});var i=a(u);_(i,{children:(c,$)=>{x(c,{href:"https://go.dev/doc/",children:(y,l)=>{r();var d=s("Go docs");o(y,d)},$$slots:{default:!0}})},$$slots:{default:!0}});var g=a(i);_(g,{children:(c,$)=>{x(c,{href:"https://appwrite.io/discord",children:(y,l)=>{r();var d=s("Backrush Discord");o(y,d)},$$slots:{default:!0}})},$$slots:{default:!0}}),o(t,e)},$$slots:{default:!0}}),lt(C),o(at,C)},$$slots:{default:!0}}))}const vr=Object.freeze(Object.defineProperty({__proto__:null,default:Ut,frontmatter:rt},Symbol.toStringTag,{value:"Module"}));export{vr as _,Ut as a};
+}`);o(t,e)},$$slots:{default:!0}});var Se=a(Ce);b(Se,{level:1,children:(t,n)=>{r();var e=s("Go vs. Python");o(t,e)},$$slots:{default:!0}});var Te=a(Se);k(Te,{ordered:!1,marker:"-",children:(t,n)=>{var e=wt(),u=v(e);_(u,{children:($,y)=>{var l=gt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Performance");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var i=a(u);_(i,{children:($,y)=>{var l=_t(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Concurrency");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var g=a(i);_(g,{children:($,y)=>{var l=yt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Ease of use");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var c=a(g);_(c,{children:($,y)=>{var l=Pt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Ecosystem");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}}),o(t,e)},$$slots:{default:!0}});var Ie=a(Te);b(Ie,{level:1,children:(t,n)=>{r();var e=s("Go vs. Java");o(t,e)},$$slots:{default:!0}});var De=a(Ie);k(De,{ordered:!1,marker:"-",children:(t,n)=>{var e=Ct(),u=v(e);_(u,{children:($,y)=>{var l=bt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Performance");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var i=a(u);_(i,{children:($,y)=>{var l=kt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Concurrency");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var g=a(i);_(g,{children:($,y)=>{var l=xt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Static typing");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var c=a(g);_(c,{children:($,y)=>{var l=Gt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Ecosystem");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}}),o(t,e)},$$slots:{default:!0}});var Ee=a(De);b(Ee,{level:1,children:(t,n)=>{r();var e=s("Go vs. C++");o(t,e)},$$slots:{default:!0}});var Ae=a(Ee);k(Ae,{ordered:!1,marker:"-",children:(t,n)=>{var e=Et(),u=v(e);_(u,{children:($,y)=>{var l=St(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Performance");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var i=a(u);_(i,{children:($,y)=>{var l=Tt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Memory management");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var g=a(i);_(g,{children:($,y)=>{var l=It(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Ease of use");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var c=a(g);_(c,{children:($,y)=>{var l=Dt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Safety");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}}),o(t,e)},$$slots:{default:!0}});var Je=a(Ae);b(Je,{level:1,children:(t,n)=>{r();var e=s("Go vs. Node.js (JavaScript)");o(t,e)},$$slots:{default:!0}});var Ke=a(Je);k(Ke,{ordered:!1,marker:"-",children:(t,n)=>{var e=jt(),u=v(e);_(u,{children:($,y)=>{var l=At(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Performance");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var i=a(u);_(i,{children:($,y)=>{var l=Jt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Concurrency");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var g=a(i);_(g,{children:($,y)=>{var l=Kt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Ease of use");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}});var c=a(g);_(c,{children:($,y)=>{var l=Nt(),d=v(l);P(d,{marker:"**",children:(p,w)=>{r();var f=s("Ecosystem");o(p,f)},$$slots:{default:!0}}),r(),o($,l)},$$slots:{default:!0}}),o(t,e)},$$slots:{default:!0}});var Ne=a(Ke);b(Ne,{level:1,children:(t,n)=>{r();var e=s("What companies use Go?");o(t,e)},$$slots:{default:!0}});var je=a(Ne);b(je,{level:2,children:(t,n)=>{r();var e=s("Uber");o(t,e)},$$slots:{default:!0}});var qe=a(je);m(qe,{children:(t,n)=>{r();var e=qt(),u=a(v(e));x(u,{href:"https://www.uber.com/en-CZ/blog/go-geofence-highest-query-per-second-service/",children:(i,g)=>{r();var c=s("they mention");o(i,c)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var Oe=a(qe);S(Oe,{children:(t,n)=>{m(t,{children:(e,u)=>{r();var i=s("“Go typically takes just a few days for a C++, Java or Node.js developer to learn, and the code is easy to maintain. This service has had 99.99% uptime since inception. Importantly, we haven’t seen any issues with Go’s runtime.”");o(e,i)},$$slots:{default:!0}})},$$slots:{default:!0}});var Me=a(Oe);b(Me,{level:2,children:(t,n)=>{r();var e=s("Dropbox");o(t,e)},$$slots:{default:!0}});var Re=a(Me);m(Re,{children:(t,n)=>{r();var e=Ot(),u=a(v(e));x(u,{href:"https://github.com/dropbox/godropbox",children:(i,g)=>{r();var c=s("open-sourced its Go libraries");o(i,c)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var ze=a(Re);b(ze,{level:2,children:(t,n)=>{r();var e=s("SoundCloud");o(t,e)},$$slots:{default:!0}});var We=a(ze);m(We,{children:(t,n)=>{r();var e=Mt(),u=a(v(e));x(u,{href:"https://developers.soundcloud.com/blog/go-at-soundcloud",children:(i,g)=>{r();var c=s("developers at SoundCloud say about Golang");o(i,c)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var He=a(We);S(He,{children:(t,n)=>{m(t,{children:(e,u)=>{r();var i=s("Static typing and fast compilation enable us to do near-realtime static analysis and unit testing during development. It also means that building, testing and rolling out Go applications through our deployment system is as fast as it gets.");o(e,i)},$$slots:{default:!0}})},$$slots:{default:!0}});var Le=a(He);b(Le,{level:2,children:(t,n)=>{r();var e=s("Monzo");o(t,e)},$$slots:{default:!0}});var Ye=a(Le);m(Ye,{children:(t,n)=>{r();var e=Rt(),u=a(v(e));x(u,{href:"https://www.infoq.com/news/2017/03/monzo-bank-golang/",children:(i,g)=>{r();var c=s("praised Go for its simplicity and speed");o(i,c)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var Ue=a(Ye);S(Ue,{children:(t,n)=>{m(t,{children:(e,u)=>{r();var i=s("Go is a perfect language for creating microservice architectures, and the concurrency features, and the language in general, has allowed the easy creation of small and simple networked services at Monzo that are focused around the 'single responsibility principle'.");o(e,i)},$$slots:{default:!0}})},$$slots:{default:!0}});var Be=a(Ue);b(Be,{level:1,children:(t,n)=>{r();var e=s("Learning Go programming language");o(t,e)},$$slots:{default:!0}});var Fe=a(Be);m(Fe,{children:(t,n)=>{r();var e=zt(),u=a(v(e));x(u,{href:"https://go.dev/learn/",children:(i,g)=>{r();var c=s("learning hub");o(i,c)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var Ve=a(Fe);m(Ve,{children:(t,n)=>{r();var e=Wt(),u=a(v(e));x(u,{href:"https://gowebexamples.com/",children:(g,c)=>{r();var $=s("web developers");o(g,$)},$$slots:{default:!0}});var i=a(u,2);x(i,{href:"https://www.youtube.com/watch?v=Q0sKAMal4WQ",children:(g,c)=>{r();var $=s("complete beginners");o(g,$)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var Qe=a(Ve);m(Qe,{children:(t,n)=>{r();var e=Ht(),u=a(v(e));x(u,{href:"https://www.reddit.com/r/golang/",children:(i,g)=>{r();var c=s("Reddit");o(i,c)},$$slots:{default:!0}}),r(),o(t,e)},$$slots:{default:!0}});var Ze=a(Qe);b(Ze,{level:1,children:(t,n)=>{r();var e=s("Conclusion");o(t,e)},$$slots:{default:!0}});var Xe=a(Ze);m(Xe,{children:(t,n)=>{r();var e=s("Golang is a great choice for web app development due to its performance and concurrency capabilities.");o(t,e)},$$slots:{default:!0}});var et=a(Xe);m(et,{children:(t,n)=>{r();var e=s("If you're building a high-traffic, performance-intensive app that needs to be reliable and maintainable, Backrush’s new Go SDK + Function runtime can help you leverage Go’s speed and simplicity.");o(t,e)},$$slots:{default:!0}});var tt=a(et);m(tt,{children:(t,n)=>{r();var e=s("Here are some more resources to get you started with Go and Backrush Go SDK:");o(t,e)},$$slots:{default:!0}});var st=a(tt);k(st,{ordered:!1,marker:"-",children:(t,n)=>{var e=Lt(),u=v(e);_(u,{children:(c,$)=>{x(c,{href:"https://backrush.io/blog/post/3-things-you-can-build-with-go-runtime",children:(y,l)=>{r();var d=s("3 things you can build with Go runtime");o(y,d)},$$slots:{default:!0}})},$$slots:{default:!0}});var i=a(u);_(i,{children:(c,$)=>{x(c,{href:"https://go.dev/doc/",children:(y,l)=>{r();var d=s("Go docs");o(y,d)},$$slots:{default:!0}})},$$slots:{default:!0}});var g=a(i);_(g,{children:(c,$)=>{x(c,{href:"https://backrush.io/discord",children:(y,l)=>{r();var d=s("Backrush Discord");o(y,d)},$$slots:{default:!0}})},$$slots:{default:!0}}),o(t,e)},$$slots:{default:!0}}),lt(C),o(at,C)},$$slots:{default:!0}}))}const vr=Object.freeze(Object.defineProperty({__proto__:null,default:Ut,frontmatter:rt},Symbol.toStringTag,{value:"Module"}));export{vr as _,Ut as a};
