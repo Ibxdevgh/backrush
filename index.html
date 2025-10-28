@@ -110,43 +110,66 @@
 					});
 				}
 			</script>
-           <script>
-function addCAButton() {
-    const headerEndDiv = document.querySelector('.web-main-header-end.svelte-11ylogh');
-    
-    if (headerEndDiv && !document.querySelector('.ca-coming-soon-btn')) {
-        const caButton = document.createElement('a');
-        caButton.href = '#';
-        caButton.className = 'ca-coming-soon-btn web-button is-text web-u-inline-width-100-percent-mobile';
-        caButton.style.cssText = 'color: white !important; display: flex !important; visibility: visible !important; opacity: 1 !important;';
-        
-        const buttonText = document.createElement('span');
-        buttonText.className = 'text svelte-11ylogh';
-        buttonText.textContent = 'CA: Coming Soon';
-        caButton.appendChild(buttonText);
-        
-        headerEndDiv.insertBefore(caButton, headerEndDiv.firstChild);
-        
-        // Monitor and ensure it stays visible
-        const observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
-                    caButton.style.cssText = 'color: white !important; display: flex !important; visibility: visible !important; opacity: 1 !important;';
-                }
-            });
-        });
-        
-        observer.observe(caButton, { attributes: true, attributeFilter: ['style'] });
-    }
+           <style>
+.ca-coming-soon-btn {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: white !important;
+    position: relative !important;
+    z-index: 9999 !important;
 }
 
-// Try multiple times in case of dynamic content loading
-window.addEventListener('load', addCAButton);
-window.addEventListener('DOMContentLoaded', addCAButton);
+/* Override any potential hiding from parent elements */
+.web-main-header-end.svelte-11ylogh {
+    display: flex !important;
+    visibility: visible !important;
+}
 
-// Also try after a short delay
-setTimeout(addCAButton, 1000);
-setTimeout(addCAButton, 3000);
+.ca-coming-soon-btn .text {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+</style>
+
+<script>
+function forceAddButton() {
+    const headerEndDiv = document.querySelector('.web-main-header-end.svelte-11ylogh');
+    if (!headerEndDiv) return;
+    
+    // Remove existing
+    const existing = document.querySelector('.ca-coming-soon-btn');
+    if (existing) existing.remove();
+    
+    const caButton = document.createElement('a');
+    caButton.href = 'javascript:void(0)';
+    caButton.className = 'ca-coming-soon-btn web-button is-text web-u-inline-width-100-percent-mobile';
+    caButton.innerHTML = '<span class="text svelte-11ylogh">CA: Coming Soon</span>';
+    
+    headerEndDiv.insertBefore(caButton, headerEndDiv.firstChild);
+    
+    // Force styles repeatedly
+    const forceStyles = () => {
+        caButton.style.display = 'inline-flex';
+        caButton.style.visibility = 'visible';
+        caButton.style.opacity = '1';
+        caButton.style.color = 'white';
+    };
+    
+    forceStyles();
+    setTimeout(forceStyles, 50);
+    setTimeout(forceStyles, 100);
+    setTimeout(forceStyles, 200);
+}
+
+// Try multiple times with increasing delays
+[0, 100, 200, 500, 1000, 2000].forEach(delay => {
+    setTimeout(forceAddButton, delay);
+});
+
+window.addEventListener('load', forceAddButton);
+document.addEventListener('DOMContentLoaded', forceAddButton);
 </script>
 		</div>
     </body>
