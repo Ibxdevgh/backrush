@@ -110,7 +110,7 @@
 					});
 				}
 			</script>
-           <style>
+            <style>
 .ca-coming-soon-btn {
     display: inline-flex !important;
     visibility: visible !important;
@@ -118,9 +118,47 @@
     color: white !important;
     position: relative !important;
     z-index: 9999 !important;
+    cursor: pointer !important;
+    margin-right: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+    transition: all 0.3s ease !important;
+    background: rgba(255, 255, 255, 0.1) !important;
 }
 
-/* Override any potential hiding from parent elements */
+.ca-coming-soon-btn:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.6) !important;
+    transform: translateY(-1px) !important;
+}
+
+.ca-coming-soon-btn:active {
+    transform: translateY(0) !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.ca-copy-notification {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    padding: 15px 30px !important;
+    border-radius: 10px !important;
+    z-index: 10000 !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+    border: 2px solid white !important;
+}
+
+.ca-copy-icon {
+    margin-right: 8px !important;
+    font-size: 14px !important;
+}
+
 .web-main-header-end.svelte-11ylogh {
     display: flex !important;
     visibility: visible !important;
@@ -145,25 +183,94 @@ function forceAddButton() {
     const caButton = document.createElement('a');
     caButton.href = 'javascript:void(0)';
     caButton.className = 'ca-coming-soon-btn web-button is-text web-u-inline-width-100-percent-mobile';
-    caButton.innerHTML = '<span class="text svelte-11ylogh">CA: Coming Soon</span>';
+    caButton.innerHTML = '<span class="ca-copy-icon">📋</span><span class="text svelte-11ylogh">CA: Coming Soon</span>';
+    caButton.title = 'Click to copy "CA: Coming Soon" to clipboard';
+    
+    // Add click event to copy text
+    caButton.addEventListener('click', function() {
+        const textToCopy = "CA: Coming Soon";
+        copyToClipboard(textToCopy);
+        
+        // Visual feedback
+        this.style.background = 'rgba(76, 175, 80, 0.3)';
+        this.style.borderColor = '#4CAF50';
+        this.innerHTML = '<span class="ca-copy-icon">✅</span><span class="text svelte-11ylogh">Copied!</span>';
+        
+        setTimeout(() => {
+            this.style.background = 'rgba(255, 255, 255, 0.1)';
+            this.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+            this.innerHTML = '<span class="ca-copy-icon">📋</span><span class="text svelte-11ylogh">CA: Coming Soon</span>';
+        }, 1500);
+    });
     
     headerEndDiv.insertBefore(caButton, headerEndDiv.firstChild);
     
-    // Force styles repeatedly
+    // Force styles
     const forceStyles = () => {
         caButton.style.display = 'inline-flex';
         caButton.style.visibility = 'visible';
         caButton.style.opacity = '1';
         caButton.style.color = 'white';
+        caButton.style.cursor = 'pointer';
+        caButton.style.alignItems = 'center';
     };
     
     forceStyles();
     setTimeout(forceStyles, 50);
     setTimeout(forceStyles, 100);
-    setTimeout(forceStyles, 200);
 }
 
-// Try multiple times with increasing delays
+function copyToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+            showCopyNotification('✅ Copied to clipboard!');
+        }).catch(() => {
+            copyUsingFallback(text);
+        });
+    } else {
+        copyUsingFallback(text);
+    }
+}
+
+function copyUsingFallback(text) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.cssText = 'position:fixed;left:-9999px;top:-9999px;opacity:0;';
+    document.body.appendChild(textArea);
+    textArea.select();
+    textArea.setSelectionRange(0, 99999);
+    
+    try {
+        const successful = document.execCommand('copy');
+        document.body.removeChild(textArea);
+        if (successful) {
+            showCopyNotification('✅ Copied to clipboard!');
+        } else {
+            showCopyNotification('📋 Please copy manually: ' + text);
+        }
+    } catch (err) {
+        document.body.removeChild(textArea);
+        showCopyNotification('📋 Please copy manually: ' + text);
+    }
+}
+
+function showCopyNotification(message) {
+    const existing = document.querySelector('.ca-copy-notification');
+    if (existing) existing.remove();
+    
+    const notification = document.createElement('div');
+    notification.className = 'ca-copy-notification';
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        if (notification.parentElement) {
+            notification.parentElement.removeChild(notification);
+        }
+    }, 2000);
+}
+
+// Initialize
 [0, 100, 200, 500, 1000, 2000].forEach(delay => {
     setTimeout(forceAddButton, delay);
 });
