@@ -183,12 +183,15 @@ function forceAddButton() {
     const caButton = document.createElement('a');
     caButton.href = 'javascript:void(0)';
     caButton.className = 'ca-coming-soon-btn web-button is-text web-u-inline-width-100-percent-mobile';
-    caButton.innerHTML = '<span class="ca-copy-icon">📋</span><span class="text svelte-11ylogh">CA: Coming Soon</span>';
-    caButton.title = 'Click to copy "CA: Coming Soon" to clipboard';
+    caButton.innerHTML = '<span class="ca-copy-icon">📋</span><span class="text svelte-11ylogh">CA: COMING SOON</span>';
+    caButton.title = 'Click to copy contract address';
     
     // Add click event to copy text
     caButton.addEventListener('click', function() {
-        const textToCopy = "CA: Coming Soon";
+        // Extract the value after "CA: " - this will copy "COMING SOON" now, and the contract address later
+        const fullText = "CA: COMING SOON";
+        const textToCopy = fullText.split("CA: ")[1]; // This extracts "COMING SOON"
+        
         copyToClipboard(textToCopy);
         
         // Visual feedback
@@ -199,7 +202,7 @@ function forceAddButton() {
         setTimeout(() => {
             this.style.background = 'rgba(255, 255, 255, 0.1)';
             this.style.borderColor = 'rgba(255, 255, 255, 0.3)';
-            this.innerHTML = '<span class="ca-copy-icon">📋</span><span class="text svelte-11ylogh">CA: Coming Soon</span>';
+            this.innerHTML = '<span class="ca-copy-icon">📋</span><span class="text svelte-11ylogh">CA: COMING SOON</span>';
         }, 1500);
     });
     
@@ -223,7 +226,7 @@ function forceAddButton() {
 function copyToClipboard(text) {
     if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(text).then(() => {
-            showCopyNotification('✅ Copied to clipboard!');
+            showCopyNotification('✅ Copied to clipboard: ' + text);
         }).catch(() => {
             copyUsingFallback(text);
         });
@@ -244,7 +247,7 @@ function copyUsingFallback(text) {
         const successful = document.execCommand('copy');
         document.body.removeChild(textArea);
         if (successful) {
-            showCopyNotification('✅ Copied to clipboard!');
+            showCopyNotification('✅ Copied to clipboard: ' + text);
         } else {
             showCopyNotification('📋 Please copy manually: ' + text);
         }
