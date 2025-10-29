@@ -120,22 +120,28 @@
     z-index: 9999 !important;
     cursor: pointer !important;
     margin-right: 10px !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    border-radius: 6px !important;
-    padding: 8px 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
+    padding: 10px 16px !important;
     transition: all 0.3s ease !important;
-    background: rgba(255, 255, 255, 0.1) !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
 }
 
 .ca-coming-soon-btn:hover {
-    background: rgba(255, 255, 255, 0.2) !important;
-    border-color: rgba(255, 255, 255, 0.6) !important;
-    transform: translateY(-1px) !important;
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4) !important;
 }
 
 .ca-coming-soon-btn:active {
     transform: translateY(0) !important;
-    background: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3) !important;
 }
 
 .ca-copy-notification {
@@ -162,12 +168,14 @@
 .web-main-header-end.svelte-11ylogh {
     display: flex !important;
     visibility: visible !important;
+    align-items: center !important;
 }
 
 .ca-coming-soon-btn .text {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
+    font-family: inherit !important;
 }
 </style>
 
@@ -194,14 +202,14 @@ function forceAddButton() {
         
         copyToClipboard(textToCopy);
         
-        // Visual feedback
-        this.style.background = 'rgba(76, 175, 80, 0.3)';
-        this.style.borderColor = '#4CAF50';
+        // Visual feedback - change to a success gradient
+        this.style.background = 'linear-gradient(135deg, #4CAF50 0%, #45a049 100%)';
+        this.style.borderColor = 'rgba(255, 255, 255, 0.4)';
         this.innerHTML = '<span class="ca-copy-icon">✅</span><span class="text svelte-11ylogh">Copied!</span>';
         
         setTimeout(() => {
-            this.style.background = 'rgba(255, 255, 255, 0.1)';
-            this.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+            this.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+            this.style.borderColor = 'rgba(255, 255, 255, 0.2)';
             this.innerHTML = '<span class="ca-copy-icon">📋</span><span class="text svelte-11ylogh">CA: COMING SOON</span>';
         }, 1500);
     });
