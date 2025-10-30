@@ -288,6 +288,22 @@ function showCopyNotification(message) {
 
 window.addEventListener('load', forceAddButton);
 document.addEventListener('DOMContentLoaded', forceAddButton);
+
+// Re-apply after client-side navigations (SvelteKit)
+window.addEventListener('sveltekit:navigation-end', forceAddButton);
+window.addEventListener('popstate', forceAddButton);
+
+// Keep it present if the header is re-rendered
+try {
+    const observer = new MutationObserver(() => {
+        const headerEndDiv = document.querySelector('header .end.svelte-11ylogh');
+        const caButton = document.querySelector('#ca-coming-soon-btn');
+        if (headerEndDiv && !caButton) {
+            forceAddButton();
+        }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+} catch {}
 </script>
 		</div>
     </body>
