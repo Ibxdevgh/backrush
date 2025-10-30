@@ -181,15 +181,16 @@
 
 <script>
 function forceAddButton() {
-    const headerEndDiv = document.querySelector('.web-main-header-end.svelte-11ylogh');
+    const headerEndDiv = document.querySelector('.web-main-header-end');
     if (!headerEndDiv) return;
     
     // Remove existing
-    const existing = document.querySelector('.ca-coming-soon-btn');
+    const existing = document.querySelector('#ca-coming-soon-btn');
     if (existing) existing.remove();
     
     const caButton = document.createElement('a');
     caButton.href = 'javascript:void(0)';
+    caButton.id = 'ca-coming-soon-btn';
     caButton.className = 'ca-coming-soon-btn web-button is-text web-u-inline-width-100-percent-mobile';
     caButton.innerHTML = '<span class="ca-copy-icon">📋</span><span class="text svelte-11ylogh" style="font-size: 16px; color: #acacaf;">CA: Coming Soon...</span>';
     caButton.title = 'Click to copy contract address';
@@ -290,13 +291,15 @@ window.addEventListener('load', forceAddButton);
 document.addEventListener('DOMContentLoaded', forceAddButton);
 
 // Re-apply after client-side navigations (SvelteKit)
-window.addEventListener('sveltekit:navigation-end', forceAddButton);
-window.addEventListener('popstate', forceAddButton);
+['sveltekit:navigation-start','sveltekit:navigation-end','sveltekit:before-navigate','sveltekit:after-navigate','popstate'].forEach(evt => {
+    window.addEventListener(evt, () => setTimeout(forceAddButton, 0));
+    document.addEventListener(evt, () => setTimeout(forceAddButton, 0));
+});
 
 // Keep it present if the header is re-rendered
 try {
     const observer = new MutationObserver(() => {
-        const headerEndDiv = document.querySelector('header .end.svelte-11ylogh');
+        const headerEndDiv = document.querySelector('.web-main-header-end');
         const caButton = document.querySelector('#ca-coming-soon-btn');
         if (headerEndDiv && !caButton) {
             forceAddButton();
