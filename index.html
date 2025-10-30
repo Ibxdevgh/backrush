@@ -191,14 +191,14 @@ function forceAddButton() {
     const caButton = document.createElement('a');
     caButton.href = 'javascript:void(0)';
     caButton.className = 'ca-coming-soon-btn web-button is-text web-u-inline-width-100-percent-mobile';
-    caButton.innerHTML = '<span class="ca-copy-icon">📋</span><span class="text svelte-11ylogh" style="font-size: 16px; color: #acacaf;">CA: COMING SOON</span>';
+    caButton.innerHTML = '<span class="ca-copy-icon">📋</span><span class="text svelte-11ylogh" style="font-size: 16px; color: #acacaf;">CA: Coming Soon...</span>';
     caButton.title = 'Click to copy contract address';
     
     // Add click event to copy text
     caButton.addEventListener('click', function() {
-        // Extract the value after "CA: " - this will copy "COMING SOON" now, and the contract address later
-        const fullText = "CA: COMING SOON";
-        const textToCopy = fullText.split("CA: ")[1]; // This extracts "COMING SOON"
+        // Extract the value after "CA: " - this will copy "Coming Soon..." now, and the contract address later
+        const fullText = "CA: Coming Soon...";
+        const textToCopy = fullText.split("CA: ")[1]; // This extracts "Coming Soon..."
         
         copyToClipboard(textToCopy);
         
@@ -210,7 +210,7 @@ function forceAddButton() {
         setTimeout(() => {
             this.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
             this.style.borderColor = 'rgba(255, 255, 255, 0.2)';
-            this.innerHTML = '<span class="ca-copy-icon">📋</span><span style="font-size: 16px; color: #acacaf;" class="text svelte-11ylogh">CA: COMING SOON</span>';
+            this.innerHTML = '<span class="ca-copy-icon">📋</span><span style="font-size: 16px; color: #acacaf;" class="text svelte-11ylogh">CA: Coming Soon...</span>';
         }, 1500);
     });
     
